@@ -1,0 +1,29 @@
+2026-04-30T18:53:30.356540599Z [inf]  
+2026-04-30T18:53:30.356543131Z [inf]  [35m====================
+Starting Healthcheck
+====================
+[0m
+2026-04-30T18:53:30.356543949Z [inf]  [37mPath: /[0m
+2026-04-30T18:53:30.356544620Z [inf]  [37mRetry window: 10m0s[0m
+2026-04-30T18:53:30.356545216Z [inf]  
+2026-04-30T18:53:40.568786088Z [inf]  [93mAttempt #1 failed with service unavailable. Continuing to retry for 9m49s[0m
+2026-04-30T18:53:51.742956182Z [inf]  [93mAttempt #2 failed with service unavailable. Continuing to retry for 9m38s[0m
+2026-04-30T18:54:03.987003722Z [inf]  [93mAttempt #3 failed with service unavailable. Continuing to retry for 9m26s[0m
+2026-04-30T18:54:18.166144806Z [inf]  [93mAttempt #4 failed with service unavailable. Continuing to retry for 9m12s[0m
+2026-04-30T18:54:36.341262229Z [inf]  [93mAttempt #5 failed with service unavailable. Continuing to retry for 8m54s[0m
+2026-04-30T18:55:02.515052166Z [inf]  [93mAttempt #6 failed with service unavailable. Continuing to retry for 8m27s[0m
+2026-04-30T18:55:42.758534599Z [inf]  [93mAttempt #7 failed with service unavailable. Continuing to retry for 7m47s[0m
+2026-04-30T18:56:22.936289573Z [inf]  [93mAttempt #8 failed with service unavailable. Continuing to retry for 7m7s[0m
+2026-04-30T18:57:03.113714524Z [inf]  [93mAttempt #9 failed with service unavailable. Continuing to retry for 6m27s[0m
+2026-04-30T18:57:43.291304493Z [inf]  [93mAttempt #10 failed with service unavailable. Continuing to retry for 5m47s[0m
+2026-04-30T18:58:23.479011878Z [inf]  [93mAttempt #11 failed with service unavailable. Continuing to retry for 5m6s[0m
+2026-04-30T18:59:03.656107420Z [inf]  [93mAttempt #12 failed with service unavailable. Continuing to retry for 4m26s[0m
+2026-04-30T18:59:43.833309491Z [inf]  [93mAttempt #13 failed with service unavailable. Continuing to retry for 3m46s[0m
+2026-04-30T19:00:24.033935394Z [inf]  [93mAttempt #14 failed with service unavailable. Continuing to retry for 3m6s[0m
+2026-04-30T19:01:04.218205498Z [inf]  [93mAttempt #15 failed with service unavailable. Continuing to retry for 2m26s[0m
+2026-04-30T19:01:44.412864536Z [inf]  [93mAttempt #16 failed with service unavailable. Continuing to retry for 1m45s[0m
+2026-04-30T19:02:24.599587531Z [inf]  [93mAttempt #17 failed with service unavailable. Continuing to retry for 1m5s[0m
+2026-04-30T19:03:04.778780296Z [inf]  [93mAttempt #18 failed with service unavailable. Continuing to retry for 25s[0m
+2026-04-30T19:03:04.878025203Z [inf]  
+2026-04-30T19:03:04.878028696Z [inf]  [91m1/1 replicas never became healthy![0m
+2026-04-30T19:03:04.878029249Z [inf]  [91mHealthcheck failed![0m

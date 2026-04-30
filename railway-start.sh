@@ -98,17 +98,22 @@ echo "Relaxing server sql_mode for backend connections..."
 node -e "
   const mysql = require('mysql2/promise');
   (async () => {
-    const c = await mysql.createConnection({
-      host: process.env.DB_HOST, port: +process.env.DB_PORT,
-      user: process.env.DB_USER, password: process.env.DB_PASSWORD
-    });
-    await c.query(\"SET GLOBAL sql_mode = ''\");
-    await c.end();
-  })().catch(e => {
-    console.error('WARN: could not SET GLOBAL sql_mode (' + e.message + '). ' +
-                  'Backend may fail with TEXT-default errors. ' +
-                  'Workaround: in MySQL plugin Data tab run: SET GLOBAL sql_mode = \"\";');
-  });
+    let c;
+    try {
+      c = await mysql.createConnection({
+        host: process.env.DB_HOST, port: +process.env.DB_PORT,
+        user: process.env.DB_USER, password: process.env.DB_PASSWORD
+      });
+      await c.query(\"SET GLOBAL sql_mode = ''\");
+    } catch (e) {
+      console.error('WARN: could not SET GLOBAL sql_mode (' + e.message + '). ' +
+                    'Backend may fail with TEXT-default errors. ' +
+                    'Workaround: in MySQL plugin Data tab run: SET GLOBAL sql_mode = \"\";');
+    } finally {
+      if (c) { try { await c.end(); } catch(_){} }
+    }
+    process.exit(0);
+  })();
 "
 
 # -------- Schema fixups for MySQL 8 compatibility --------
@@ -125,69 +130,86 @@ echo "Applying MySQL 8 schema fixups..."
 node -e "
   const mysql = require('mysql2/promise');
   (async () => {
-    const c = await mysql.createConnection({
-      host: process.env.DB_HOST, port: +process.env.DB_PORT,
-      user: process.env.DB_USER, password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME, multipleStatements: true
-    });
-    const [tbls] = await c.query(
-      \"SELECT 1 FROM information_schema.tables WHERE table_schema=? AND table_name='support_ticket'\",
-      [process.env.DB_NAME]
-    );
-    if (tbls.length === 0) { console.log('  support_ticket not present yet, skipping.'); await c.end(); return; }
-    const [idx] = await c.query(
-      \"SELECT 1 FROM information_schema.statistics WHERE table_schema=? AND table_name='support_ticket' AND index_name='tags_idx'\",
-      [process.env.DB_NAME]
-    );
-    if (idx.length > 0) {
-      console.log('  Dropping support_ticket.tags_idx (incompatible with JSON column)...');
-      await c.query('ALTER TABLE support_ticket DROP INDEX tags_idx');
-    } else {
-      console.log('  support_ticket.tags_idx already absent.');
+    let c;
+    try {
+      c = await mysql.createConnection({
+        host: process.env.DB_HOST, port: +process.env.DB_PORT,
+        user: process.env.DB_USER, password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME, multipleStatements: true
+      });
+      const [tbls] = await c.query(
+        \"SELECT 1 FROM information_schema.tables WHERE table_schema=? AND table_name='support_ticket'\",
+        [process.env.DB_NAME]
+      );
+      if (tbls.length === 0) { console.log('  support_ticket not present yet, skipping.'); }
+      else {
+        const [idx] = await c.query(
+          \"SELECT 1 FROM information_schema.statistics WHERE table_schema=? AND table_name='support_ticket' AND index_name='tags_idx'\",
+          [process.env.DB_NAME]
+        );
+        if (idx.length > 0) {
+          console.log('  Dropping support_ticket.tags_idx (incompatible with JSON column)...');
+          await c.query('ALTER TABLE support_ticket DROP INDEX tags_idx');
+        } else {
+          console.log('  support_ticket.tags_idx already absent.');
+        }
+        const [col] = await c.query(
+          \"SELECT DATA_TYPE AS dt FROM information_schema.columns WHERE table_schema=? AND table_name='support_ticket' AND column_name='tags'\",
+          [process.env.DB_NAME]
+        );
+        const colType = (col[0] && (col[0].dt || col[0].DT)) || '';
+        if (colType && colType.toLowerCase() !== 'json') {
+          console.log('  Converting support_ticket.tags ' + colType + ' -> JSON...');
+          await c.query(\"ALTER TABLE support_ticket MODIFY COLUMN tags JSON NULL COMMENT 'Tags for search/filter (string array)'\");
+        } else {
+          console.log('  support_ticket.tags already JSON.');
+        }
+      }
+    } catch (e) {
+      console.error('WARN: schema fixup failed (' + e.message + '). Backend may crash-loop.');
+    } finally {
+      if (c) { try { await c.end(); } catch(_){} }
     }
-    const [col] = await c.query(
-      \"SELECT DATA_TYPE AS dt FROM information_schema.columns WHERE table_schema=? AND table_name='support_ticket' AND column_name='tags'\",
-      [process.env.DB_NAME]
-    );
-    const colType = (col[0] && (col[0].dt || col[0].DT)) || '';
-    if (colType && colType.toLowerCase() !== 'json') {
-      console.log('  Converting support_ticket.tags ' + colType + ' -> JSON...');
-      await c.query(\"ALTER TABLE support_ticket MODIFY COLUMN tags JSON NULL COMMENT 'Tags for search/filter (string array)'\");
-    } else {
-      console.log('  support_ticket.tags already JSON.');
-    }
-    await c.end();
-  })().catch(e => {
-    console.error('WARN: schema fixup failed (' + e.message + '). Backend may crash-loop.');
-  });
+    process.exit(0);
+  })();
 "
 
 # -------- Ensure database exists --------
 node -e "
   const mysql = require('mysql2/promise');
   (async () => {
-    const c = await mysql.createConnection({
-      host: process.env.DB_HOST, port: +process.env.DB_PORT,
-      user: process.env.DB_USER, password: process.env.DB_PASSWORD
-    });
-    await c.query('CREATE DATABASE IF NOT EXISTS \`' + process.env.DB_NAME + '\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci');
-    await c.end();
-  })().catch(e => { console.error(e); process.exit(1); });
+    let c;
+    try {
+      c = await mysql.createConnection({
+        host: process.env.DB_HOST, port: +process.env.DB_PORT,
+        user: process.env.DB_USER, password: process.env.DB_PASSWORD
+      });
+      await c.query('CREATE DATABASE IF NOT EXISTS \`' + process.env.DB_NAME + '\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci');
+    } catch (e) { console.error(e); process.exitCode = 1; }
+    finally { if (c) { try { await c.end(); } catch(_){} } process.exit(process.exitCode || 0); }
+  })();
 "
 
 # -------- Detect empty schema and import initial.sql --------
 TABLE_COUNT=$(node -e "
   const mysql = require('mysql2/promise');
   (async () => {
-    const c = await mysql.createConnection({
-      host: process.env.DB_HOST, port: +process.env.DB_PORT,
-      user: process.env.DB_USER, password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME
-    });
-    const [rows] = await c.query('SHOW TABLES');
-    console.log(rows.length);
-    await c.end();
-  })().catch(e => { console.error(e); process.exit(1); });
+    let c, count = 0;
+    try {
+      c = await mysql.createConnection({
+        host: process.env.DB_HOST, port: +process.env.DB_PORT,
+        user: process.env.DB_USER, password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME
+      });
+      const [rows] = await c.query('SHOW TABLES');
+      count = rows.length;
+    } catch (e) { console.error(e); process.exitCode = 1; }
+    finally {
+      if (c) { try { await c.end(); } catch(_){} }
+      console.log(count);
+      process.exit(process.exitCode || 0);
+    }
+  })();
 " | tr -d '[:space:]')
 
 if [ "${TABLE_COUNT:-0}" -lt "10" ]; then
