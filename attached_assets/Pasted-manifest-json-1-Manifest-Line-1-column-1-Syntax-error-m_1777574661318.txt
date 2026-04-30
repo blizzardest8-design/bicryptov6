@@ -1,0 +1,190 @@
+manifest.json:1 Manifest: Line: 1, column: 1, Syntax error.
+manifest.json:1 Manifest: Line: 1, column: 1, Syntax error.
+img/logo/favicon-32x32.webp:1  Failed to load resource: the server responded with a status of 404 ()
+img/logo/favicon-16x16.webp:1  Failed to load resource: the server responded with a status of 404 ()
+img/logo/favicon-96x96.webp:1  Failed to load resource: the server responded with a status of 404 ()
+img/logo/logo-dark.webp?v=1:1  Failed to load resource: the server responded with a status of 404 ()
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/content/default-page/home?pageSource=default' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/content/default-page/home?pageSource=default:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at e2532eead2102466.js:4:37125
+    at e2532eead2102466.js:4:37380
+    at ih (f264763466d2ab35.js:1:102203)
+    at uf (f264763466d2ab35.js:1:126053)
+    at uc (f264763466d2ab35.js:1:125715)
+    at uf (f264763466d2ab35.js:1:126098)
+    at uc (f264763466d2ab35.js:1:125715)
+    at uf (f264763466d2ab35.js:1:126033)
+    at uc (f264763466d2ab35.js:1:125715)
+r @ 9a0c4b1f491d6cfe.js:2
+img/logo/logo.webp?v=1:1  Failed to load resource: the server responded with a status of 404 ()
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/content/landing-stats' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/content/landing-stats:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at e2532eead2102466.js:4:37232
+    at e2532eead2102466.js:4:37380
+    at ih (f264763466d2ab35.js:1:102203)
+    at uf (f264763466d2ab35.js:1:126053)
+    at uc (f264763466d2ab35.js:1:125715)
+    at uf (f264763466d2ab35.js:1:126098)
+    at uc (f264763466d2ab35.js:1:125715)
+    at uf (f264763466d2ab35.js:1:126033)
+    at uc (f264763466d2ab35.js:1:125715)
+r @ 9a0c4b1f491d6cfe.js:2
+86de8797603776dd.js:153 Login form submitted: Object
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at 86de8797603776dd.js:153:1241
+    at 86de8797603776dd.js:153:1558
+    at en (86de8797603776dd.js:153:3252)
+    at sY (f264763466d2ab35.js:1:161827)
+    at f264763466d2ab35.js:1:167715
+    at tD (f264763466d2ab35.js:1:30322)
+    at s3 (f264763466d2ab35.js:1:163060)
+    at fC (f264763466d2ab35.js:1:199026)
+    at fP (f264763466d2ab35.js:1:198848)
+r @ 9a0c4b1f491d6cfe.js:2
+86de8797603776dd.js:153 Failed to get PoW challenge: Failed to fetch
+(anonymous) @ 86de8797603776dd.js:153
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/auth/login:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at login (982f61629c41ecb3.js:6:35037)
+    at en (86de8797603776dd.js:153:3431)
+r @ 9a0c4b1f491d6cfe.js:2
+86de8797603776dd.js:153 Login form submitted: Object
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at 86de8797603776dd.js:153:1241
+    at 86de8797603776dd.js:153:1558
+    at en (86de8797603776dd.js:153:3252)
+    at sY (f264763466d2ab35.js:1:161827)
+    at f264763466d2ab35.js:1:167715
+    at tD (f264763466d2ab35.js:1:30322)
+    at s3 (f264763466d2ab35.js:1:163060)
+    at fC (f264763466d2ab35.js:1:199026)
+    at fP (f264763466d2ab35.js:1:198848)
+r @ 9a0c4b1f491d6cfe.js:2
+86de8797603776dd.js:153 Failed to get PoW challenge: Failed to fetch
+(anonymous) @ 86de8797603776dd.js:153
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/auth/login:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at login (982f61629c41ecb3.js:6:35037)
+    at en (86de8797603776dd.js:153:3431)
+r @ 9a0c4b1f491d6cfe.js:2
+86de8797603776dd.js:153 Login form submitted: Object
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at 86de8797603776dd.js:153:1241
+    at 86de8797603776dd.js:153:1558
+    at en (86de8797603776dd.js:153:3252)
+    at sY (f264763466d2ab35.js:1:161827)
+    at f264763466d2ab35.js:1:167715
+    at tD (f264763466d2ab35.js:1:30322)
+    at s3 (f264763466d2ab35.js:1:163060)
+    at fC (f264763466d2ab35.js:1:199026)
+    at fP (f264763466d2ab35.js:1:198848)
+r @ 9a0c4b1f491d6cfe.js:2
+86de8797603776dd.js:153 Failed to get PoW challenge: Failed to fetch
+(anonymous) @ 86de8797603776dd.js:153
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+demourinho-crypto.up.railway.app/api/auth/login:1  Failed to load resource: net::ERR_FAILED
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at login (982f61629c41ecb3.js:6:35037)
+    at en (86de8797603776dd.js:153:3431)
+r @ 9a0c4b1f491d6cfe.js:2
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+The resource <URL> was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+86de8797603776dd.js:153 Login form submitted: {email: 'superadmin@example.com'}
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+9a0c4b1f491d6cfe.js:2  GET https://demourinho-crypto.up.railway.app/api/auth/pow/challenge?action=login net::ERR_FAILED
+r @ 9a0c4b1f491d6cfe.js:2
+(anonymous) @ 86de8797603776dd.js:153
+(anonymous) @ 86de8797603776dd.js:153
+en @ 86de8797603776dd.js:153
+sY @ f264763466d2ab35.js:1
+(anonymous) @ f264763466d2ab35.js:1
+tD @ f264763466d2ab35.js:1
+s3 @ f264763466d2ab35.js:1
+fC @ f264763466d2ab35.js:1
+fP @ f264763466d2ab35.js:1
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at 86de8797603776dd.js:153:1241
+    at 86de8797603776dd.js:153:1558
+    at en (86de8797603776dd.js:153:3252)
+    at sY (f264763466d2ab35.js:1:161827)
+    at f264763466d2ab35.js:1:167715
+    at tD (f264763466d2ab35.js:1:30322)
+    at s3 (f264763466d2ab35.js:1:163060)
+    at fC (f264763466d2ab35.js:1:199026)
+    at fP (f264763466d2ab35.js:1:198848)
+r @ 9a0c4b1f491d6cfe.js:2
+await in r
+(anonymous) @ 86de8797603776dd.js:153
+(anonymous) @ 86de8797603776dd.js:153
+en @ 86de8797603776dd.js:153
+sY @ f264763466d2ab35.js:1
+(anonymous) @ f264763466d2ab35.js:1
+tD @ f264763466d2ab35.js:1
+s3 @ f264763466d2ab35.js:1
+fC @ f264763466d2ab35.js:1
+fP @ f264763466d2ab35.js:1
+86de8797603776dd.js:153 Failed to get PoW challenge: Failed to fetch
+(anonymous) @ 86de8797603776dd.js:153
+await in (anonymous)
+(anonymous) @ 86de8797603776dd.js:153
+en @ 86de8797603776dd.js:153
+sY @ f264763466d2ab35.js:1
+(anonymous) @ f264763466d2ab35.js:1
+tD @ f264763466d2ab35.js:1
+s3 @ f264763466d2ab35.js:1
+fC @ f264763466d2ab35.js:1
+fP @ f264763466d2ab35.js:1
+en:1 Access to fetch at 'https://demourinho-crypto.up.railway.app/api/auth/login' from origin 'https://demourinho-crypto-production.up.railway.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+9a0c4b1f491d6cfe.js:2  POST https://demourinho-crypto.up.railway.app/api/auth/login net::ERR_FAILED
+r @ 9a0c4b1f491d6cfe.js:2
+login @ 982f61629c41ecb3.js:6
+en @ 86de8797603776dd.js:153
+await in en
+sY @ f264763466d2ab35.js:1
+(anonymous) @ f264763466d2ab35.js:1
+tD @ f264763466d2ab35.js:1
+s3 @ f264763466d2ab35.js:1
+fC @ f264763466d2ab35.js:1
+fP @ f264763466d2ab35.js:1
+9a0c4b1f491d6cfe.js:2 Fetch error: TypeError: Failed to fetch
+    at r (9a0c4b1f491d6cfe.js:2:13802)
+    at login (982f61629c41ecb3.js:6:35037)
+    at en (86de8797603776dd.js:153:3431)
+r @ 9a0c4b1f491d6cfe.js:2
+await in r
+login @ 982f61629c41ecb3.js:6
+en @ 86de8797603776dd.js:153
+await in en
+sY @ f264763466d2ab35.js:1
+(anonymous) @ f264763466d2ab35.js:1
+tD @ f264763466d2ab35.js:1
+s3 @ f264763466d2ab35.js:1
+fC @ f264763466d2ab35.js:1
+fP @ f264763466d2ab35.js:1
