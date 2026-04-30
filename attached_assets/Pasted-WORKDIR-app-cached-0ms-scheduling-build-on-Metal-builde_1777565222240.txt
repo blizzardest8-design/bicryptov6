@@ -1,0 +1,71 @@
+WORKDIR /app/ cached
+0ms
+scheduling build on Metal builder "builder-mezshl"
+found 'railway.json' at 'railway.json'
+uploading snapshot
+66.3 MB
+1.8s
+using build driver nixpacks-v1.41.0
+ 
+╔════════════════════════ Nixpacks v1.41.0 ═══════════════════════╗
+║─────────────────────────────────────────────────────────────────║
+║            │ cd frontend && pnpm exec next build                ║
+║─────────────────────────────────────────────────────────────────║
+Saved output to:
+
+load build definition from Dockerfile
+5m 42s
+
+load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+255ms
+
+load .dockerignore
+0ms
+SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ARG "APP_REFRESH_TOKEN_SECRET") (line 11)(https://docs.docker.com/go/dockerfile/rule/secrets-used-in-arg-or-env/)
+ details: Sensitive data should not be used in the ARG or ENV commands
+SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ARG "APP_RESET_TOKEN_SECRET") (line 11)(https://docs.docker.com/go/dockerfile/rule/secrets-used-in-arg-or-env/)
+ details: Sensitive data should not be used in the ARG or ENV commands
+SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ARG "APP_VERIFY_TOKEN_SECRET") (line 11)(https://docs.docker.com/go/dockerfile/rule/secrets-used-in-arg-or-env/)
+ details: Sensitive data should not be used in the ARG or ENV commands
+SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ARG "REDIS_PASSWORD") (line 11)(https://docs.docker.com/go/dockerfile/rule/secrets-used-in-arg-or-env/)
+ details: Sensitive data should not be used in the ARG or ENV commands
+SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ENV "APP_ACCESS_TOKEN_SECRET") (line 12)(https://docs.docker.com/go/dockerfile/rule/secrets-used-in-arg-or-env/)
+ details: Sensitive data should not be used in the ARG or ENV commands
+SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ENV "APP_REFRESH_TOKEN_SECRET") (line 12)(https://docs.docker.com/go/dockerfile/rule/secrets-used-in-arg-or-env/)
+ details: Sensitive data should not be used in the ARG or ENV commands
+UndefinedVar: Usage of undefined variable '$NIXPACKS_PATH' (line 18)(https://docs.docker.com/go/dockerfile/rule/undefined-var/)
+ details: Variables should be defined before their use
+
+load build context
+11s
+
+COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix
+8s
+
+RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d
+1m 2s
+42 store paths deleted, 263.32 MiB freed
+
+COPY . /app/.
+4m 10s
+
+RUN pnpm install --no-frozen-lockfile --prefer-offline
+46s
+Done in 40.6s using pnpm v9.15.9
+
+COPY . /app/.
+3m 14s
+
+RUN pnpm build:i18n || true
+12s
+Output: /app/frontend/public/i18n
+
+RUN cd frontend && pnpm exec next build
+55s
+ƒ (Dynamic) server-rendered on demand
+
+RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+11s
+
+COPY . /app
+1m 18s
