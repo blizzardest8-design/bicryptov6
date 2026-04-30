@@ -111,6 +111,56 @@ node -e "
   });
 "
 
+# -------- Schema fixups for MySQL 8 compatibility --------
+# initial.sql was dumped from an older MariaDB/MySQL where you could index a
+# JSON-validated LONGTEXT with a length prefix. MySQL 8 forbids plain indexes
+# on JSON columns. The compiled Sequelize model now defines `tags` as JSON
+# (no index), so on backend boot it tries to ALTER `tags` LONGTEXT -> JSON,
+# but the leftover `tags_idx` index blocks the conversion with:
+#   "JSON column 'tags' supports indexing only via generated columns ..."
+# Drop the offending index and convert the column up-front. Idempotent: after
+# the first run the index is gone and the column is already JSON, so the
+# follow-up runs are no-ops.
+echo "Applying MySQL 8 schema fixups..."
+node -e "
+  const mysql = require('mysql2/promise');
+  (async () => {
+    const c = await mysql.createConnection({
+      host: process.env.DB_HOST, port: +process.env.DB_PORT,
+      user: process.env.DB_USER, password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME, multipleStatements: true
+    });
+    const [tbls] = await c.query(
+      \"SELECT 1 FROM information_schema.tables WHERE table_schema=? AND table_name='support_ticket'\",
+      [process.env.DB_NAME]
+    );
+    if (tbls.length === 0) { console.log('  support_ticket not present yet, skipping.'); await c.end(); return; }
+    const [idx] = await c.query(
+      \"SELECT 1 FROM information_schema.statistics WHERE table_schema=? AND table_name='support_ticket' AND index_name='tags_idx'\",
+      [process.env.DB_NAME]
+    );
+    if (idx.length > 0) {
+      console.log('  Dropping support_ticket.tags_idx (incompatible with JSON column)...');
+      await c.query('ALTER TABLE support_ticket DROP INDEX tags_idx');
+    } else {
+      console.log('  support_ticket.tags_idx already absent.');
+    }
+    const [col] = await c.query(
+      \"SELECT data_type FROM information_schema.columns WHERE table_schema=? AND table_name='support_ticket' AND column_name='tags'\",
+      [process.env.DB_NAME]
+    );
+    if (col.length && col[0].data_type.toLowerCase() !== 'json') {
+      console.log('  Converting support_ticket.tags ' + col[0].data_type + ' -> JSON...');
+      await c.query(\"ALTER TABLE support_ticket MODIFY COLUMN tags JSON NULL COMMENT 'Tags for search/filter (string array)'\");
+    } else {
+      console.log('  support_ticket.tags already JSON.');
+    }
+    await c.end();
+  })().catch(e => {
+    console.error('WARN: schema fixup failed (' + e.message + '). Backend may crash-loop.');
+  });
+"
+
 # -------- Ensure database exists --------
 node -e "
   const mysql = require('mysql2/promise');
