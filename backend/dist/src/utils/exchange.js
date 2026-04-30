@@ -138,7 +138,7 @@ class ExchangeManager {
         if (!apiKey || !apiSecret || apiKey === "" || apiSecret === "") {
             console_1.logger.info("EXCHANGE", `API credentials for ${provider} are missing. Falling back to public mode for charts and prices.`);
             const publicExchange = new ccxt.pro[provider]({
-                agent,
+                agent: httpsAgentIPv4,
                 timeout: 30000,
                 enableRateLimit: true,
             });

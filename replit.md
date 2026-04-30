@@ -150,7 +150,33 @@ What needs your own keys later:
 
 ## Compiled-backend caveat
 
-The `backend/dist/` folder is the only backend that exists. We do **not**
-edit compiled JS by hand (it's effectively output, not source). All
-"backend changes" must happen via env vars or by replacing `dist/`
-wholesale with a new build from the original vendor.
+The `backend/dist/` folder is the only backend that exists. There is no
+TypeScript source for the backend under `src/`. Surgical edits to
+`backend/dist/` are acceptable when the bug is precisely understood and
+the change is small (one line). Document such edits here.
+
+### Known dist patches
+
+- **`backend/dist/src/utils/exchange.js` line 144** (patched 2026-04-30):
+  TDZ bug — `agent` was declared with `const` at line 157 but referenced
+  at line 141 (inside the "no API key → public mode" branch). In JS,
+  `const`/`let` declarations are hoisted but not initialized; any access
+  before the declaration line throws `Cannot access 'agent' before
+  initialization`. Fixed by replacing the bare `agent` reference with
+  `httpsAgentIPv4` (the value it would have resolved to in public mode
+  anyway since there is no proxy URL in that branch).
+  This bug caused: charts blank, exchange tickers never populating Redis,
+  all CRON jobs (`processPendingOrders`, `processCurrenciesPrices`) crashing,
+  binary trading not loading real-time prices.
+
+## Secondary issues to fix when possible
+
+- **OpenExchangeRates API key** — `processCurrenciesPrices` cron calls
+  OpenExchangeRates for fiat FX rates. Without `APP_OPENEXCHANGERATES_API_KEY`
+  it logs `Unauthorized: Invalid API key`. Free tier is 1000 req/month.
+  Sign up at https://openexchangerates.org and add the env var on Railway.
+
+- **CodeCanyon license** — admin panel shows "No main product license found".
+  This is cosmetic; all installed extensions work without it. It's needed
+  only if you want to use the in-admin extension store (download/update add-ons
+  direct from Bicrypto's license server).
