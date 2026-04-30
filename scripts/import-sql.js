@@ -50,18 +50,18 @@ async function main() {
         !/^\/\*!.*\*\/$/.test(s)
     );
 
-  console.log(`Executing ${stmts.length} statements...`);
+  console.log("Executing " + stmts.length + " statements...");
   let i = 0;
   for (const stmt of stmts) {
     i++;
     try {
       await conn.query(stmt);
     } catch (err) {
-      console.error(`Statement ${i} failed: ${err.message}`);
+      console.error("Statement " + i + " failed: " + err.message);
       console.error(stmt.slice(0, 200));
       throw err;
     }
-    if (i % 50 === 0) console.log(`  ...${i}/${stmts.length}`);
+    if (i % 50 === 0) console.log("  ..." + i + "/" + stmts.length);
   }
 
   await conn.query("SET FOREIGN_KEY_CHECKS=1");
