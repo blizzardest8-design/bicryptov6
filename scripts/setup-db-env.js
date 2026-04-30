@@ -1,0 +1,10 @@
+const fs = require('fs');
+let env = fs.readFileSync('backend/.env', 'utf8');
+env = env.replace(/DB_NAME=""/, 'DB_NAME="v4"');
+env = env.replace(/DB_USER=""/, 'DB_USER="root"');
+env = env.replace(/DB_HOST=""/, 'DB_HOST="127.0.0.1"');
+env = env.replace(/DB_PORT=""/, 'DB_PORT="3306"');
+env = env.replace(/REDIS_HOST=""/, 'REDIS_HOST="127.0.0.1"');
+env = env.replace(/REDIS_PORT=""/, 'REDIS_PORT="6379"');
+fs.writeFileSync('backend/.env', env);
+console.log('done');

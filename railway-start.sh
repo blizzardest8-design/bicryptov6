@@ -1,0 +1,138 @@
+#!/usr/bin/env bash
+# ============================================================================
+# Bicrypto Railway Start Script
+# ----------------------------------------------------------------------------
+# What this does on every deploy:
+#   1. Maps Railway's MYSQL* / REDIS* env vars onto the names Bicrypto expects
+#   2. Loudly warns if Redis is not attached (backend cron/queues need it)
+#   3. Waits for MySQL to be reachable (up to 60s)
+#   4. If the database is empty, imports initial.sql (creates all tables)
+#   5. Runs Sequelize seeders (creates super admin, default settings, etc.)
+#   6. Starts backend (port 4000) and frontend (port $PORT) under PM2
+#
+# Idempotent: re-running on a populated DB is safe; import + seed are skipped.
+# Safe restart: if a previous import left a partial schema, drop the database
+# from Railway's MySQL Data tab (DROP DATABASE railway; CREATE DATABASE railway;)
+# and redeploy — this script will re-import cleanly.
+# ============================================================================
+set -e
+
+echo "================================================================"
+echo "  Bicrypto Railway Boot"
+echo "================================================================"
+
+# -------- Map Railway MySQL plugin vars onto Bicrypto's DB_* names --------
+# Railway's MySQL plugin exposes: MYSQLHOST, MYSQLPORT, MYSQLUSER,
+# MYSQLPASSWORD, MYSQLDATABASE (and a MYSQL_URL).
+export DB_HOST="${DB_HOST:-${MYSQLHOST:-127.0.0.1}}"
+export DB_PORT="${DB_PORT:-${MYSQLPORT:-3306}}"
+export DB_USER="${DB_USER:-${MYSQLUSER:-root}}"
+export DB_PASSWORD="${DB_PASSWORD:-${MYSQLPASSWORD:-}}"
+export DB_NAME="${DB_NAME:-${MYSQLDATABASE:-railway}}"
+
+echo "DB target: ${DB_USER}@${DB_HOST}:${DB_PORT}/${DB_NAME}"
+
+# -------- Map Railway Redis plugin vars onto Bicrypto's REDIS_* names ----
+# Railway's Redis plugin exposes: REDISHOST, REDISPORT, REDISUSER, REDISPASSWORD
+# (and a REDIS_URL). Bicrypto's backend reads REDIS_HOST/PORT/PASSWORD.
+export REDIS_HOST="${REDIS_HOST:-${REDISHOST:-}}"
+export REDIS_PORT="${REDIS_PORT:-${REDISPORT:-6379}}"
+export REDIS_PASSWORD="${REDIS_PASSWORD:-${REDISPASSWORD:-}}"
+export REDIS_USER="${REDIS_USER:-${REDISUSER:-default}}"
+
+if [ -z "$REDIS_HOST" ]; then
+  echo "----------------------------------------------------------------" >&2
+  echo "WARNING: No Redis attached. Backend features that require Redis" >&2
+  echo "(BullMQ cron jobs, notifications, rate-limiting, deposit/order" >&2
+  echo "monitors, Redlock) WILL FAIL at runtime." >&2
+  echo "Fix: in Railway, add a Redis plugin and connect it to this service." >&2
+  echo "----------------------------------------------------------------" >&2
+else
+  echo "Redis target: ${REDIS_HOST}:${REDIS_PORT}"
+fi
+
+# -------- Build a runtime .env from the process env ---------
+# Railway already injects every variable into the process env, but Bicrypto's
+# config.js explicitly looks for a .env file, so we synthesize one. The regex
+# below is intentionally broad so new integrations don't need a code change.
+ENV_FILE="$(pwd)/.env"
+echo "Writing runtime .env from environment..."
+: > "$ENV_FILE"
+for v in $(env | awk -F= '{print $1}' | grep -E '^(DB_|NEXT_PUBLIC_|APP_|JWT_|RATE_LIMIT|REDIS_|SMTP_|SENDGRID_|MAILGUN_|GOOGLE_|FACEBOOK_|TWITTER_|GITHUB_|APPLE_|DISCORD_|STRIPE_|PAYPAL_|COINMARKETCAP_|OPENEXCHANGERATES_|VAPID_|TELEGRAM_|TWILIO_|PUSHER_|S3_|AWS_|CLOUDINARY_|IPFS_|PINATA_|BINANCE_|KUCOIN_|OKX_|BITFINEX_|HUOBI_|KRAKEN_|COINBASE_|BYBIT_|MEXC_|GATE_|BITGET_|BITMART_|XT_|CRYPTOCOM_|BACKEND_|NODE_ENV|PORT|SITE_URL|TZ)'); do
+  val="${!v}"
+  val_esc="${val//\"/\\\"}"
+  printf '%s="%s"\n' "$v" "$val_esc" >> "$ENV_FILE"
+done
+cp -f "$ENV_FILE" backend/.env || true
+cp -f "$ENV_FILE" frontend/.env || true
+
+# -------- Wait for MySQL --------
+echo "Waiting for MySQL at ${DB_HOST}:${DB_PORT}..."
+ATTEMPTS=0
+until node -e "
+  const mysql = require('mysql2/promise');
+  mysql.createConnection({
+    host: process.env.DB_HOST, port: +process.env.DB_PORT,
+    user: process.env.DB_USER, password: process.env.DB_PASSWORD
+  }).then(c => c.end()).then(() => process.exit(0)).catch(() => process.exit(1));
+" 2>/dev/null; do
+  ATTEMPTS=$((ATTEMPTS+1))
+  if [ "$ATTEMPTS" -gt 30 ]; then
+    echo "ERROR: MySQL not reachable after 60s. Check that the MySQL plugin is attached and that DB_* / MYSQL* env vars are wired (Railway: Variables tab → Reference)." >&2
+    exit 1
+  fi
+  sleep 2
+done
+echo "MySQL is reachable."
+
+# -------- Ensure database exists --------
+node -e "
+  const mysql = require('mysql2/promise');
+  (async () => {
+    const c = await mysql.createConnection({
+      host: process.env.DB_HOST, port: +process.env.DB_PORT,
+      user: process.env.DB_USER, password: process.env.DB_PASSWORD
+    });
+    await c.query('CREATE DATABASE IF NOT EXISTS \`' + process.env.DB_NAME + '\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci');
+    await c.end();
+  })().catch(e => { console.error(e); process.exit(1); });
+"
+
+# -------- Detect empty schema and import initial.sql --------
+TABLE_COUNT=$(node -e "
+  const mysql = require('mysql2/promise');
+  (async () => {
+    const c = await mysql.createConnection({
+      host: process.env.DB_HOST, port: +process.env.DB_PORT,
+      user: process.env.DB_USER, password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME
+    });
+    const [rows] = await c.query('SHOW TABLES');
+    console.log(rows.length);
+    await c.end();
+  })().catch(e => { console.error(e); process.exit(1); });
+" | tr -d '[:space:]')
+
+if [ "${TABLE_COUNT:-0}" -lt "10" ]; then
+  if [ "${TABLE_COUNT:-0}" -gt "0" ]; then
+    echo "WARNING: DB has ${TABLE_COUNT} tables (expected 160). Likely a previous import failed partway." >&2
+    echo "         To recover: open Railway → MySQL plugin → Data tab and run:" >&2
+    echo "           DROP DATABASE \`${DB_NAME}\`; CREATE DATABASE \`${DB_NAME}\`;" >&2
+    echo "         Then redeploy. Continuing with import attempt anyway..." >&2
+  fi
+  echo "Importing initial.sql ($(wc -l < initial.sql) lines)..."
+  # Always use the Node-based importer: it relaxes sql_mode and disables FK
+  # checks per session, which the bare `mysql` CLI does not do by default
+  # and which has historically been the source of strict-mode boot failures.
+  node scripts/import-sql.js initial.sql
+  echo "Schema imported."
+
+  echo "Running seeders..."
+  (cd backend && npx sequelize-cli db:seed:all --config ./config.js) || echo "WARN: seeders reported errors; continuing."
+else
+  echo "Database already has $TABLE_COUNT tables. Skipping import + seed."
+fi
+
+# -------- Start the app --------
+echo "Starting backend (port ${BACKEND_PORT:-4000}) + frontend (port ${PORT:-3000}) under PM2..."
+exec npx pm2-runtime start production.config.js --env production

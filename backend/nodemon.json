@@ -1,0 +1,12 @@
+{
+  "watch": ["dist/**/*", "../.env"],
+  "ignore": ["node_modules/*"],
+  "ext": "js,json",
+  "exec": "node dist/index.js",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "events": {
+    "restart": "echo 'Backend restarted due to changes...'"
+  }
+}

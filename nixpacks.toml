@@ -1,0 +1,23 @@
+providers = ["node"]
+
+[phases.setup]
+nixPkgs = ["nodejs_22", "pnpm-9_x", "mysql80", "openssl"]
+
+[phases.install]
+cmds = [
+  "pnpm install --no-frozen-lockfile --prefer-offline"
+]
+
+[phases.build]
+cmds = [
+  "pnpm build:i18n || true",
+  "cd frontend && pnpm exec next build"
+]
+
+[start]
+cmd = "bash railway-start.sh"
+
+[variables]
+NODE_OPTIONS = "--max-old-space-size=4096 --dns-result-order=ipv4first"
+NODE_ENV = "production"
+NIXPACKS_NODE_VERSION = "22"
