@@ -146,11 +146,12 @@ node -e "
       console.log('  support_ticket.tags_idx already absent.');
     }
     const [col] = await c.query(
-      \"SELECT data_type FROM information_schema.columns WHERE table_schema=? AND table_name='support_ticket' AND column_name='tags'\",
+      \"SELECT DATA_TYPE AS dt FROM information_schema.columns WHERE table_schema=? AND table_name='support_ticket' AND column_name='tags'\",
       [process.env.DB_NAME]
     );
-    if (col.length && col[0].data_type.toLowerCase() !== 'json') {
-      console.log('  Converting support_ticket.tags ' + col[0].data_type + ' -> JSON...');
+    const colType = (col[0] && (col[0].dt || col[0].DT)) || '';
+    if (colType && colType.toLowerCase() !== 'json') {
+      console.log('  Converting support_ticket.tags ' + colType + ' -> JSON...');
       await c.query(\"ALTER TABLE support_ticket MODIFY COLUMN tags JSON NULL COMMENT 'Tags for search/filter (string array)'\");
     } else {
       console.log('  support_ticket.tags already JSON.');
