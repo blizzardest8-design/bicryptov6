@@ -1,0 +1,85 @@
+2026-04-30T17:47:41.131138768Z [inf]  Starting Container
+2026-04-30T17:47:41.137159295Z [inf]  ================================================================
+2026-04-30T17:47:41.137171096Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T17:47:41.137178539Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T17:47:41.137184155Z [inf]  Writing runtime .env from environment...
+2026-04-30T17:47:41.137199797Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T17:47:41.137222620Z [inf]  MySQL is reachable.
+2026-04-30T17:47:41.137230390Z [inf]  Relaxing server sql_mode for backend connections...
+2026-04-30T17:47:41.137238797Z [inf]  ================================================================
+2026-04-30T17:47:41.137243748Z [inf]    Bicrypto Railway Boot
+2026-04-30T17:47:43.545588222Z [inf]  Database already has 160 tables. Skipping import + seed.
+2026-04-30T17:47:43.545593427Z [inf]  Starting backend (port 4000) + frontend (port 8080) under PM2...
+2026-04-30T17:47:43.689397096Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-04-30T17:47:44.399837663Z [inf]  2026-04-30T17:47:44: PM2 log: Launching in no daemon mode
+2026-04-30T17:47:44.399843873Z [inf]  2026-04-30T17:47:44: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T17:47:44.399850089Z [inf]  2026-04-30T17:47:44: PM2 log: App [frontend:1] starting in -fork mode-
+2026-04-30T17:47:44.399856251Z [inf]  2026-04-30T17:47:44: PM2 log: App [backend:0] online
+2026-04-30T17:47:44.399862256Z [inf]  2026-04-30T17:47:44: PM2 log: App [frontend:1] online
+2026-04-30T17:47:44.840117733Z [inf]  ▲ Next.js 16.1.6
+2026-04-30T17:47:44.840125245Z [inf]  - Local:         http://localhost:8080
+2026-04-30T17:47:44.840129799Z [inf]  - Network:       http://10.172.223.29:8080
+2026-04-30T17:47:44.840133703Z [inf]  ✓ Starting...
+2026-04-30T17:47:45.430617679Z [inf]  ✓ Ready in 800ms
+2026-04-30T17:47:48.271396335Z [inf]  [90m17:47:48[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T17:47:48.271405594Z [err]  (node:85) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-04-30T17:47:48.271413859Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-30T17:47:48.271441069Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T17:47:48.271452000Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T17:47:48.271458869Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T17:47:48.271464669Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T17:56:33.510920702Z [err]  [90m17:56:24[0m [36m[DB][0m [31m✗[0m  [31mConnection failed[0m
+2026-04-30T17:56:33.510925593Z [err]  [90m17:56:24[0m [36m[SERVER][0m [31m✗[0m  [31mInitialization failed: JSON column 'tags' supports indexing only via generated columns on a specified JSON path.[0m
+2026-04-30T17:56:33.510930094Z [inf]                      └─ [31m✗[0m [31mJSON column 'tags' supports indexing only via generated columns on a specified JSON path.[0m [90m(8m 36s)[0m
+2026-04-30T17:56:33.510934927Z [inf]  2026-04-30T17:56:24: PM2 log: App [backend:0] exited with code [1] via signal [SIGINT]
+2026-04-30T17:56:33.510939961Z [inf]  2026-04-30T17:56:24: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T17:56:33.510944380Z [inf]  2026-04-30T17:56:24: PM2 log: App [backend:0] online
+2026-04-30T17:56:33.510949062Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T17:56:33.510953393Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T17:56:33.510958669Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T17:56:33.510963294Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T17:56:33.510967568Z [inf]  [90m17:56:27[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T18:04:42.014195874Z [err]  [90m18:04:35[0m [36m[DB][0m [31m✗[0m  [31mConnection failed[0m
+2026-04-30T18:04:42.014201374Z [err]  [90m18:04:35[0m [36m[SERVER][0m [31m✗[0m  [31mInitialization failed: JSON column 'tags' supports indexing only via generated columns on a specified JSON path.[0m
+2026-04-30T18:04:42.014206425Z [inf]                      └─ [31m✗[0m [31mJSON column 'tags' supports indexing only via generated columns on a specified JSON path.[0m [90m(8m 8s)[0m
+2026-04-30T18:04:42.014211044Z [inf]  2026-04-30T18:04:35: PM2 log: App [backend:0] exited with code [1] via signal [SIGINT]
+2026-04-30T18:04:42.014216480Z [inf]  2026-04-30T18:04:35: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T18:04:42.014221432Z [inf]  2026-04-30T18:04:35: PM2 log: App [backend:0] online
+2026-04-30T18:04:42.014226958Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T18:04:42.014231518Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T18:04:42.014236171Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T18:04:42.014241013Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T18:04:42.014245982Z [inf]  [90m18:04:38[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T18:13:08.249396843Z [inf]                      └─ [32m✓[0m [32mDone[0m [90m(8m 25s)[0m
+2026-04-30T18:13:08.249404915Z [inf]  [90m18:13:03[0m [36m[NOTIFICATIONS][0m [36m→[0m  Notifications...
+2026-04-30T18:13:08.249412426Z [inf]  [NotificationService] Channels: IN_APP, EMAIL
+2026-04-30T18:13:08.249422203Z [inf]                           └─ [32m✓[0m [32mDone[0m [90m(758ms)[0m
+2026-04-30T18:13:08.249430227Z [inf]  [90m18:13:03[0m [36m[SECURITY][0m [36m→[0m  Security...
+2026-04-30T18:13:08.249436782Z [inf]                      └─ [32m✓[0m [32mDone[0m [90m(0ms)[0m
+2026-04-30T18:13:08.249521259Z [inf]  [90m18:13:03[0m [36m[ROLES][0m [36m→[0m  Roles...
+2026-04-30T18:13:08.249526208Z [inf]                   └─ [32m✓[0m [32mDone[0m [90m(148ms)[0m
+2026-04-30T18:13:08.249531233Z [inf]  [90m18:13:04[0m [36m[ROUTES][0m [36m→[0m  Routes...
+2026-04-30T18:13:08.249536840Z [err]  (node:121) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-04-30T18:13:08.249540096Z [inf]                    └─ [32m✓[0m [32mDone[0m [90m(934ms)[0m
+2026-04-30T18:13:08.249542757Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-30T18:13:08.249549477Z [inf]  [90m18:13:05[0m [36m[CRON][0m [36m→[0m  Cron...
+2026-04-30T18:13:08.249555263Z [inf]                  └─ [32m✓[0m [32mDone[0m [90m(1.6s)[0m
+2026-04-30T18:13:08.249560500Z [inf]  [90m18:13:06[0m [36m[EXTENSIONS][0m [36m→[0m  Extensions...
+2026-04-30T18:13:08.249565603Z [inf]                        └─ [32m✓[0m [32mDone[0m [90m(296ms)[0m
+2026-04-30T18:13:08.249570540Z [inf]  [32m✓[0m [1m[32mServer ready[0m [2mon port[0m [36m4000[0m [90m(8m 28s)[0m
+2026-04-30T18:14:08.239126164Z [inf]  [90m18:14:00[0m [36m[BTC_SCAN][0m [36m→[0m  Starting Bitcoin deposit scanner...
+2026-04-30T18:14:08.239135576Z [inf]                      ├─ [2m•[0m [2mTrying Mempool.space API...[0m
+2026-04-30T18:14:08.239144400Z [inf]                      ├─ [32m✓[0m [2mMempool.space connected[0m
+2026-04-30T18:14:08.239150097Z [inf]                      └─ [32m✓[0m [32mScanner started using mempool[0m [90m(68ms)[0m
+2026-04-30T18:14:08.239156172Z [err]  [90m18:14:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:14:10.484511288Z [err]  [90m18:14:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:14:17.526034495Z [err]  [90m18:14:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:14:17.526041640Z [err]  [90m18:14:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:14:17.825745012Z [err]  [90m18:14:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:15:08.547777901Z [err]  [90m18:15:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:15:10.156709728Z [err]  [90m18:15:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:15:17.254828617Z [err]  [90m18:15:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:15:17.254837925Z [err]  [90m18:15:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:15:17.331335426Z [err]  [90m18:15:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:16:07.831870280Z [err]  [90m18:16:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T18:16:10.143918448Z [err]  [90m18:16:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
