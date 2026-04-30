@@ -1,0 +1,260 @@
+2026-04-30T20:02:34.652261559Z [inf]  Starting Container
+2026-04-30T20:02:35.275545197Z [inf]  Relaxing server sql_mode for backend connections...
+2026-04-30T20:02:35.275598626Z [inf]  ================================================================
+2026-04-30T20:02:35.275603976Z [inf]    Bicrypto Railway Boot
+2026-04-30T20:02:35.275608876Z [inf]  ================================================================
+2026-04-30T20:02:35.275613726Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T20:02:35.275618786Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T20:02:35.275623636Z [inf]  Writing runtime .env from environment...
+2026-04-30T20:02:35.275627996Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T20:02:35.275632066Z [inf]  MySQL is reachable.
+2026-04-30T20:02:35.736867474Z [inf]  Applying MySQL 8 schema fixups...
+2026-04-30T20:02:36.590824632Z [inf]    support_ticket.tags_idx already absent.
+2026-04-30T20:02:36.742843354Z [inf]    support_ticket.tags already JSON.
+2026-04-30T20:02:38.201338135Z [inf]  Database already has 184 tables. Skipping import + seed.
+2026-04-30T20:02:38.201342115Z [inf]  Starting backend (port 4000) + frontend (port 8080) under PM2...
+2026-04-30T20:02:38.201348204Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-04-30T20:02:38.604947841Z [inf]  2026-04-30T20:02:38: PM2 log: Launching in no daemon mode
+2026-04-30T20:02:38.624808712Z [inf]  2026-04-30T20:02:38: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T20:02:38.624812572Z [inf]  2026-04-30T20:02:38: PM2 log: App [frontend:1] starting in -fork mode-
+2026-04-30T20:02:38.633419540Z [inf]  2026-04-30T20:02:38: PM2 log: App [backend:0] online
+2026-04-30T20:02:38.633424020Z [inf]  2026-04-30T20:02:38: PM2 log: App [frontend:1] online
+2026-04-30T20:02:38.920870143Z [inf]  ▲ Next.js 16.1.6
+2026-04-30T20:02:38.920872623Z [inf]  - Local:         http://localhost:8080
+2026-04-30T20:02:38.920875383Z [inf]  - Network:       http://10.217.176.28:8080
+2026-04-30T20:02:38.920878103Z [inf]  ✓ Starting...
+2026-04-30T20:02:39.278014382Z [inf]  ✓ Ready in 524ms
+2026-04-30T20:02:39.925962222Z [err]  (node:96) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2026-04-30T20:02:39.925966372Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-30T20:02:39.930762716Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-04-30T20:02:39.930766826Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-04-30T20:02:39.930771096Z [err]    errno: -111,
+2026-04-30T20:02:39.930774616Z [err]    code: 'ECONNREFUSED',
+2026-04-30T20:02:39.930777786Z [err]    syscall: 'connect',
+2026-04-30T20:02:39.930781646Z [err]    address: '127.0.0.1',
+2026-04-30T20:02:39.930785206Z [err]    port: 4000
+2026-04-30T20:02:39.930788716Z [err]  }
+2026-04-30T20:02:39.930791946Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-04-30T20:02:39.930795586Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-04-30T20:02:39.930801316Z [err]    errno: -111,
+2026-04-30T20:02:39.930805346Z [err]    code: 'ECONNREFUSED',
+2026-04-30T20:02:39.930808876Z [err]    syscall: 'connect',
+2026-04-30T20:02:39.930812506Z [err]    address: '127.0.0.1',
+2026-04-30T20:02:39.930815566Z [err]    port: 4000
+2026-04-30T20:02:39.930818866Z [err]  }
+2026-04-30T20:02:39.934919506Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-04-30T20:02:40.226208472Z [err]  Failed to proxy http://127.0.0.1:4000/api/settings Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-04-30T20:02:40.226211952Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-04-30T20:02:40.226215412Z [err]    errno: -111,
+2026-04-30T20:02:40.226220242Z [err]    code: 'ECONNREFUSED',
+2026-04-30T20:02:40.226223242Z [err]    syscall: 'connect',
+2026-04-30T20:02:40.226226442Z [err]    address: '127.0.0.1',
+2026-04-30T20:02:40.226229572Z [err]    port: 4000
+2026-04-30T20:02:40.226232992Z [err]  }
+2026-04-30T20:02:40.226235862Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-04-30T20:02:40.226238622Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-04-30T20:02:40.226241382Z [err]    errno: -111,
+2026-04-30T20:02:40.226244762Z [err]    code: 'ECONNREFUSED',
+2026-04-30T20:02:40.226247622Z [err]    syscall: 'connect',
+2026-04-30T20:02:40.226250692Z [err]    address: '127.0.0.1',
+2026-04-30T20:02:40.226253922Z [err]    port: 4000
+2026-04-30T20:02:40.226258472Z [err]  }
+2026-04-30T20:02:40.226261852Z [err]  SSR: Failed to fetch /api/settings: 500 Internal Server Error
+2026-04-30T20:02:40.308411210Z [err]  (node:96) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-04-30T20:02:40.832345900Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T20:02:40.832351190Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T20:02:40.832355770Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T20:02:40.832359600Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T20:02:40.832363480Z [inf]  [90m20:02:40[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T20:11:42.082939887Z [inf]                      └─ [32m✓[0m [32mDone[0m [90m(8m 60s)[0m
+2026-04-30T20:11:42.082943137Z [inf]  [90m20:11:40[0m [36m[NOTIFICATIONS][0m [36m→[0m  Notifications...
+2026-04-30T20:11:42.082946327Z [inf]  [NotificationService] Channels: IN_APP, EMAIL
+2026-04-30T20:11:42.082950067Z [inf]                           └─ [32m✓[0m [32mDone[0m [90m(589ms)[0m
+2026-04-30T20:11:42.082953737Z [inf]  [90m20:11:41[0m [36m[SECURITY][0m [36m→[0m  Security...
+2026-04-30T20:11:42.082958716Z [inf]                      └─ [32m✓[0m [32mDone[0m [90m(1ms)[0m
+2026-04-30T20:11:42.082962956Z [inf]  [90m20:11:41[0m [36m[ROLES][0m [36m→[0m  Roles...
+2026-04-30T20:11:42.082966456Z [inf]                   └─ [32m✓[0m [32mDone[0m [90m(157ms)[0m
+2026-04-30T20:11:42.082969906Z [inf]  [90m20:11:41[0m [36m[ROUTES][0m [36m→[0m  Routes...
+2026-04-30T20:11:42.082973516Z [err]  (node:95) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-04-30T20:11:42.082977326Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-30T20:11:42.082981116Z [inf]                    └─ [32m✓[0m [32mDone[0m [90m(465ms)[0m
+2026-04-30T20:11:42.082985776Z [inf]  [90m20:11:41[0m [36m[CRON][0m [36m→[0m  Cron...
+2026-04-30T20:11:44.118264790Z [inf]                  └─ [32m✓[0m [32mDone[0m [90m(1.9s)[0m
+2026-04-30T20:11:44.118274089Z [inf]  [90m20:11:43[0m [36m[EXTENSIONS][0m [36m→[0m  Extensions...
+2026-04-30T20:11:44.221961955Z [inf]                        └─ [32m✓[0m [32mDone[0m [90m(299ms)[0m
+2026-04-30T20:11:44.221965945Z [inf]  [32m✓[0m [1m[32mServer ready[0m [2mon port[0m [36m4000[0m [90m(9m 3s)[0m
+2026-04-30T20:12:04.225516275Z [inf]  [90m20:12:00[0m [36m[BTC_SCAN][0m [36m→[0m  Starting Bitcoin deposit scanner...
+2026-04-30T20:12:04.225522505Z [inf]                      ├─ [2m•[0m [2mTrying Mempool.space API...[0m
+2026-04-30T20:12:04.225526035Z [inf]                      ├─ [32m✓[0m [2mMempool.space connected[0m
+2026-04-30T20:12:04.225529365Z [inf]                      └─ [32m✓[0m [32mScanner started using mempool[0m [90m(58ms)[0m
+2026-04-30T20:12:04.225531805Z [err]  [90m20:12:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:12:10.473052072Z [err]  [90m20:12:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:12:17.876928600Z [err]  [90m20:12:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:12:17.877213668Z [err]  [90m20:12:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:12:17.877217698Z [err]  [90m20:12:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:13:07.856112147Z [err]  [90m20:13:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:13:10.428463760Z [err]  [90m20:13:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:13:17.431170274Z [err]  [90m20:13:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:13:17.431178604Z [err]  [90m20:13:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:13:17.526534641Z [err]  [90m20:13:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:14:07.544405783Z [err]  [90m20:14:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:14:10.078749233Z [err]  [90m20:14:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:14:17.149260183Z [err]  [90m20:14:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:14:17.149264763Z [err]  [90m20:14:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:14:17.584190318Z [err]  [90m20:14:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:15:07.335330296Z [err]  [90m20:15:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:15:10.256125201Z [err]  [90m20:15:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:15:17.316256700Z [err]  [90m20:15:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:15:17.316259550Z [err]  [90m20:15:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:15:17.462120939Z [err]  [90m20:15:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:16:07.472318730Z [err]  [90m20:16:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:16:10.135947790Z [err]  [90m20:16:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:16:17.201120509Z [err]  [90m20:16:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:16:17.201122919Z [err]  [90m20:16:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:16:17.353255434Z [err]  [90m20:16:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:17:07.361811576Z [err]  [90m20:17:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:17:10.220516139Z [err]  [90m20:17:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:17:17.305306440Z [err]  [90m20:17:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:17:17.305309550Z [err]  [90m20:17:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:17:17.436621985Z [err]  [90m20:17:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:18:07.436562831Z [err]  [90m20:18:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:18:10.079400741Z [err]  [90m20:18:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:18:17.141742038Z [err]  [90m20:18:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:18:17.141748558Z [err]  [90m20:18:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:18:17.475751371Z [err]  [90m20:18:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:19:07.663863561Z [err]  [90m20:19:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:19:10.242351717Z [err]  [90m20:19:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:19:17.312789980Z [err]  [90m20:19:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:19:17.312794530Z [err]  [90m20:19:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:19:17.764669113Z [err]  [90m20:19:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:20:07.885819944Z [err]  [90m20:20:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:20:10.115580567Z [err]  [90m20:20:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:20:17.176280399Z [err]  [90m20:20:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:20:17.176285679Z [err]  [90m20:20:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:20:17.324829479Z [err]  [90m20:20:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:21:07.333029780Z [err]  [90m20:21:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:21:10.283277722Z [err]  [90m20:21:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:21:17.341909093Z [err]  [90m20:21:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:21:17.341913543Z [err]  [90m20:21:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:21:17.488757621Z [err]  [90m20:21:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:22:07.494386953Z [err]  [90m20:22:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:22:10.375288515Z [err]  [90m20:22:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:22:17.428037117Z [err]  [90m20:22:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:22:17.428041237Z [err]  [90m20:22:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:22:17.428044887Z [err]  [90m20:22:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:23:07.164051622Z [err]  [90m20:23:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:23:10.257761581Z [err]  [90m20:23:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:23:17.313518865Z [err]  [90m20:23:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:23:17.313524325Z [err]  [90m20:23:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:23:17.681309042Z [err]  [90m20:23:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:24:07.855227907Z [err]  [90m20:24:02[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:24:10.058244064Z [err]  [90m20:24:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:24:17.103930053Z [err]  [90m20:24:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:24:17.103934253Z [err]  [90m20:24:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:24:17.254389766Z [err]  [90m20:24:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:25:07.266821037Z [err]  [90m20:25:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:25:10.201129018Z [err]  [90m20:25:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:25:17.255943216Z [err]  [90m20:25:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:25:17.255947166Z [err]  [90m20:25:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:25:17.406826846Z [err]  [90m20:25:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:26:07.436118117Z [err]  [90m20:26:02[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:26:10.385113055Z [err]  [90m20:26:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:26:17.350289361Z [err]  [90m20:26:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:26:17.350292141Z [err]  [90m20:26:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:26:17.350295721Z [err]  [90m20:26:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:27:07.091818679Z [err]  [90m20:27:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:27:10.171800177Z [err]  [90m20:27:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:27:17.230920447Z [err]  [90m20:27:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:27:17.230923807Z [err]  [90m20:27:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:27:17.633538345Z [err]  [90m20:27:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:28:07.321295057Z [err]  [90m20:28:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:28:10.088635750Z [err]  [90m20:28:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:28:17.134555922Z [err]  [90m20:28:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:28:17.134560811Z [err]  [90m20:28:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:28:17.277788142Z [err]  [90m20:28:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:29:07.272301011Z [err]  [90m20:29:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:29:10.228107648Z [err]  [90m20:29:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:29:17.279988104Z [err]  [90m20:29:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:29:17.279993894Z [err]  [90m20:29:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:29:17.431236422Z [err]  [90m20:29:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:30:07.443249987Z [err]  [90m20:30:01[0m [36m[CRON][0m [31m✗[0m  [31mfetchOpenExchangeRates - OpenExchangeRates failed: Unauthorized: Invalid API key.[0m
+2026-04-30T20:30:07.443253747Z [err]  [90m20:30:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:30:10.418928538Z [err]  [90m20:30:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:30:17.421666537Z [err]  [90m20:30:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:30:17.421670696Z [err]  [90m20:30:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:30:17.421758436Z [err]  [90m20:30:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:31:07.086404749Z [err]  [90m20:31:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:31:10.177744725Z [err]  [90m20:31:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:31:17.223392347Z [err]  [90m20:31:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:31:17.223400127Z [err]  [90m20:31:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:31:17.638927705Z [err]  [90m20:31:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:32:07.729576755Z [err]  [90m20:32:02[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:32:10.031583583Z [err]  [90m20:32:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:32:17.076838731Z [err]  [90m20:32:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:32:17.076850241Z [err]  [90m20:32:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:32:17.232182079Z [err]  [90m20:32:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:33:07.236979280Z [err]  [90m20:33:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:33:10.193250801Z [err]  [90m20:33:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:33:17.242766293Z [err]  [90m20:33:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:33:17.242769163Z [err]  [90m20:33:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:33:17.386152840Z [err]  [90m20:33:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:34:07.404498241Z [err]  [90m20:34:02[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:34:10.156832839Z [err]  [90m20:34:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:34:17.122042305Z [err]  [90m20:34:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:34:17.122046145Z [err]  [90m20:34:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:34:17.248749811Z [err]  [90m20:34:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:35:06.903492310Z [err]  [90m20:35:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:35:10.411466607Z [err]  [90m20:35:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:35:17.424578583Z [err]  [90m20:35:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:35:17.424590443Z [err]  [90m20:35:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:35:17.424594893Z [err]  [90m20:35:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:36:07.109868802Z [err]  [90m20:36:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:36:10.071440589Z [err]  [90m20:36:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:36:17.118331681Z [err]  [90m20:36:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:36:17.118334591Z [err]  [90m20:36:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:36:17.266564288Z [err]  [90m20:36:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:37:07.286569017Z [err]  [90m20:37:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:37:10.279432427Z [err]  [90m20:37:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:37:17.343784117Z [err]  [90m20:37:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:37:17.343791847Z [err]  [90m20:37:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:37:17.488361603Z [err]  [90m20:37:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:38:07.500391953Z [err]  [90m20:38:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:38:10.112342873Z [err]  [90m20:38:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:38:17.175199858Z [err]  [90m20:38:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:38:17.175203738Z [err]  [90m20:38:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:38:17.317047335Z [err]  [90m20:38:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:39:07.460551999Z [err]  [90m20:39:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:39:10.462980428Z [err]  [90m20:39:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:39:17.436191597Z [err]  [90m20:39:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:39:17.436345436Z [err]  [90m20:39:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:39:17.436350066Z [err]  [90m20:39:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:40:07.202173742Z [err]  [90m20:40:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:40:10.132215971Z [err]  [90m20:40:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:40:17.193666122Z [err]  [90m20:40:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:40:17.193669192Z [err]  [90m20:40:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:40:17.342016601Z [err]  [90m20:40:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:41:07.366362990Z [err]  [90m20:41:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:41:10.285914560Z [err]  [90m20:41:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:41:17.354696608Z [err]  [90m20:41:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:41:17.354701428Z [err]  [90m20:41:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:41:17.496187834Z [err]  [90m20:41:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:42:07.520623065Z [err]  [90m20:42:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:42:10.299552808Z [err]  [90m20:42:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:42:18.147153268Z [err]  [90m20:42:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:42:18.147155998Z [err]  [90m20:42:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:42:18.147462235Z [err]  [90m20:42:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:43:07.491355783Z [err]  [90m20:43:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:43:10.493357767Z [err]  [90m20:43:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:43:17.569847879Z [err]  [90m20:43:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:43:17.569850329Z [err]  [90m20:43:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:43:17.569853239Z [err]  [90m20:43:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:44:07.268384983Z [err]  [90m20:44:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:44:10.075723473Z [err]  [90m20:44:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:44:17.134097679Z [err]  [90m20:44:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:44:17.134103239Z [err]  [90m20:44:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:44:17.283621025Z [err]  [90m20:44:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:45:07.293231537Z [err]  [90m20:45:03[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 1/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:45:10.274276079Z [err]  [90m20:45:10[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 2/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:45:17.335873543Z [err]  [90m20:45:17[0m [36m[CRON][0m [31m✗[0m  [31mProcessing pending orders failed (attempt 3/3): Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:45:17.335879363Z [err]  [90m20:45:17[0m [36m[CRON][0m [31m✗[0m  [31mWorker processPendingOrders error: Service temporarily unavailable. Please try again later.[0m
+2026-04-30T20:45:17.483603012Z [err]  [90m20:45:17[0m [36m[CRON][0m [31m✗[0m  [31mJob processPendingOrders failed: Service temporarily unavailable. Please try again later.[0m
