@@ -1,0 +1,139 @@
+2026-04-30T17:23:41.140232569Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T17:23:41.140251599Z [inf]  ================================================================
+2026-04-30T17:23:41.140257445Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T17:23:41.140262748Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T17:23:41.140269563Z [inf]  Writing runtime .env from environment...
+2026-04-30T17:23:41.140297141Z [inf]  ================================================================
+2026-04-30T17:23:41.140305263Z [inf]    Bicrypto Railway Boot
+2026-04-30T17:23:41.439673783Z [inf]  MySQL is reachable.
+2026-04-30T17:23:41.634317448Z [inf]  Starting Container
+2026-04-30T17:23:43.104638748Z [inf]  Importing initial.sql (3953 lines)...
+2026-04-30T17:23:44.142257432Z [inf]  Executing 320 statements...
+2026-04-30T17:23:52.496849629Z [inf]    ...50/320
+2026-04-30T17:24:00.741991547Z [inf]    ...100/320
+2026-04-30T17:24:09.633761390Z [inf]    ...150/320
+2026-04-30T17:24:18.193436594Z [inf]    ...200/320
+2026-04-30T17:24:26.480069551Z [inf]    ...250/320
+2026-04-30T17:24:34.482569662Z [inf]    ...300/320
+2026-04-30T17:24:38.248871908Z [inf]  Import complete.
+2026-04-30T17:24:38.329876534Z [inf]  Schema imported.
+2026-04-30T17:24:38.329883068Z [inf]  Running seeders...
+2026-04-30T17:24:38.427369179Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-04-30T17:24:38.905598506Z [inf]  
+2026-04-30T17:24:38.905608930Z [inf]  [4mSequelize CLI [Node: 22.11.0, CLI: 6.6.5, ORM: 6.37.8][24m
+2026-04-30T17:24:38.905615018Z [inf]  
+2026-04-30T17:24:38.924263224Z [inf]  Config: Environment loaded from: /app/.env
+2026-04-30T17:24:38.924272908Z [inf]  Config: Using environment: production
+2026-04-30T17:24:38.924279833Z [inf]  Config: NODE_ENV = production
+2026-04-30T17:24:38.924284068Z [inf]  Config: Database config - Host: mysql.railway.internal, User: root, Database: railway
+2026-04-30T17:24:38.924288517Z [inf]  Loaded configuration file "config.js".
+2026-04-30T17:24:38.924293406Z [inf]  Using environment "production".
+2026-04-30T17:24:40.412759319Z [inf]  == 20240402234552-fiatCurrencies: migrating =======
+2026-04-30T17:24:40.720121840Z [inf]  == 20240402234552-fiatCurrencies: migrated (0.297s)
+2026-04-30T17:24:40.720131380Z [inf]  
+2026-04-30T17:24:40.720137713Z [inf]  == 20240402234615-depositGateways: migrating =======
+2026-04-30T17:24:41.338623764Z [inf]  Inserting 15 new deposit gateways with column types: {
+2026-04-30T17:24:41.338626656Z [inf]    fixedFee: 'LONGTEXT',
+2026-04-30T17:24:41.338629632Z [inf]    percentageFee: 'LONGTEXT',
+2026-04-30T17:24:41.338632628Z [inf]    minAmount: 'LONGTEXT',
+2026-04-30T17:24:41.338635604Z [inf]    maxAmount: 'LONGTEXT'
+2026-04-30T17:24:41.338638799Z [inf]  }
+2026-04-30T17:24:43.316753728Z [inf]  == 20240402234615-depositGateways: migrated (2.548s)
+2026-04-30T17:24:43.316759572Z [inf]  
+2026-04-30T17:24:43.316764796Z [inf]  == 20240402234637-pages: migrating =======
+2026-04-30T17:24:43.408100662Z [inf]  == 20240402234637-pages: migrated (0.144s)
+2026-04-30T17:24:43.408109896Z [inf]  
+2026-04-30T17:24:43.408115976Z [inf]  == 20240402234643-permissions: migrating =======
+2026-04-30T17:24:43.703603231Z [inf]  == 20240402234643-permissions: migrated (0.297s)
+2026-04-30T17:24:43.703610092Z [inf]  
+2026-04-30T17:24:43.703614801Z [inf]  == 20240402234649-roles: migrating =======
+2026-04-30T17:24:44.312241559Z [inf]  == 20240402234654-superAdmin: migrating =======
+2026-04-30T17:24:44.312540582Z [inf]  == 20240402234649-roles: migrated (0.283s)
+2026-04-30T17:24:44.312549874Z [inf]  
+2026-04-30T17:24:44.497690311Z [inf]  == 20240402234654-superAdmin: migrated (0.501s)
+2026-04-30T17:24:44.497696345Z [inf]  
+2026-04-30T17:24:44.497700759Z [inf]  == 20240402234702-notificationTemplates: migrating =======
+2026-04-30T17:24:45.319190858Z [inf]  
+2026-04-30T17:24:45.319202415Z [inf]  == 20240402234741-ecosystemTokens: migrating =======
+2026-04-30T17:24:45.319309338Z [inf]  == 20240402234702-notificationTemplates: migrated (0.626s)
+2026-04-30T17:24:46.346087116Z [inf]  == 20240402234741-ecosystemTokens: migrated (1.172s)
+2026-04-30T17:24:46.346093871Z [inf]  
+2026-04-30T17:24:46.346100014Z [inf]  == 20240402234742-ecosystemBlockchains: migrating =======
+2026-04-30T17:24:46.571089743Z [inf]  == 20240402234742-ecosystemBlockchains: migrated (0.284s)
+2026-04-30T17:24:46.571103229Z [inf]  
+2026-04-30T17:24:46.571109566Z [inf]  == 20240402234748-exchanges: migrating =======
+2026-04-30T17:24:46.856215421Z [inf]  == 20240402234748-exchanges: migrated (0.283s)
+2026-04-30T17:24:46.856221733Z [inf]  
+2026-04-30T17:24:46.856225705Z [inf]  == 20240402234806-rewardConditions: migrating =======
+2026-04-30T17:24:47.341959166Z [inf]  Database allows these types: DEPOSIT, TRADE, SPOT_TRADE, BINARY_WIN, INVESTMENT, AI_INVESTMENT, FOREX_INVESTMENT, ICO_CONTRIBUTION, STAKING, ECOMMERCE_PURCHASE, P2P_TRADE, NFT_TRADE, COPY_TRADING, FUTURES_TRADE, TOKEN_PURCHASE
+2026-04-30T17:24:47.341969617Z [inf]  Inserting 35 new conditions
+2026-04-30T17:24:47.341979392Z [inf]  ✓ Successfully inserted 35 conditions
+2026-04-30T17:24:47.341985421Z [inf]  == 20240402234806-rewardConditions: migrated (0.432s)
+2026-04-30T17:24:47.341995466Z [inf]  
+2026-04-30T17:24:47.342003901Z [inf]  == 20240403000503-extensions: migrating =======
+2026-04-30T17:24:47.570510873Z [inf]  == 20240403000503-extensions: migrated (0.286s)
+2026-04-30T17:24:47.570514587Z [inf]  
+2026-04-30T17:24:47.570517875Z [inf]  == 20240403000504-blog: migrating =======
+2026-04-30T17:24:49.335569911Z [inf]  == 20240403000505-ecommerce-slugs: migrating =======
+2026-04-30T17:24:49.335615918Z [inf]  == 20240403000504-blog: migrated (1.693s)
+2026-04-30T17:24:49.335623120Z [inf]  
+2026-04-30T17:24:49.550620512Z [inf]  == 20240403000505-ecommerce-slugs: migrated (0.284s)
+2026-04-30T17:24:49.550635243Z [inf]  
+2026-04-30T17:24:49.550642480Z [inf]  == 20240403000506-kyc-services: migrating =======
+2026-04-30T17:24:49.834426883Z [inf]  == 20240403000506-kyc-services: migrated (0.286s)
+2026-04-30T17:24:49.834435205Z [inf]  
+2026-04-30T17:24:49.834440515Z [inf]  == 20240403000507-binaryAiEngineUserTiers: migrating =======
+2026-04-30T17:24:50.364093587Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-04-30T17:24:50.364199964Z [inf]  binary_ai_engine table does not exist yet, skipping user tiers seeder
+2026-04-30T17:24:50.364206962Z [inf]  == 20240403000507-binaryAiEngineUserTiers: migrated (0.142s)
+2026-04-30T17:24:50.364212790Z [inf]  
+2026-04-30T17:24:50.364217496Z [inf]  Starting backend (port 4000) + frontend (port 8080) under PM2...
+2026-04-30T17:24:50.665850466Z [inf]  2026-04-30T17:24:50: PM2 log: Launching in no daemon mode
+2026-04-30T17:24:50.705636122Z [inf]  2026-04-30T17:24:50: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T17:24:50.705640375Z [inf]  2026-04-30T17:24:50: PM2 log: App [frontend:1] starting in -fork mode-
+2026-04-30T17:24:50.713897067Z [inf]  2026-04-30T17:24:50: PM2 log: App [backend:0] online
+2026-04-30T17:24:50.722253489Z [inf]  2026-04-30T17:24:50: PM2 log: App [frontend:1] online
+2026-04-30T17:24:51.368318186Z [inf]  ▲ Next.js 16.1.6
+2026-04-30T17:24:51.368323849Z [inf]  - Local:         http://localhost:8080
+2026-04-30T17:24:51.368329946Z [inf]  - Network:       http://10.165.113.212:8080
+2026-04-30T17:24:51.368336628Z [inf]  ✓ Starting...
+2026-04-30T17:24:51.708490012Z [inf]  ✓ Ready in 763ms
+2026-04-30T17:24:54.350801026Z [inf]  [90m17:24:54[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T17:24:54.350855466Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T17:24:54.350862013Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T17:24:54.350868946Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T17:24:54.350875085Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T17:25:03.755665652Z [err]  Failed to fetch roles and permissions: 404 
+2026-04-30T17:25:04.384744621Z [err]  (node:163) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-04-30T17:25:04.384756495Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-30T17:25:24.044474390Z [inf]                      └─ [31m✗[0m [31mBLOB, TEXT, GEOMETRY or JSON column 'content' can't have a default value[0m [90m(29.7s)[0m
+2026-04-30T17:25:24.044486053Z [inf]  2026-04-30T17:25:23: PM2 log: App [backend:0] exited with code [1] via signal [SIGINT]
+2026-04-30T17:25:24.044493329Z [inf]  2026-04-30T17:25:23: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T17:25:24.044501008Z [inf]  2026-04-30T17:25:23: PM2 log: App [backend:0] online
+2026-04-30T17:25:24.044612765Z [err]  [90m17:25:23[0m [36m[DB][0m [31m✗[0m  [31mConnection failed[0m
+2026-04-30T17:25:24.044616558Z [err]  [90m17:25:23[0m [36m[SERVER][0m [31m✗[0m  [31mInitialization failed: BLOB, TEXT, GEOMETRY or JSON column 'content' can't have a default value[0m
+2026-04-30T17:25:26.748472979Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T17:25:26.748481318Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T17:25:26.748485172Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T17:25:26.748489401Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T17:25:26.748492616Z [inf]  [90m17:25:26[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T17:25:56.764256194Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T17:25:56.764264281Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T17:25:56.764272064Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T17:25:56.764277245Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T17:25:56.764281395Z [inf]  [90m17:25:54[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T17:25:56.764335169Z [err]  [90m17:25:52[0m [36m[DB][0m [31m✗[0m  [31mConnection failed[0m
+2026-04-30T17:25:56.764339193Z [err]  [90m17:25:52[0m [36m[SERVER][0m [31m✗[0m  [31mInitialization failed: BLOB, TEXT, GEOMETRY or JSON column 'content' can't have a default value[0m
+2026-04-30T17:25:56.764343686Z [inf]                      └─ [31m✗[0m [31mBLOB, TEXT, GEOMETRY or JSON column 'content' can't have a default value[0m [90m(25.4s)[0m
+2026-04-30T17:25:56.764348343Z [inf]  2026-04-30T17:25:52: PM2 log: App [backend:0] exited with code [1] via signal [SIGINT]
+2026-04-30T17:25:56.764352029Z [inf]  2026-04-30T17:25:52: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T17:25:56.764354915Z [inf]  2026-04-30T17:25:52: PM2 log: App [backend:0] online
+2026-04-30T17:26:26.772648146Z [inf]  2026-04-30T17:26:21: PM2 log: App [backend:0] online
+2026-04-30T17:26:26.772655981Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T17:26:26.772660226Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T17:26:26.772664211Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T17:26:26.772668306Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-04-30T17:26:26.772673732Z [inf]  [90m17:26:23[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T17:26:26.772738262Z [err]  [90m17:26:21[0m [36m[SERVER][0m [31m✗[0m  [31mInitialization failed: BLOB, TEXT, GEOMETRY or JSON column 'content' can't have a default value[0m
+2026-04-30T17:26:26.772745546Z [inf]  2026-04-30T17:26:21: PM2 log: App [backend:0] exited with code [1] via signal [SIGINT]
+2026-04-30T17:26:26.772748722Z [inf]  2026-04-30T17:26:21: PM2 log: App [backend:0] starting in -fork mode-

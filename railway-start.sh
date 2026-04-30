@@ -85,6 +85,32 @@ until node -e "
 done
 echo "MySQL is reachable."
 
+# -------- Relax server-wide sql_mode --------
+# Bicrypto's compiled backend defines several Sequelize models with TEXT/BLOB
+# columns that have DEFAULT values. MySQL 8 strict mode rejects those at
+# CREATE/ALTER time with:
+#   "BLOB, TEXT, GEOMETRY or JSON column '<col>' can't have a default value"
+# The schema import is already protected (import-sql.js sets session sql_mode=''),
+# but the backend opens its own connections later and inherits the server default.
+# Setting it GLOBAL here applies to every new connection for the life of the
+# MySQL instance — re-applied on every deploy in case the MySQL plugin restarts.
+echo "Relaxing server sql_mode for backend connections..."
+node -e "
+  const mysql = require('mysql2/promise');
+  (async () => {
+    const c = await mysql.createConnection({
+      host: process.env.DB_HOST, port: +process.env.DB_PORT,
+      user: process.env.DB_USER, password: process.env.DB_PASSWORD
+    });
+    await c.query(\"SET GLOBAL sql_mode = ''\");
+    await c.end();
+  })().catch(e => {
+    console.error('WARN: could not SET GLOBAL sql_mode (' + e.message + '). ' +
+                  'Backend may fail with TEXT-default errors. ' +
+                  'Workaround: in MySQL plugin Data tab run: SET GLOBAL sql_mode = \"\";');
+  });
+"
+
 # -------- Ensure database exists --------
 node -e "
   const mysql = require('mysql2/promise');
