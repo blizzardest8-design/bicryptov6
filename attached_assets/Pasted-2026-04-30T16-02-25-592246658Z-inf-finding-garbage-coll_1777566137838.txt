@@ -1,0 +1,2449 @@
+2026-04-30T16:02:25.592246658Z [inf]  finding garbage collector roots...
+removing stale link from '/nix/var/nix/gcroots/auto/lzjbmb2ry0z7lma2fvpqprb12921pnb5' to '/nix/var/nix/profiles/per-user/root/profile-1-link'
+
+2026-04-30T16:02:25.594144143Z [inf]  deleting garbage...
+
+2026-04-30T16:02:25.600189318Z [inf]  deleting '/nix/store/a9qf4wwhympzs35ncp80r185j6a21w07-user-environment'
+
+2026-04-30T16:02:25.603107625Z [inf]  deleting '/nix/store/253kwn1730vnay87xkjgxa2v97w3y079-user-environment.drv'
+
+2026-04-30T16:02:25.603589868Z [inf]  deleting '/nix/store/hn5mrh362n52x8wwab9s1v6bgn4n5c94-env-manifest.nix'
+
+2026-04-30T16:02:25.62921831Z [inf]  deleting '/nix/store/4ig84cyqi6qy4n0sanrbzsw1ixa497jx-stdenv-linux'
+
+2026-04-30T16:02:25.629612792Z [inf]  deleting '/nix/store/1m82cbxhdbb85h3lykjpry4mnvyq5x0m-libraries'
+
+2026-04-30T16:02:25.630071409Z [inf]  deleting '/nix/store/5f5linrxzhhb3mrclkwdpm9bd8ygldna-curl-8.11.0-dev'
+
+2026-04-30T16:02:25.630926632Z [inf]  deleting '/nix/store/p123cq20klajcl9hj8jnkjip5nw6awhz-curl-8.11.0-bin'
+
+2026-04-30T16:02:25.631097198Z [inf]  deleting '/nix/store/pkc7mb4a4qvyz73srkqh4mwl70w98dsv-curl-8.11.0'
+
+2026-04-30T16:02:25.631334574Z [inf]  deleting '/nix/store/dz97fw51rm5bl9kz1vg0haj1j1a7r1mr-nghttp2-1.64.0-dev'
+
+2026-04-30T16:02:25.631632961Z [inf]  deleting '/nix/store/qcghigzrz56vczwlzg9c02vbs6zr9jkz-nghttp2-1.64.0-lib'
+
+2026-04-30T16:02:25.631891118Z [inf]  deleting '/nix/store/557l0iw27bp2xx0vvwvymw1wxyajqnyl-source'
+
+2026-04-30T16:02:25.633269916Z [inf]  deleting '/nix/store/d0gfdcag8bxzvg7ww4s7px4lf8sxisyx-stdenv-linux'
+
+2026-04-30T16:02:25.633475654Z [inf]  deleting '/nix/store/abm77lnrkrkb58z6xp1qwjcr1xgkcfwm-gnused-4.9'
+
+2026-04-30T16:02:25.63719377Z [inf]  deleting '/nix/store/lwi59jcfwk2lnrakmm1y5vw85hj3n1bi-source'
+
+2026-04-30T16:02:27.334127707Z [inf]  deleting '/nix/store/grixvx878884hy8x3xs0c0s1i00j632k-nghttp2-1.64.0'
+
+2026-04-30T16:02:27.334370541Z [inf]  deleting '/nix/store/1i003ijlh9i0mzp6alqby5hg3090pjdx-perl-5.40.0'
+
+2026-04-30T16:02:27.369551658Z [inf]  deleting '/nix/store/fv7gpnvg922frkh81w5hkdhpz0nw3iiz-mirrors-list'
+
+2026-04-30T16:02:27.369750727Z [inf]  deleting '/nix/store/9cwwj1c9csmc85l2cqzs3h9hbf1vwl6c-gnutar-1.35'
+
+2026-04-30T16:02:27.373394822Z [inf]  deleting '/nix/store/nvvj6sk0k6px48436drlblf4gafgbvzr-gzip-1.13'
+
+2026-04-30T16:02:27.373874792Z [inf]  deleting '/nix/store/fp6cjl1zcmm6mawsnrb5yak1wkz2ma8l-gnumake-4.4.1'
+
+2026-04-30T16:02:27.376817404Z [inf]  deleting '/nix/store/00g69vw7c9lycy63h45ximy0wmzqx5y6-diffutils-3.10'
+
+2026-04-30T16:02:27.380256902Z [inf]  deleting '/nix/store/jqrz1vq5nz4lnv9pqzydj0ir58wbjfy1-findutils-4.10.0'
+
+2026-04-30T16:02:27.38463664Z [inf]  deleting '/nix/store/a3c47r5z1q2c4rz0kvq8hlilkhx2s718-gawk-5.3.1'
+
+2026-04-30T16:02:27.387679974Z [inf]  deleting '/nix/store/mglixp03lsp0w986svwdvm7vcy17rdax-bzip2-1.0.8-bin'
+
+2026-04-30T16:02:27.387998261Z [inf]  deleting '/nix/store/6cr0spsvymmrp1hj5n0kbaxw55w1lqyp-libxcrypt-4.4.36'
+
+2026-04-30T16:02:27.38851114Z [inf]  deleting '/nix/store/b56mswksrql15knpb1bnhv3ysif340kd-krb5-1.21.3-dev'
+
+2026-04-30T16:02:27.389640033Z [inf]  deleting '/nix/store/milph81dilrh96isyivh5n50agpx39k2-krb5-1.21.3'
+
+2026-04-30T16:02:27.390866412Z [inf]  deleting '/nix/store/v9c1s50x7magpiqgycxxkn36avzbcg0g-krb5-1.21.3-lib'
+
+2026-04-30T16:02:27.392342165Z [inf]  deleting '/nix/store/d7zhcrcc7q3yfbm3qkqpgc3daq82spwi-libssh2-1.11.1-dev'
+
+2026-04-30T16:02:27.392728554Z [inf]  deleting '/nix/store/kqm7wpqkzc4bwjlzqizcbz0mgkj06a9x-openssl-3.3.2-dev'
+
+2026-04-30T16:02:27.394909285Z [inf]  deleting '/nix/store/qq5q0alyzywdazhmybi7m69akz0ppk05-openssl-3.3.2-bin'
+
+2026-04-30T16:02:27.395998838Z [inf]  deleting '/nix/store/h18s640fnhhj2qdh5vivcfbxvz377srg-xz-5.6.3-bin'
+
+2026-04-30T16:02:27.396543395Z [inf]  deleting '/nix/store/agvks3qmzja0yj54szi3vja6vx3cwkkw-curl-8.11.0-man'
+
+2026-04-30T16:02:27.396899279Z [inf]  deleting '/nix/store/5yja5dpk2qw1v5mbfbl2d7klcdfrh90w-patch-2.7.6'
+
+2026-04-30T16:02:27.397285258Z [inf]  deleting '/nix/store/8675pnfr4fqnwv4pzjl67hdwls4q13aa-libssh2-1.11.1'
+
+2026-04-30T16:02:27.397611247Z [inf]  deleting '/nix/store/f4glllk86xq0kygag8bljhnazpa5q6w2-pnpm-9.15.9.tgz'
+
+2026-04-30T16:02:27.397789053Z [inf]  deleting '/nix/store/74h4z8k82pmp24xryflv4lxkz8jlpqqd-ed-1.20.2'
+
+2026-04-30T16:02:27.398313269Z [inf]  deleting '/nix/store/d29r1bdmlvwmj52apgcdxfl1mm9c5782-update-autotools-gnu-config-scripts-hook'
+
+2026-04-30T16:02:27.398456724Z [inf]  deleting '/nix/store/1m67ipsk39xvhyqrxnzv2m2p48pil8kl-gnu-config-2024-01-01'
+
+2026-04-30T16:02:27.398772147Z [inf]  deleting '/nix/store/c4rj90r2m89rxs64hmm857mipwjhig5d-file-5.46'
+
+2026-04-30T16:02:27.399153068Z [inf]  deleting '/nix/store/wf5zj2gbib3gjqllkabxaw4dh0gzcla3-builder.pl'
+
+2026-04-30T16:02:27.399605767Z [inf]  deleting '/nix/store/9l9n7a0v4aibcz0sgd0crs209an9p7dz-openssl-3.3.2'
+
+2026-04-30T16:02:27.400114891Z [inf]  deleting unused links...
+
+2026-04-30T16:02:31.093039258Z [inf]  note: currently hard linking saves 2.31 MiB
+
+2026-04-30T16:02:31.108847093Z [inf]  42 store paths deleted, 263.32 MiB freed
+
+2026-04-30T16:02:33.045576575Z [inf]  [stage-0  4/11] RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d
+2026-04-30T16:02:33.139432220Z [inf]  [stage-0  5/11] COPY . /app/.
+2026-04-30T16:02:42.074507641Z [inf]  [stage-0  5/11] COPY . /app/.
+2026-04-30T16:02:42.312524088Z [inf]  [stage-0  6/11] RUN --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 pnpm install --no-frozen-lockfile --prefer-offline
+2026-04-30T16:02:45.903035227Z [inf]  Scope: all 3 workspace projects
+
+2026-04-30T16:02:46.116300097Z [inf]  Lockfile is up to date, resolution step is skipped
+
+2026-04-30T16:02:46.263623482Z [inf]  Progress: resolved 1, reused 0, downloaded 0, added 0
+
+2026-04-30T16:02:46.520004679Z [inf]  Packages: +2586
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2026-04-30T16:02:47.265124083Z [inf]  Progress: resolved 2586, reused 0, downloaded 135, added 103
+
+2026-04-30T16:02:48.265731976Z [inf]  Progress: resolved 2586, reused 0, downloaded 243, added 204
+
+2026-04-30T16:02:49.266682483Z [inf]  Progress: resolved 2586, reused 0, downloaded 311, added 277
+
+2026-04-30T16:02:50.271101451Z [inf]  Progress: resolved 2586, reused 0, downloaded 380, added 350
+
+2026-04-30T16:02:51.271070916Z [inf]  Progress: resolved 2586, reused 0, downloaded 438, added 425
+
+2026-04-30T16:02:52.27168664Z [inf]  Progress: resolved 2586, reused 0, downloaded 464, added 450
+
+2026-04-30T16:02:53.272774723Z [inf]  Progress: resolved 2586, reused 0, downloaded 577, added 569
+
+2026-04-30T16:02:54.274283948Z [inf]  Progress: resolved 2586, reused 0, downloaded 745, added 752
+
+2026-04-30T16:02:55.275063869Z [inf]  Progress: resolved 2586, reused 0, downloaded 810, added 810
+
+2026-04-30T16:02:56.275856028Z [inf]  Progress: resolved 2586, reused 0, downloaded 849, added 851
+
+2026-04-30T16:02:57.276304201Z [inf]  Progress: resolved 2586, reused 0, downloaded 911, added 922
+
+2026-04-30T16:02:58.275753176Z [inf]  Progress: resolved 2586, reused 0, downloaded 981, added 988
+
+2026-04-30T16:02:59.276860918Z [inf]  Progress: resolved 2586, reused 0, downloaded 1080, added 1087
+
+2026-04-30T16:03:00.277676743Z [inf]  Progress: resolved 2586, reused 0, downloaded 1210, added 1232
+
+2026-04-30T16:03:01.278646578Z [inf]  Progress: resolved 2586, reused 0, downloaded 1352, added 1365
+
+2026-04-30T16:03:02.279024035Z [inf]  Progress: resolved 2586, reused 0, downloaded 1492, added 1523
+
+2026-04-30T16:03:03.279465168Z [inf]  Progress: resolved 2586, reused 0, downloaded 1612, added 1629
+
+2026-04-30T16:03:04.279044148Z [inf]  Progress: resolved 2586, reused 0, downloaded 1703, added 1717
+
+2026-04-30T16:03:05.279860273Z [inf]  Progress: resolved 2586, reused 0, downloaded 1807, added 1823
+
+2026-04-30T16:03:06.280668827Z [inf]  Progress: resolved 2586, reused 0, downloaded 1908, added 1920
+
+2026-04-30T16:03:07.019560442Z [inf]  Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v3
+  Virtual store is at:             node_modules/.pnpm
+
+2026-04-30T16:03:07.284139493Z [inf]  Progress: resolved 2586, reused 0, downloaded 2033, added 2056
+
+2026-04-30T16:03:08.284047165Z [inf]  Progress: resolved 2586, reused 0, downloaded 2203, added 2223
+
+2026-04-30T16:03:09.28484332Z [inf]  Progress: resolved 2586, reused 0, downloaded 2344, added 2361
+
+2026-04-30T16:03:10.285740848Z [inf]  Progress: resolved 2586, reused 0, downloaded 2384, added 2396
+
+2026-04-30T16:03:11.286878044Z [inf]  Progress: resolved 2586, reused 0, downloaded 2500, added 2524
+
+2026-04-30T16:03:12.287536002Z [inf]  Progress: resolved 2586, reused 0, downloaded 2512, added 2574
+
+2026-04-30T16:03:13.287884706Z [inf]  Progress: resolved 2586, reused 0, downloaded 2512, added 2577
+
+2026-04-30T16:03:14.288361913Z [inf]  Progress: resolved 2586, reused 0, downloaded 2512, added 2579
+
+2026-04-30T16:03:15.289018609Z [inf]  Progress: resolved 2586, reused 0, downloaded 2512, added 2582
+
+2026-04-30T16:03:20.429731316Z [inf]  Progress: resolved 2586, reused 0, downloaded 2512, added 2583
+
+2026-04-30T16:03:20.62990163Z [inf]  Progress: resolved 2586, reused 0, downloaded 2512, added 2586, done
+
+2026-04-30T16:03:21.658097703Z [inf]  .../node_modules/protobufjs postinstall$ node scripts/postinstall
+
+2026-04-30T16:03:21.795189555Z [inf]  .../node_modules/unrs-resolver postinstall$ napi-postinstall unrs-resolver 1.11.1 check
+
+2026-04-30T16:03:21.795598458Z [inf]  .../node_modules/bufferutil install$ node-gyp-build
+
+2026-04-30T16:03:21.795848744Z [inf]  .../node_modules/utf-8-validate install$ node-gyp-build
+
+2026-04-30T16:03:21.92148018Z [inf]  .../node_modules/utf-8-validate install$ node-gyp-build
+
+2026-04-30T16:03:22.080524992Z [inf]  .../node_modules/protobufjs postinstall: Done
+
+2026-04-30T16:03:22.347860736Z [inf]  .../node_modules/unrs-resolver postinstall: Done
+
+2026-04-30T16:03:22.348458573Z [inf]  .../node_modules/utf-8-validate install: Done
+
+2026-04-30T16:03:22.348701016Z [inf]  .../node_modules/bufferutil install: Done
+
+2026-04-30T16:03:22.357320282Z [inf]  .../node_modules/secp256k1 install$ node-gyp-build || exit 0
+
+2026-04-30T16:03:22.513787368Z [inf]  .../node_modules/utf-8-validate install: Done
+
+2026-04-30T16:03:22.517780607Z [inf]  .../node_modules/ccxt postinstall$ node postinstall.js
+
+2026-04-30T16:03:22.693271872Z [inf]  .../node_modules/secp256k1 install: Done
+
+2026-04-30T16:03:22.707388491Z [inf]  .../keccak@3.0.4/node_modules/keccak install$ node-gyp-build || exit 0
+
+2026-04-30T16:03:22.861978703Z [inf]  .../node_modules/@firebase/util postinstall$ node ./postinstall.js
+
+2026-04-30T16:03:22.998302533Z [inf]  .../keccak@3.0.4/node_modules/keccak install: Done
+
+2026-04-30T16:03:23.005171113Z [inf]  .../sharp@0.34.5/node_modules/sharp install$ node install/check.js || npm run build
+
+2026-04-30T16:03:23.123367419Z [inf]  .../node_modules/@firebase/util postinstall: Done
+
+2026-04-30T16:03:23.125882491Z [inf]  .../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+
+2026-04-30T16:03:23.252218493Z [inf]  .../node_modules/ccxt postinstall: [34m                                                              
+
+2026-04-30T16:03:23.252578603Z [inf]  .../node_modules/ccxt postinstall:                                                               
+
+2026-04-30T16:03:23.253376069Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:23.253584021Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:23.25377013Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:23.25407043Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:23.254305723Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████████████    ████████████     
+
+2026-04-30T16:03:23.25455058Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████████████    ████████████     
+
+2026-04-30T16:03:23.254885923Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:23.255126914Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:23.255233605Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:23.255354726Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:23.255422728Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████    ████            ████     
+
+2026-04-30T16:03:23.255522197Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████    ████            ████     
+
+2026-04-30T16:03:23.255633514Z [inf]  .../node_modules/ccxt postinstall:                      ████████    ████████████    ████████     
+
+2026-04-30T16:03:23.255718872Z [inf]  .../node_modules/ccxt postinstall:                      ████████    ████████████    ████████     
+
+2026-04-30T16:03:23.255782808Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████    ████████    ████████     
+
+2026-04-30T16:03:23.255885772Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████    ████████    ████████     
+
+2026-04-30T16:03:23.255981386Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:23.256101686Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:23.256262387Z [inf]  .../node_modules/ccxt postinstall:                                                               
+
+2026-04-30T16:03:23.256337269Z [inf]  .../node_modules/ccxt postinstall:                                                               [0m
+
+2026-04-30T16:03:23.256429948Z [inf]  .../node_modules/ccxt postinstall: [31m                                  Stars: 42,137                                 [0m
+
+2026-04-30T16:03:23.256518972Z [inf]  .../node_modules/ccxt postinstall: [31m                                  Forks: 8,633                                  [0m
+
+2026-04-30T16:03:23.256609738Z [inf]  .../node_modules/ccxt postinstall: [31m                                  Size: 6.63MB                                  [0m
+
+2026-04-30T16:03:23.256725331Z [inf]  .../node_modules/ccxt postinstall: [33m
+
+2026-04-30T16:03:23.256849377Z [inf]  .../node_modules/ccxt postinstall:                           Thanks for installing ccxt 🙏                         [0m
+
+2026-04-30T16:03:23.256994145Z [inf]  .../node_modules/ccxt postinstall: [90m                 Please consider donating to our open collective                [0m
+
+2026-04-30T16:03:23.257092272Z [inf]  .../node_modules/ccxt postinstall: [90m                        to help us maintain this package.                       [0m
+
+2026-04-30T16:03:23.257291981Z [inf]  .../node_modules/ccxt postinstall: [33m              👉 Donate: https://opencollective.com/ccxt/donate 🎉              [0m
+
+2026-04-30T16:03:23.258286693Z [inf]  .../sharp@0.34.5/node_modules/sharp install: Done
+
+2026-04-30T16:03:23.258701425Z [inf]  .../node_modules/ccxt postinstall: Done
+
+2026-04-30T16:03:23.28074443Z [inf]  .../node_modules/@reown/appkit postinstall$ node scripts/appkit-version-check.js
+
+2026-04-30T16:03:23.430279281Z [inf]  .../node_modules/@reown/appkit postinstall$ node scripts/appkit-version-check.js
+
+2026-04-30T16:03:23.430924018Z [inf]  .../node_modules/@parcel/watcher install: Done
+
+2026-04-30T16:03:23.562519477Z [inf]  .../node_modules/@reown/appkit postinstall: Checking project at: /app
+.../node_modules/@reown/appkit postinstall: Found project: Bicrypto
+.../node_modules/@reown/appkit postinstall: Found @reown/appkit packages: [ '@reown/appkit', '@reown/appkit-adapter-wagmi' ]
+.../node_modules/@reown/appkit postinstall: Installed @reown/appkit packages and versions:
+.../node_modules/@reown/appkit postinstall:   @reown/appkit: 1.8.15
+.../node_modules/@reown/appkit postinstall:   @reown/appkit-adapter-wagmi: 1.8.15
+.../node_modules/@reown/appkit postinstall: [32m✓ All @reown/appkit packages are in sync (1.8.15)[0m
+.../node_modules/@reown/appkit postinstall: Done
+
+2026-04-30T16:03:23.568653015Z [inf]  .../sharp@0.33.5/node_modules/sharp install$ node install/check
+
+2026-04-30T16:03:23.713389921Z [inf]  .../node_modules/@reown/appkit postinstall: Checking project at: /app
+
+2026-04-30T16:03:23.713419536Z [inf]  .../node_modules/@reown/appkit postinstall: Found project: Bicrypto
+
+2026-04-30T16:03:23.713506116Z [inf]  .../node_modules/@reown/appkit postinstall: Found @reown/appkit packages: [ '@reown/appkit', '@reown/appkit-adapter-wagmi' ]
+.../node_modules/@reown/appkit postinstall: Installed @reown/appkit packages and versions:
+
+2026-04-30T16:03:23.713532025Z [inf]  .../node_modules/@reown/appkit postinstall:   @reown/appkit: 1.8.15
+
+2026-04-30T16:03:23.713557663Z [inf]  .../node_modules/@reown/appkit postinstall:   @reown/appkit-adapter-wagmi: 1.8.15
+
+2026-04-30T16:03:23.713639646Z [inf]  .../node_modules/@reown/appkit postinstall: [32m✓ All @reown/appkit packages are in sync (1.8.15)[0m
+
+2026-04-30T16:03:23.714076651Z [inf]  .../node_modules/@reown/appkit postinstall: Done
+
+2026-04-30T16:03:23.789817081Z [inf]  .../sharp@0.33.5/node_modules/sharp install: Done
+
+2026-04-30T16:03:23.978090134Z [inf]  .../node_modules/ccxt postinstall$ node postinstall.js
+
+2026-04-30T16:03:24.373383722Z [inf]  .../node_modules/ccxt postinstall: [34m                                                              
+
+2026-04-30T16:03:24.373418445Z [inf]  .../node_modules/ccxt postinstall:                                                               
+
+2026-04-30T16:03:24.37352176Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:24.373594909Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:24.373599396Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:24.373640578Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:24.373678435Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████████████    ████████████     
+
+2026-04-30T16:03:24.373760347Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████████████    ████████████     
+
+2026-04-30T16:03:24.374003392Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:24.374060728Z [inf]  .../node_modules/ccxt postinstall:                      ████            ████            ████     
+
+2026-04-30T16:03:24.374201178Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:24.374234318Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:24.374314498Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████    ████            ████     
+
+2026-04-30T16:03:24.374340828Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████    ████            ████     
+
+2026-04-30T16:03:24.374447417Z [inf]  .../node_modules/ccxt postinstall:                      ████████    ████████████    ████████     
+
+2026-04-30T16:03:24.374578164Z [inf]  .../node_modules/ccxt postinstall:                      ████████    ████████████    ████████     
+.../node_modules/ccxt postinstall:                      ████    ████    ████████    ████████     
+
+2026-04-30T16:03:24.374598955Z [inf]  .../node_modules/ccxt postinstall:                      ████    ████    ████████    ████████     
+
+2026-04-30T16:03:24.374637082Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+
+2026-04-30T16:03:24.374707588Z [inf]  .../node_modules/ccxt postinstall:                      ████████████████████████████████████     
+.../node_modules/ccxt postinstall:                                                               
+
+2026-04-30T16:03:24.374810482Z [inf]  .../node_modules/ccxt postinstall:                                                               [0m
+.../node_modules/ccxt postinstall: [31m                                  Stars: 42,137                                 [0m
+
+2026-04-30T16:03:24.374821909Z [inf]  .../node_modules/ccxt postinstall: [31m                                  Forks: 8,633                                  [0m
+
+2026-04-30T16:03:24.374932655Z [inf]  .../node_modules/ccxt postinstall: [31m                                  Size: 6.63MB                                  [0m
+.../node_modules/ccxt postinstall: [33m
+
+2026-04-30T16:03:24.374937302Z [inf]  .../node_modules/ccxt postinstall:                           Thanks for installing ccxt 🙏                         [0m
+
+2026-04-30T16:03:24.37500922Z [inf]  .../node_modules/ccxt postinstall: [90m                 Please consider donating to our open collective                [0m
+
+2026-04-30T16:03:24.37501611Z [inf]  .../node_modules/ccxt postinstall: [90m                        to help us maintain this package.                       [0m
+
+2026-04-30T16:03:24.375410522Z [inf]  .../node_modules/ccxt postinstall: [33m              👉 Donate: https://opencollective.com/ccxt/donate 🎉              [0m
+
+2026-04-30T16:03:24.384026783Z [inf]  .../node_modules/ccxt postinstall: Done
+
+2026-04-30T16:03:25.016956599Z [inf]  .../node_modules/@reown/appkit postinstall$ node scripts/appkit-version-check.js
+
+2026-04-30T16:03:25.236047505Z [inf]  .../node_modules/@reown/appkit postinstall: Checking project at: /app
+
+2026-04-30T16:03:25.236282998Z [inf]  .../node_modules/@reown/appkit postinstall: Found project: Bicrypto
+
+2026-04-30T16:03:25.236656529Z [inf]  .../node_modules/@reown/appkit postinstall: Found @reown/appkit packages: [ '@reown/appkit', '@reown/appkit-adapter-wagmi' ]
+
+2026-04-30T16:03:25.237426874Z [inf]  .../node_modules/@reown/appkit postinstall: Installed @reown/appkit packages and versions:
+
+2026-04-30T16:03:25.237714335Z [inf]  .../node_modules/@reown/appkit postinstall:   @reown/appkit: 1.8.15
+
+2026-04-30T16:03:25.237879823Z [inf]  .../node_modules/@reown/appkit postinstall:   @reown/appkit-adapter-wagmi: 1.8.15
+
+2026-04-30T16:03:25.238026333Z [inf]  .../node_modules/@reown/appkit postinstall: [32m✓ All @reown/appkit packages are in sync (1.8.15)[0m
+
+2026-04-30T16:03:25.245287822Z [inf]  .../node_modules/@reown/appkit postinstall: Done
+
+2026-04-30T16:03:25.774919513Z [inf]  
+dependencies:
++ @google-cloud/translate 9.3.0
++ @reown/appkit 1.8.15
++ @reown/appkit-adapter-wagmi 1.8.15
++ @tanstack/react-query 5.90.21
++ @vitalets/google-translate-api 9.2.1
++ ccxt 4.5.43
++ dotenv 16.6.1
++ jose 5.10.0
++ mysql2 3.19.1
++ pm2 5.4.3
++ tonweb 0.0.66
++ viem 2.47.4
++ wagmi 2.19.5
++ web-push 3.6.7
+
+devDependencies:
++ @babel/generator 7.29.1
++ @babel/parser 7.29.0
++ @babel/traverse 7.29.0
++ @babel/types 7.29.0
++ @eslint/js 9.39.4
++ @next/eslint-plugin-next 15.5.12
++ @tailwindcss/oxide-win32-x64-msvc 4.1.18
++ @types/jest 29.5.14
++ @types/lodash 4.17.24
++ @types/node 22.19.15
++ @typescript-eslint/eslint-plugin 8.0.0-alpha.26
++ @typescript-eslint/parser 8.0.0-alpha.26
++ concurrently 7.6.0
++ cross-env 10.1.0
++ eslint 9.39.4
++ eslint-config-prettier 9.1.2
++ eslint-plugin-import 2.32.0
++ eslint-plugin-prettier 5.5.5
++ eslint-plugin-react 7.37.5
++ eslint-plugin-react-hooks 7.0.1
++ eslint-plugin-unused-imports 4.4.1
++ ethers 6.16.0
++ fast-glob 3.3.3
++ globals 15.15.0
++ prettier 3.8.1
++ prettier-plugin-tailwindcss 0.6.14
++ ts-jest 29.4.6
++ typescript 5.9.3
++ typescript-eslint 8.57.0
+
+The following dependencies have build scripts that were ignored: argon2, bcrypt, bigint-buffer, esbuild, msgpackr-extract, zeromq
+To allow the execution of build scripts for these packages, add their names to "pnpm.onlyBuiltDependencies" in your "package.json", then run "pnpm rebuild"
+
+
+2026-04-30T16:03:26.100532329Z [inf]  Done in 40.6s using pnpm v9.15.9
+
+2026-04-30T16:03:29.308547871Z [inf]  [stage-0  6/11] RUN --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 pnpm install --no-frozen-lockfile --prefer-offline
+2026-04-30T16:03:29.556756212Z [inf]  [stage-0  7/11] COPY . /app/.
+2026-04-30T16:04:02.195468277Z [inf]  [stage-0  7/11] COPY . /app/.
+2026-04-30T16:04:05.876210766Z [inf]  [stage-0  8/11] RUN --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-frontend/next/cache,target=/app/frontend/.next/cache --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-node_modules/cache,target=/app/node_modules/.cache pnpm build:i18n || true
+2026-04-30T16:04:11.185630345Z [inf]  
+> Bicrypto@6.3.0 build:i18n /app
+> node frontend/i18n/scripts/generate-i18n-manifest.js
+
+
+2026-04-30T16:04:11.279770016Z [inf]  🌐 Generating i18n manifest...
+
+
+2026-04-30T16:04:11.309525527Z [inf]  Found 366 pages
+
+🔍 Validating i18n usage...
+
+
+2026-04-30T16:04:11.388612785Z [inf]  ✓ No i18n validation issues found.
+
+
+2026-04-30T16:04:12.268118584Z [inf]  Loaded 90 locales
+
+
+2026-04-30T16:04:12.269523091Z [inf]  Processing: /admin/blog/author [admin]
+
+2026-04-30T16:04:12.271705594Z [inf]    → 34 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.279602245Z [inf]  Processing: /admin/blog/category [admin]
+
+2026-04-30T16:04:12.280284258Z [inf]    → 21 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.28608069Z [inf]  Processing: /admin/blog/comment [admin]
+
+2026-04-30T16:04:12.286562533Z [inf]    → 44 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.293808228Z [inf]  Processing: /admin/blog [admin]
+
+2026-04-30T16:04:12.294531804Z [inf]    → 24 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.299960304Z [inf]  Processing: /admin/blog/post [admin]
+
+2026-04-30T16:04:12.300453794Z [inf]    → 53 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.308269404Z [inf]  Processing: /admin/blog/settings [admin]
+
+2026-04-30T16:04:12.308677476Z [inf]    → 2 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.316624654Z [inf]  Processing: /admin/blog/tag [admin]
+  → 32 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.330803396Z [inf]  Processing: /blog/[slug] [user]
+
+2026-04-30T16:04:12.331555754Z [inf]    → 14 page keys, menu: menu-user
+
+2026-04-30T16:04:12.337143944Z [inf]  Processing: /blog/author/[id] [user]
+
+2026-04-30T16:04:12.337649332Z [inf]    → 6 page keys, menu: menu-user
+
+2026-04-30T16:04:12.342398524Z [inf]  Processing: /blog/author/apply [user]
+
+2026-04-30T16:04:12.343157242Z [inf]    → 91 page keys, menu: menu-user
+
+2026-04-30T16:04:12.355728283Z [inf]  Processing: /blog/author/manage/[id]/edit [user]
+
+2026-04-30T16:04:12.356892439Z [inf]    → 26 page keys, menu: menu-user
+
+2026-04-30T16:04:12.36315497Z [inf]  Processing: /blog/author/manage/new [user]
+
+2026-04-30T16:04:12.363995331Z [inf]    → 26 page keys, menu: menu-user
+
+2026-04-30T16:04:12.369546465Z [inf]  Processing: /blog/author/manage [user]
+
+2026-04-30T16:04:12.370085133Z [inf]    → 8 page keys, menu: menu-user
+
+2026-04-30T16:04:12.374451841Z [inf]  Processing: /blog/author [user]
+
+2026-04-30T16:04:12.374916718Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:12.379124628Z [inf]  Processing: /blog/category/[slug] [user]
+
+2026-04-30T16:04:12.379649766Z [inf]    → 16 page keys, menu: menu-user
+
+2026-04-30T16:04:12.384561491Z [inf]  Processing: /blog/category [user]
+
+2026-04-30T16:04:12.384950485Z [inf]    → 8 page keys, menu: menu-user
+
+2026-04-30T16:04:12.389156983Z [inf]  Processing: /blog [user]
+
+2026-04-30T16:04:12.390792075Z [inf]    → 34 page keys, menu: menu-user
+
+2026-04-30T16:04:12.402756777Z [inf]  Processing: /blog/post [user]
+
+2026-04-30T16:04:12.403565439Z [inf]    → 18 page keys, menu: menu-user
+
+2026-04-30T16:04:12.408706669Z [inf]  Processing: /blog/tag/[slug] [user]
+
+2026-04-30T16:04:12.409236944Z [inf]    → 14 page keys, menu: menu-user
+
+2026-04-30T16:04:12.414498344Z [inf]  Processing: /blog/tag [user]
+
+2026-04-30T16:04:12.415588599Z [inf]    → 11 page keys, menu: menu-user
+
+2026-04-30T16:04:12.419378603Z [inf]  Processing: /admin/api/key [admin]
+
+2026-04-30T16:04:12.419748628Z [inf]    → 47 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.427562685Z [inf]  Processing: /admin/builder/[id] [excluded]
+
+2026-04-30T16:04:12.444952823Z [inf]    → 371 page keys, menu: none
+
+2026-04-30T16:04:12.476947052Z [inf]  Processing: /admin/builder [excluded]
+
+2026-04-30T16:04:12.4804666Z [inf]    → 42 page keys, menu: none
+
+2026-04-30T16:04:12.488397773Z [inf]  Processing: /admin/content/media [excluded]
+  → No translations found
+
+2026-04-30T16:04:12.488421949Z [inf]  Processing: /admin/content [admin]
+
+2026-04-30T16:04:12.488651874Z [inf]    → 0 page keys, menu: menu-admin
+Processing: /admin/content/slider [admin]
+
+2026-04-30T16:04:12.488987007Z [inf]    → 28 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.495539293Z [inf]  Processing: /admin/crm/kyc/application/[id] [excluded]
+
+2026-04-30T16:04:12.497810508Z [inf]    → 95 page keys, menu: none
+
+2026-04-30T16:04:12.509817214Z [inf]  Processing: /admin/crm/kyc/application [admin]
+
+2026-04-30T16:04:12.510453027Z [inf]    → 29 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.517442128Z [inf]  Processing: /admin/crm/kyc/level/[id] [excluded]
+
+2026-04-30T16:04:12.524101084Z [inf]    → 325 page keys, menu: none
+
+2026-04-30T16:04:12.553679709Z [inf]  Processing: /admin/crm/kyc/level/create [excluded]
+
+2026-04-30T16:04:12.560016883Z [inf]    → 325 page keys, menu: none
+
+2026-04-30T16:04:12.591379053Z [inf]  Processing: /admin/crm/kyc/level [admin]
+
+2026-04-30T16:04:12.592278712Z [inf]    → 40 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.59991949Z [inf]  Processing: /admin/crm [admin]
+
+2026-04-30T16:04:12.600057948Z [inf]    → 0 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.600133061Z [inf]  Processing: /admin/crm/permission [admin]
+
+2026-04-30T16:04:12.600362645Z [inf]    → 8 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.604990345Z [inf]  Processing: /admin/crm/role [admin]
+
+2026-04-30T16:04:12.605235582Z [inf]    → 13 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.610151765Z [inf]  Processing: /admin/crm/support/[id] [excluded]
+
+2026-04-30T16:04:12.610930763Z [inf]    → No translations found
+Processing: /admin/crm/support [admin]
+
+2026-04-30T16:04:12.611538264Z [inf]    → 64 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.620756227Z [inf]  Processing: /admin/crm/user/[id] [admin]
+
+2026-04-30T16:04:12.622548024Z [inf]    → 117 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.636974838Z [inf]  Processing: /admin/crm/user [admin]
+
+2026-04-30T16:04:12.637916981Z [inf]    → 56 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.64731873Z [inf]  Processing: /admin/default-editor/[pageId]/edit [excluded]
+
+2026-04-30T16:04:12.648244588Z [inf]    → 25 page keys, menu: none
+
+2026-04-30T16:04:12.65408036Z [inf]  Processing: /admin/default-editor/[pageId]/preview [excluded]
+
+2026-04-30T16:04:12.654369763Z [inf]    → 13 page keys, menu: none
+
+2026-04-30T16:04:12.659406927Z [inf]  Processing: /admin/default-editor [excluded]
+
+2026-04-30T16:04:12.659815009Z [inf]    → No translations found
+Processing: /admin/extensions [admin]
+
+2026-04-30T16:04:12.659939295Z [inf]    → 0 page keys, menu: menu-admin
+Processing: /admin/finance/binary/market/[id]/edit [admin]
+
+2026-04-30T16:04:12.660442189Z [inf]    → 0 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.664125693Z [inf]  Processing: /admin/finance/binary/market/create [admin]
+
+2026-04-30T16:04:12.66465013Z [inf]    → 0 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.668180293Z [inf]  Processing: /admin/finance/binary/market [admin]
+
+2026-04-30T16:04:12.668576898Z [inf]    → 20 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.673957747Z [inf]  Processing: /admin/finance/binary/settings [admin]
+
+2026-04-30T16:04:12.676834121Z [inf]    → 127 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.693743638Z [inf]  Processing: /admin/finance/currency/fiat [admin]
+
+2026-04-30T16:04:12.693923989Z [inf]    → 14 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.699171638Z [inf]  Processing: /admin/finance/currency/spot [admin]
+
+2026-04-30T16:04:12.6996134Z [inf]    → 20 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.705184745Z [inf]  Processing: /admin/finance/deposit/gateway/[id] [admin]
+
+2026-04-30T16:04:12.706185926Z [inf]    → 60 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.715416829Z [inf]  Processing: /admin/finance/deposit/gateway [admin]
+
+2026-04-30T16:04:12.715756819Z [inf]    → 36 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.722921533Z [inf]  Processing: /admin/finance/deposit/log/[id] [excluded]
+
+2026-04-30T16:04:12.723712539Z [inf]    → 47 page keys, menu: none
+
+2026-04-30T16:04:12.731817754Z [inf]  Processing: /admin/finance/deposit/log [admin]
+
+2026-04-30T16:04:12.732197383Z [inf]    → 45 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.747930646Z [inf]  Processing: /admin/finance/deposit/method/[id] [admin]
+
+2026-04-30T16:04:12.748677026Z [inf]    → 44 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.755813087Z [inf]  Processing: /admin/finance/deposit/method [admin]
+
+2026-04-30T16:04:12.756078685Z [inf]    → 31 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.762531762Z [inf]  Processing: /admin/finance/exchange/balance [admin]
+
+2026-04-30T16:04:12.762934666Z [inf]    → 18 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.768121394Z [inf]  Processing: /admin/finance/exchange/chart [admin]
+
+2026-04-30T16:04:12.769169716Z [inf]    → 0 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.772541833Z [inf]  Processing: /admin/finance/exchange/fee [admin]
+
+2026-04-30T16:04:12.772909905Z [inf]    → 21 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.778437625Z [inf]  Processing: /admin/finance/exchange/market [admin]
+
+2026-04-30T16:04:12.77873473Z [inf]    → 34 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.785410661Z [inf]  Processing: /admin/finance/exchange [admin]
+
+2026-04-30T16:04:12.786040326Z [inf]    → 42 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.796542114Z [inf]  Processing: /admin/finance/investment/duration [admin]
+
+2026-04-30T16:04:12.796811658Z [inf]    → 17 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.802274019Z [inf]  Processing: /admin/finance/investment/history [admin]
+
+2026-04-30T16:04:12.802640729Z [inf]    → 42 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.810019044Z [inf]  Processing: /admin/finance/investment/plan [admin]
+
+2026-04-30T16:04:12.810358112Z [inf]    → 53 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.821250236Z [inf]  Processing: /admin/finance/order/binary [admin]
+  → 46 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.826541981Z [inf]  Processing: /admin/finance/order/ecosystem [admin]
+
+2026-04-30T16:04:12.827062312Z [inf]    → 50 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.835212824Z [inf]  Processing: /admin/finance/order/exchange [admin]
+
+2026-04-30T16:04:12.835616309Z [inf]    → 74 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.845149064Z [inf]  Processing: /admin/finance/order/futures [admin]
+
+2026-04-30T16:04:12.845628744Z [inf]    → 76 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.855607337Z [inf]  Processing: /admin/finance [admin]
+
+2026-04-30T16:04:12.855717463Z [inf]    → 0 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.855740828Z [inf]  Processing: /admin/finance/profit [admin]
+
+2026-04-30T16:04:12.856632084Z [inf]    → 33 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.863336087Z [inf]  Processing: /admin/finance/transaction [admin]
+
+2026-04-30T16:04:12.863981505Z [inf]    → 75 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.87294017Z [inf]  Processing: /admin/finance/transfer/[id] [excluded]
+
+2026-04-30T16:04:12.873724997Z [inf]    → 49 page keys, menu: none
+
+2026-04-30T16:04:12.882703871Z [inf]  Processing: /admin/finance/transfer [admin]
+
+2026-04-30T16:04:12.883097411Z [inf]    → 56 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.891523868Z [inf]  Processing: /admin/finance/wallet [admin]
+
+2026-04-30T16:04:12.891848044Z [inf]    → 45 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.899546128Z [inf]  Processing: /admin/finance/withdraw/log/[id] [excluded]
+
+2026-04-30T16:04:12.900406869Z [inf]    → 51 page keys, menu: none
+
+2026-04-30T16:04:12.908793105Z [inf]  Processing: /admin/finance/withdraw/log [admin]
+
+2026-04-30T16:04:12.909168748Z [inf]    → 45 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.916989416Z [inf]  Processing: /admin/finance/withdraw/method [admin]
+
+2026-04-30T16:04:12.917313932Z [inf]    → 31 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.923816093Z [inf]  Processing: /admin/notification [admin]
+
+2026-04-30T16:04:12.926207579Z [inf]    → 0 page keys, menu: menu-admin
+Processing: /admin [admin]
+
+2026-04-30T16:04:12.927044905Z [inf]    → 17 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.932455118Z [inf]  Processing: /admin/system/announcement [admin]
+
+2026-04-30T16:04:12.933060576Z [inf]    → 36 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.940337188Z [inf]  Processing: /admin/system/cron [admin]
+
+2026-04-30T16:04:12.941856206Z [inf]    → 30 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.950030013Z [inf]  Processing: /admin/system/database/backup [admin]
+
+2026-04-30T16:04:12.95060849Z [inf]    → 14 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.956992974Z [inf]  Processing: /admin/system/extension/[id] [excluded]
+
+2026-04-30T16:04:12.958087806Z [inf]    → 38 page keys, menu: none
+
+2026-04-30T16:04:12.968248313Z [inf]  Processing: /admin/system/extension [excluded]
+
+2026-04-30T16:04:12.969038518Z [inf]    → 8 page keys, menu: none
+
+2026-04-30T16:04:12.975172126Z [inf]  Processing: /admin/system/license [excluded]
+
+2026-04-30T16:04:12.975792566Z [inf]    → 37 page keys, menu: none
+
+2026-04-30T16:04:12.983732793Z [inf]  Processing: /admin/system/logo [admin]
+
+2026-04-30T16:04:12.983885052Z [inf]    → 3 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.987906923Z [inf]  Processing: /admin/system/notification [admin]
+
+2026-04-30T16:04:12.990242325Z [inf]    → 0 page keys, menu: menu-admin
+
+2026-04-30T16:04:12.990393632Z [inf]  Processing: /admin/system/notification/template [admin]
+
+2026-04-30T16:04:12.992414572Z [inf]    → 24 page keys, menu: menu-admin
+
+2026-04-30T16:04:13.002520086Z [inf]  Processing: /admin/system [admin]
+
+2026-04-30T16:04:13.002680187Z [inf]    → 0 page keys, menu: menu-admin
+
+2026-04-30T16:04:13.00284249Z [inf]  Processing: /admin/system/settings [excluded]
+
+2026-04-30T16:04:13.003043111Z [inf]    → 2 page keys, menu: none
+
+2026-04-30T16:04:13.007142388Z [inf]  Processing: /admin/system/update [excluded]
+
+2026-04-30T16:04:13.007953424Z [inf]    → 30 page keys, menu: none
+
+2026-04-30T16:04:13.01502547Z [inf]  Processing: /admin/trading/settings [admin]
+
+2026-04-30T16:04:13.015309726Z [inf]    → 2 page keys, menu: menu-admin
+
+2026-04-30T16:04:13.019506129Z [inf]  Processing: /user/kyc/application/[id] [user]
+
+2026-04-30T16:04:13.02066719Z [inf]    → 75 page keys, menu: menu-user
+
+2026-04-30T16:04:13.035093293Z [inf]  Processing: /user/kyc/application/[id]/update [user]
+
+2026-04-30T16:04:13.036788074Z [inf]    → 28 page keys, menu: menu-user
+
+2026-04-30T16:04:13.045780359Z [inf]  Processing: /user/kyc/apply/[id] [user]
+
+2026-04-30T16:04:13.047482242Z [inf]    → 33 page keys, menu: menu-user
+
+2026-04-30T16:04:13.055012794Z [inf]  Processing: /user/kyc [user]
+
+2026-04-30T16:04:13.055565633Z [inf]    → 38 page keys, menu: menu-user
+
+2026-04-30T16:04:13.0624188Z [inf]  Processing: /user/notification [user]
+
+2026-04-30T16:04:13.062997778Z [inf]    → 6 page keys, menu: menu-user
+
+2026-04-30T16:04:13.067198848Z [inf]  Processing: /user/profile [user]
+
+2026-04-30T16:04:13.06744659Z [inf]    → 0 page keys, menu: menu-user
+
+2026-04-30T16:04:13.067500781Z [inf]  Processing: /admin/affiliate/condition [extension-admin]
+
+2026-04-30T16:04:13.068304807Z [inf]    → 0 page keys, menu: ext_admin_affiliate
+
+2026-04-30T16:04:13.071810524Z [inf]  Processing: /admin/affiliate [extension-admin]
+
+2026-04-30T16:04:13.072186207Z [inf]    → 23 page keys, menu: ext_admin_affiliate
+
+2026-04-30T16:04:13.077993506Z [inf]  Processing: /admin/affiliate/referral/[id] [extension-admin]
+
+2026-04-30T16:04:13.07905655Z [inf]    → 23 page keys, menu: ext_admin_affiliate
+
+2026-04-30T16:04:13.086191379Z [inf]  Processing: /admin/affiliate/referral [extension-admin]
+
+2026-04-30T16:04:13.088856266Z [inf]    → 56 page keys, menu: ext_admin_affiliate
+
+2026-04-30T16:04:13.101763481Z [inf]  Processing: /admin/affiliate/reward [extension-admin]
+
+2026-04-30T16:04:13.102160086Z [inf]    → 29 page keys, menu: ext_admin_affiliate
+
+2026-04-30T16:04:13.109222507Z [inf]  Processing: /admin/affiliate/settings [extension-admin]
+
+2026-04-30T16:04:13.109450569Z [inf]    → 17 page keys, menu: ext_admin_affiliate
+
+2026-04-30T16:04:13.116782273Z [inf]  Processing: /admin/ai/investment/duration [extension-admin]
+  → 17 page keys, menu: ext_admin_ai_investment
+
+2026-04-30T16:04:13.121507349Z [inf]  Processing: /admin/ai/investment/log [extension-admin]
+
+2026-04-30T16:04:13.122087969Z [inf]    → 58 page keys, menu: ext_admin_ai_investment
+
+2026-04-30T16:04:13.157961155Z [inf]  Processing: /admin/ai/investment [extension-admin]
+  → 38 page keys, menu: ext_admin_ai_investment
+
+2026-04-30T16:04:13.179740274Z [inf]  Processing: /admin/ai/investment/plan [extension-admin]
+
+2026-04-30T16:04:13.180296148Z [inf]    → 50 page keys, menu: ext_admin_ai_investment
+
+2026-04-30T16:04:13.192999798Z [inf]  Processing: /admin/ai/market-maker/analytics [extension-admin]
+
+2026-04-30T16:04:13.193993488Z [inf]    → 36 page keys, menu: ext_admin_ai_market-maker
+
+2026-04-30T16:04:13.204133945Z [inf]  Processing: /admin/ai/market-maker/guide [extension-admin]
+
+2026-04-30T16:04:13.205662006Z [inf]    → 178 page keys, menu: ext_admin_ai_market-maker
+
+2026-04-30T16:04:13.23403242Z [inf]  Processing: /admin/ai/market-maker/market/[id] [extension-admin]
+
+2026-04-30T16:04:13.236082144Z [inf]    → 116 page keys, menu: ext_admin_ai_market-maker
+
+2026-04-30T16:04:13.249885964Z [inf]  Processing: /admin/ai/market-maker/market/create [extension-admin]
+
+2026-04-30T16:04:13.250305774Z [inf]    → 42 page keys, menu: ext_admin_ai_market-maker
+
+2026-04-30T16:04:13.258644278Z [inf]  Processing: /admin/ai/market-maker/market [extension-admin]
+
+2026-04-30T16:04:13.258907643Z [inf]    → 41 page keys, menu: ext_admin_ai_market-maker
+
+2026-04-30T16:04:13.266075442Z [inf]  Processing: /admin/ai/market-maker [extension-admin]
+
+2026-04-30T16:04:13.266570815Z [inf]    → 24 page keys, menu: ext_admin_ai_market-maker
+
+2026-04-30T16:04:13.271886746Z [inf]  Processing: /admin/ai/market-maker/settings [extension-admin]
+
+2026-04-30T16:04:13.272400247Z [inf]    → 18 page keys, menu: ext_admin_ai_market-maker
+
+2026-04-30T16:04:13.277635767Z [inf]  Processing: /admin/copy-trading/audit [extension-admin]
+
+2026-04-30T16:04:13.278080044Z [inf]    → 16 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.282766161Z [inf]  Processing: /admin/copy-trading/follower/[id] [extension-admin]
+
+2026-04-30T16:04:13.283089877Z [inf]    → 0 page keys, menu: ext_admin_copy-trading
+Processing: /admin/copy-trading/follower [extension-admin]
+
+2026-04-30T16:04:13.283577688Z [inf]    → 53 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.291446007Z [inf]  Processing: /admin/copy-trading/health [extension-admin]
+
+2026-04-30T16:04:13.291704335Z [inf]    → 21 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.296990502Z [inf]  Processing: /admin/copy-trading/leader/[id] [extension-admin]
+
+2026-04-30T16:04:13.297525474Z [inf]    → 13 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.302219884Z [inf]  Processing: /admin/copy-trading/leader [extension-admin]
+
+2026-04-30T16:04:13.303026934Z [inf]    → 48 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.311702264Z [inf]  Processing: /admin/copy-trading [extension-admin]
+
+2026-04-30T16:04:13.31233376Z [inf]    → 27 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.318852335Z [inf]  Processing: /admin/copy-trading/settings [extension-admin]
+
+2026-04-30T16:04:13.319142771Z [inf]    → 2 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.323713926Z [inf]  Processing: /admin/copy-trading/trade [extension-admin]
+
+2026-04-30T16:04:13.324298813Z [inf]    → 35 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.332683637Z [inf]  Processing: /admin/copy-trading/transaction [extension-admin]
+
+2026-04-30T16:04:13.33321251Z [inf]    → 39 page keys, menu: ext_admin_copy-trading
+
+2026-04-30T16:04:13.343242791Z [inf]  Processing: /admin/ecommerce/category [extension-admin]
+
+2026-04-30T16:04:13.343551614Z [inf]    → 21 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.351671851Z [inf]  Processing: /admin/ecommerce/discount [extension-admin]
+
+2026-04-30T16:04:13.352200775Z [inf]    → 33 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.364843013Z [inf]  Processing: /admin/ecommerce/order/[id] [extension-admin]
+
+2026-04-30T16:04:13.365942301Z [inf]    → 65 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.378278611Z [inf]  Processing: /admin/ecommerce/order [extension-admin]
+
+2026-04-30T16:04:13.378585631Z [inf]    → 28 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.386948492Z [inf]  Processing: /admin/ecommerce [extension-admin]
+
+2026-04-30T16:04:13.387724946Z [inf]    → 37 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.396447927Z [inf]  Processing: /admin/ecommerce/product [extension-admin]
+
+2026-04-30T16:04:13.39698326Z [inf]    → 53 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.407729996Z [inf]  Processing: /admin/ecommerce/review [extension-admin]
+
+2026-04-30T16:04:13.408112449Z [inf]    → 38 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.417171564Z [inf]  Processing: /admin/ecommerce/settings [extension-admin]
+
+2026-04-30T16:04:13.417429832Z [inf]    → 2 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.422204832Z [inf]  Processing: /admin/ecommerce/shipping [extension-admin]
+
+2026-04-30T16:04:13.422440966Z [inf]    → 45 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.431262154Z [inf]  Processing: /admin/ecommerce/wishlist [extension-admin]
+
+2026-04-30T16:04:13.431480011Z [inf]    → 17 page keys, menu: ext_admin_ecommerce
+
+2026-04-30T16:04:13.437019858Z [inf]  Processing: /admin/ecosystem/blockchain/[productId] [extension-admin]
+
+2026-04-30T16:04:13.437561471Z [inf]    → 10 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.443232505Z [inf]  Processing: /admin/ecosystem/ledger [extension-admin]
+
+2026-04-30T16:04:13.443429671Z [inf]    → 18 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.452234565Z [inf]  Processing: /admin/ecosystem/market/[id] [extension-admin]
+
+2026-04-30T16:04:13.452777849Z [inf]    → 13 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.46096106Z [inf]  Processing: /admin/ecosystem/market/create [extension-admin]
+
+2026-04-30T16:04:13.461551035Z [inf]    → 12 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.47401093Z [inf]  Processing: /admin/ecosystem/market [extension-admin]
+  → 26 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.487136423Z [inf]  Processing: /admin/ecosystem [extension-admin]
+
+2026-04-30T16:04:13.487805997Z [inf]    → 32 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.496945973Z [inf]  Processing: /admin/ecosystem/token/[id] [extension-admin]
+
+2026-04-30T16:04:13.497588216Z [inf]    → 4 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.505502154Z [inf]  Processing: /admin/ecosystem/token/create [extension-admin]
+
+2026-04-30T16:04:13.50824677Z [inf]    → 1 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.510301261Z [inf]  Processing: /admin/ecosystem/token [extension-admin]
+
+2026-04-30T16:04:13.511241481Z [inf]    → 41 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.520921376Z [inf]  Processing: /admin/ecosystem/utxo [extension-admin]
+
+2026-04-30T16:04:13.521259614Z [inf]    → 25 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.530371848Z [inf]  Processing: /admin/ecosystem/wallet/custodial [extension-admin]
+
+2026-04-30T16:04:13.530841873Z [inf]    → 25 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.541835119Z [inf]  Processing: /admin/ecosystem/wallet/master [extension-admin]
+
+2026-04-30T16:04:13.54212956Z [inf]    → 17 page keys, menu: ext_admin_ecosystem
+
+2026-04-30T16:04:13.552641544Z [inf]  Processing: /admin/faq [extension-admin]
+  → 23 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.557049754Z [inf]  Processing: /admin/faq/ai [extension-admin]
+
+2026-04-30T16:04:13.557835432Z [inf]    → 22 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.564105976Z [inf]  Processing: /admin/faq/feedback [extension-admin]
+
+2026-04-30T16:04:13.565065124Z [inf]    → 18 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.572210099Z [inf]  Processing: /admin/faq/manage/[id] [extension-admin]
+
+2026-04-30T16:04:13.582402924Z [inf]    → 55 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.592405704Z [inf]  Processing: /admin/faq/manage [extension-admin]
+
+2026-04-30T16:04:13.594468858Z [inf]    → 60 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.604663976Z [inf]  Processing: /admin/faq/question/[id]/answer [extension-admin]
+
+2026-04-30T16:04:13.605336054Z [inf]    → 10 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.611251254Z [inf]  Processing: /admin/faq/question/[id]/convert [extension-admin]
+
+2026-04-30T16:04:13.611866878Z [inf]    → 18 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.618106164Z [inf]  Processing: /admin/faq/question [extension-admin]
+
+2026-04-30T16:04:13.618676139Z [inf]    → 13 page keys, menu: ext_admin_faq
+
+2026-04-30T16:04:13.62411205Z [inf]  Processing: /admin/forex/account [extension-admin]
+
+2026-04-30T16:04:13.624706632Z [inf]    → 52 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.635783633Z [inf]  Processing: /admin/forex/deposit/[id] [extension-admin]
+
+2026-04-30T16:04:13.636202491Z [inf]    → 1 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.639986736Z [inf]  Processing: /admin/forex/deposit [extension-admin]
+
+2026-04-30T16:04:13.640413846Z [inf]    → 56 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.649381314Z [inf]  Processing: /admin/forex/duration [extension-admin]
+
+2026-04-30T16:04:13.649770788Z [inf]    → 17 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.655626078Z [inf]  Processing: /admin/forex/investment [extension-admin]
+
+2026-04-30T16:04:13.656139438Z [inf]    → 45 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.664319555Z [inf]  Processing: /admin/forex [extension-admin]
+
+2026-04-30T16:04:13.665016971Z [inf]    → 32 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.671600444Z [inf]  Processing: /admin/forex/plan [extension-admin]
+
+2026-04-30T16:04:13.671881545Z [inf]    → 53 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.68692228Z [inf]  Processing: /admin/forex/signal [extension-admin]
+
+2026-04-30T16:04:13.687145385Z [inf]    → 18 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.693103469Z [inf]  Processing: /admin/forex/withdraw/[id] [extension-admin]
+
+2026-04-30T16:04:13.693288176Z [inf]    → 1 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.697181144Z [inf]  Processing: /admin/forex/withdraw [extension-admin]
+
+2026-04-30T16:04:13.697614734Z [inf]    → 56 page keys, menu: ext_admin_forex
+
+2026-04-30T16:04:13.70679426Z [inf]  Processing: /admin/futures/market/[id] [extension-admin]
+
+2026-04-30T16:04:13.707356383Z [inf]    → 3 page keys, menu: ext_admin_futures
+
+2026-04-30T16:04:13.713588999Z [inf]  Processing: /admin/futures/market/create [extension-admin]
+
+2026-04-30T16:04:13.713978323Z [inf]    → 2 page keys, menu: ext_admin_futures
+
+2026-04-30T16:04:13.718055207Z [inf]  Processing: /admin/futures/market [extension-admin]
+
+2026-04-30T16:04:13.718236919Z [inf]    → 16 page keys, menu: ext_admin_futures
+
+2026-04-30T16:04:13.724313622Z [inf]  Processing: /admin/futures [extension-admin]
+
+2026-04-30T16:04:13.72487237Z [inf]    → 25 page keys, menu: ext_admin_futures
+
+2026-04-30T16:04:13.730553239Z [inf]  Processing: /admin/futures/position [extension-admin]
+
+2026-04-30T16:04:13.730880419Z [inf]    → 36 page keys, menu: ext_admin_futures
+
+2026-04-30T16:04:13.739025794Z [inf]  Processing: /admin/gateway/merchant/[id] [extension-admin]
+
+2026-04-30T16:04:13.73972336Z [inf]    → 0 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.739807716Z [inf]  Processing: /admin/gateway/merchant [extension-admin]
+
+2026-04-30T16:04:13.740234286Z [inf]    → 48 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.748847983Z [inf]  Processing: /admin/gateway [extension-admin]
+
+2026-04-30T16:04:13.749291438Z [inf]    → 20 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.755020249Z [inf]  Processing: /admin/gateway/payment/[id] [extension-admin]
+
+2026-04-30T16:04:13.755629803Z [inf]    → 0 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.755666288Z [inf]  Processing: /admin/gateway/payment [extension-admin]
+
+2026-04-30T16:04:13.7560741Z [inf]    → 46 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.764511903Z [inf]  Processing: /admin/gateway/payout [extension-admin]
+
+2026-04-30T16:04:13.765064562Z [inf]    → 46 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.773444148Z [inf]  Processing: /admin/gateway/settings/design [extension-admin]
+
+2026-04-30T16:04:13.773838779Z [inf]    → 5 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.77929419Z [inf]  Processing: /admin/gateway/settings/design/preview [extension-admin]
+
+2026-04-30T16:04:13.779536293Z [inf]    → 0 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.779616133Z [inf]  Processing: /admin/gateway/settings [extension-admin]
+
+2026-04-30T16:04:13.780506198Z [inf]    → 12 page keys, menu: ext_admin_gateway
+
+2026-04-30T16:04:13.786751152Z [inf]  Processing: /admin/ico/offer/[id] [extension-admin]
+
+2026-04-30T16:04:13.787905754Z [inf]    → 49 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.797044048Z [inf]  Processing: /admin/ico/offer/create [extension-admin]
+
+2026-04-30T16:04:13.797155915Z [inf]    → 2 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.801596445Z [inf]  Processing: /admin/ico/offer [extension-admin]
+
+2026-04-30T16:04:13.802116474Z [inf]    → 43 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.810513476Z [inf]  Processing: /admin/ico/offer/status/[status] [extension-admin]
+
+2026-04-30T16:04:13.810952364Z [inf]    → 42 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.819337489Z [inf]  Processing: /admin/ico [extension-admin]
+
+2026-04-30T16:04:13.819775035Z [inf]    → 22 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.825623265Z [inf]  Processing: /admin/ico/settings [extension-admin]
+
+2026-04-30T16:04:13.828561731Z [inf]    → 100 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.843138541Z [inf]  Processing: /admin/ico/transaction/[id] [extension-admin]
+
+2026-04-30T16:04:13.843916257Z [inf]    → 45 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.852557185Z [inf]  Processing: /admin/ico/transaction [extension-admin]
+
+2026-04-30T16:04:13.852799168Z [inf]    → 31 page keys, menu: ext_admin_ico
+
+2026-04-30T16:04:13.859926826Z [inf]  Processing: /admin/mailwizard/campaign/[id] [extension-admin]
+
+2026-04-30T16:04:13.860310512Z [inf]    → 3 page keys, menu: ext_admin_mailwizard
+
+2026-04-30T16:04:13.865088406Z [inf]  Processing: /admin/mailwizard/campaign/create [extension-admin]
+
+2026-04-30T16:04:13.865330359Z [inf]    → 3 page keys, menu: ext_admin_mailwizard
+
+2026-04-30T16:04:13.869738059Z [inf]  Processing: /admin/mailwizard/campaign [extension-admin]
+
+2026-04-30T16:04:13.870371459Z [inf]    → 36 page keys, menu: ext_admin_mailwizard
+
+2026-04-30T16:04:13.880781439Z [inf]  Processing: /admin/mailwizard/template/[id] [extension-admin]
+
+2026-04-30T16:04:13.881212366Z [inf]    → 1 page keys, menu: ext_admin_mailwizard
+
+2026-04-30T16:04:13.885685484Z [inf]  Processing: /admin/mailwizard/template/create [extension-admin]
+
+2026-04-30T16:04:13.886059735Z [inf]    → 5 page keys, menu: ext_admin_mailwizard
+
+2026-04-30T16:04:13.893953042Z [inf]  Processing: /admin/mailwizard/template [extension-admin]
+
+2026-04-30T16:04:13.89421205Z [inf]    → 19 page keys, menu: ext_admin_mailwizard
+
+2026-04-30T16:04:13.900016304Z [inf]  Processing: /admin/nft/activity [extension-admin]
+
+2026-04-30T16:04:13.901113049Z [inf]    → 26 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.90764228Z [inf]  Processing: /admin/nft/analytics [extension-admin]
+
+2026-04-30T16:04:13.908370972Z [inf]    → 0 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.913152883Z [inf]  Processing: /admin/nft/auction [extension-admin]
+
+2026-04-30T16:04:13.91395045Z [inf]    → 42 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.922570326Z [inf]  Processing: /admin/nft/category [extension-admin]
+
+2026-04-30T16:04:13.922916465Z [inf]    → 23 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.930635781Z [inf]  Processing: /admin/nft/collection [extension-admin]
+
+2026-04-30T16:04:13.931280638Z [inf]    → 58 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.943868254Z [inf]  Processing: /admin/nft/creator [extension-admin]
+
+2026-04-30T16:04:13.944378809Z [inf]    → 42 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.953987829Z [inf]  Processing: /admin/nft/dispute [extension-admin]
+
+2026-04-30T16:04:13.954787829Z [inf]    → 21 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.964507785Z [inf]  Processing: /admin/nft/listing [extension-admin]
+  → 55 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.980027728Z [inf]  Processing: /admin/nft/marketplace [extension-admin]
+
+2026-04-30T16:04:13.98090906Z [inf]    → 60 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:13.99337217Z [inf]  Processing: /admin/nft/offer [extension-admin]
+
+2026-04-30T16:04:13.993801654Z [inf]    → 44 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:14.003006167Z [inf]  Processing: /admin/nft/onboarding [extension-admin]
+
+2026-04-30T16:04:14.00359497Z [inf]    → 0 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:14.007786205Z [inf]  Processing: /admin/nft [extension-admin]
+
+2026-04-30T16:04:14.008273926Z [inf]    → 0 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:14.012347465Z [inf]  Processing: /admin/nft/sale [extension-admin]
+
+2026-04-30T16:04:14.012646894Z [inf]    → 30 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:14.019194002Z [inf]  Processing: /admin/nft/settings [extension-admin]
+
+2026-04-30T16:04:14.019473511Z [inf]    → 1 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:14.023441211Z [inf]  Processing: /admin/nft/token [extension-admin]
+
+2026-04-30T16:04:14.023823344Z [inf]    → 55 page keys, menu: ext_admin_nft
+
+2026-04-30T16:04:14.035092202Z [inf]  Processing: /admin/p2p/activity [extension-admin]
+
+2026-04-30T16:04:14.035706604Z [inf]    → 20 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.044381793Z [inf]  Processing: /admin/p2p/dispute/[id] [extension-admin]
+
+2026-04-30T16:04:14.046918918Z [inf]    → 76 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.058143951Z [inf]  Processing: /admin/p2p/dispute [extension-admin]
+
+2026-04-30T16:04:14.058485113Z [inf]    → 42 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.066151759Z [inf]  Processing: /admin/p2p/offer/[id]/edit [extension-admin]
+
+2026-04-30T16:04:14.067183617Z [inf]    → 17 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.073728261Z [inf]  Processing: /admin/p2p/offer/[id] [extension-admin]
+
+2026-04-30T16:04:14.074724695Z [inf]    → 42 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.085025081Z [inf]  Processing: /admin/p2p/offer [extension-admin]
+
+2026-04-30T16:04:14.085547104Z [inf]    → 59 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.094581752Z [inf]  Processing: /admin/p2p [extension-admin]
+
+2026-04-30T16:04:14.095278858Z [inf]    → 6 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.099255121Z [inf]  Processing: /admin/p2p/payment-method/[id] [extension-admin]
+
+2026-04-30T16:04:14.099799407Z [inf]    → 21 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.106317261Z [inf]  Processing: /admin/p2p/payment-method [extension-admin]
+
+2026-04-30T16:04:14.106653926Z [inf]    → 37 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.11317146Z [inf]  Processing: /admin/p2p/settings [extension-admin]
+
+2026-04-30T16:04:14.113587003Z [inf]    → 2 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.117457276Z [inf]  Processing: /admin/p2p/trade/[id] [extension-admin]
+
+2026-04-30T16:04:14.118772248Z [inf]    → 52 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.131523841Z [inf]  Processing: /admin/p2p/trade [extension-admin]
+
+2026-04-30T16:04:14.132075438Z [inf]    → 48 page keys, menu: ext_admin_p2p
+
+2026-04-30T16:04:14.144785898Z [inf]  Processing: /admin/staking [extension-admin]
+
+2026-04-30T16:04:14.146113709Z [inf]    → 33 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.154445984Z [inf]  Processing: /admin/staking/earning [extension-admin]
+
+2026-04-30T16:04:14.15521645Z [inf]    → 55 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.164508194Z [inf]  Processing: /admin/staking/pool/[id]/edit [extension-admin]
+
+2026-04-30T16:04:14.16621953Z [inf]    → 88 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.18377744Z [inf]  Processing: /admin/staking/pool/[id] [extension-admin]
+
+2026-04-30T16:04:14.186916297Z [inf]    → 193 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.215755464Z [inf]  Processing: /admin/staking/pool/new [extension-admin]
+
+2026-04-30T16:04:14.217697816Z [inf]    → 88 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.235417679Z [inf]  Processing: /admin/staking/pool [extension-admin]
+
+2026-04-30T16:04:14.235798771Z [inf]    → 40 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.243598056Z [inf]  Processing: /admin/staking/position [extension-admin]
+
+2026-04-30T16:04:14.244453579Z [inf]    → 56 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.253635378Z [inf]  Processing: /admin/staking/settings [extension-admin]
+
+2026-04-30T16:04:14.253978342Z [inf]    → 2 page keys, menu: ext_admin_staking
+
+2026-04-30T16:04:14.257936778Z [inf]  Processing: /affiliate/condition [extension-user]
+
+2026-04-30T16:04:14.258661625Z [inf]    → 28 page keys, menu: ext_affiliate
+
+2026-04-30T16:04:14.265549434Z [inf]  Processing: /affiliate/dashboard [extension-user]
+
+2026-04-30T16:04:14.26652702Z [inf]    → 36 page keys, menu: ext_affiliate
+
+2026-04-30T16:04:14.273276692Z [inf]  Processing: /affiliate/network [extension-user]
+
+2026-04-30T16:04:14.274160407Z [inf]    → 31 page keys, menu: ext_affiliate
+
+2026-04-30T16:04:14.280078772Z [inf]  Processing: /affiliate [extension-user]
+
+2026-04-30T16:04:14.280926493Z [inf]    → 41 page keys, menu: ext_affiliate
+
+2026-04-30T16:04:14.287585229Z [inf]  Processing: /affiliate/referral [extension-user]
+
+2026-04-30T16:04:14.288623686Z [inf]    → 29 page keys, menu: ext_affiliate
+
+2026-04-30T16:04:14.29497445Z [inf]  Processing: /affiliate/referral-generator [extension-user]
+
+2026-04-30T16:04:14.29556851Z [inf]    → 62 page keys, menu: ext_affiliate
+
+2026-04-30T16:04:14.304516349Z [inf]  Processing: /affiliate/reward [extension-user]
+
+2026-04-30T16:04:14.305344681Z [inf]    → 20 page keys, menu: ext_affiliate
+
+2026-04-30T16:04:14.310568344Z [inf]  Processing: /copy-trading/analytics [extension-user]
+
+2026-04-30T16:04:14.311167493Z [inf]    → 19 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.317402773Z [inf]  Processing: /copy-trading/become-leader [extension-user]
+
+2026-04-30T16:04:14.317877405Z [inf]    → 21 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.323417613Z [inf]  Processing: /copy-trading/dashboard [extension-user]
+
+2026-04-30T16:04:14.324974247Z [inf]    → 78 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.335874804Z [inf]  Processing: /copy-trading/guide/follower [extension-user]
+
+2026-04-30T16:04:14.336257037Z [inf]    → 13 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.341802052Z [inf]  Processing: /copy-trading/guide/leader [extension-user]
+
+2026-04-30T16:04:14.342123554Z [inf]    → 9 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.346592516Z [inf]  Processing: /copy-trading/leader/[id]/follow [extension-user]
+
+2026-04-30T16:04:14.347550182Z [inf]    → 22 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.353293765Z [inf]  Processing: /copy-trading/leader/[id] [extension-user]
+
+2026-04-30T16:04:14.354084801Z [inf]    → 43 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.361448604Z [inf]  Processing: /copy-trading/leader [extension-user]
+
+2026-04-30T16:04:14.362037306Z [inf]    → 18 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.367760309Z [inf]  Processing: /copy-trading [extension-user]
+
+2026-04-30T16:04:14.368830784Z [inf]    → 45 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.376905513Z [inf]  Processing: /copy-trading/subscription [extension-user]
+
+2026-04-30T16:04:14.377513505Z [inf]    → 17 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.388397917Z [inf]  Processing: /copy-trading/trade [extension-user]
+
+2026-04-30T16:04:14.388881111Z [inf]    → 10 page keys, menu: ext_copy-trading
+
+2026-04-30T16:04:14.395562661Z [inf]  Processing: /ecommerce/cart [extension-user]
+
+2026-04-30T16:04:14.39591528Z [inf]    → 27 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.401832884Z [inf]  Processing: /ecommerce/category/[slug] [extension-user]
+
+2026-04-30T16:04:14.402568787Z [inf]    → 25 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.409623797Z [inf]  Processing: /ecommerce/category [extension-user]
+
+2026-04-30T16:04:14.409963607Z [inf]    → 11 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.414489694Z [inf]  Processing: /ecommerce/checkout [extension-user]
+
+2026-04-30T16:04:14.41519414Z [inf]    → 45 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.422497703Z [inf]  Processing: /ecommerce/order/[id] [extension-user]
+
+2026-04-30T16:04:14.423216801Z [inf]    → 37 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.42961144Z [inf]  Processing: /ecommerce/order [extension-user]
+
+2026-04-30T16:04:14.430029958Z [inf]    → 24 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.435422454Z [inf]  Processing: /ecommerce [extension-user]
+
+2026-04-30T16:04:14.436849144Z [inf]    → 50 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.444909852Z [inf]  Processing: /ecommerce/product/[slug] [extension-user]
+
+2026-04-30T16:04:14.44558214Z [inf]    → 25 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.457578679Z [inf]  Processing: /ecommerce/product [extension-user]
+
+2026-04-30T16:04:14.458189375Z [inf]    → 15 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.46290745Z [inf]  Processing: /ecommerce/shipping [extension-user]
+
+2026-04-30T16:04:14.463229163Z [inf]    → 31 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.469146136Z [inf]  Processing: /ecommerce/wishlist [extension-user]
+
+2026-04-30T16:04:14.469734408Z [inf]    → 19 page keys, menu: ext_ecommerce
+
+2026-04-30T16:04:14.474842518Z [inf]  Processing: /ecosystem [user]
+
+2026-04-30T16:04:14.475334927Z [inf]    → 12 page keys, menu: menu-user
+
+2026-04-30T16:04:14.479675796Z [inf]  Processing: /faq/[id] [extension-user]
+
+2026-04-30T16:04:14.480211199Z [inf]    → 14 page keys, menu: ext_faq
+
+2026-04-30T16:04:14.485334842Z [inf]  Processing: /faq [extension-user]
+
+2026-04-30T16:04:14.486941422Z [inf]    → 60 page keys, menu: ext_faq
+
+2026-04-30T16:04:14.495013106Z [inf]  Processing: /faq/troubleshooter [extension-user]
+
+2026-04-30T16:04:14.495503031Z [inf]    → 0 page keys, menu: ext_faq
+Processing: /forex/account/[id]/deposit [extension-user]
+
+2026-04-30T16:04:14.496280587Z [inf]    → 47 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.503973112Z [inf]  Processing: /forex/account/[id]/withdraw [extension-user]
+
+2026-04-30T16:04:14.504727133Z [inf]    → 47 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.511894021Z [inf]  Processing: /forex/account [extension-user]
+
+2026-04-30T16:04:14.511962453Z [inf]    → 0 page keys, menu: ext_forex
+Processing: /forex/dashboard [extension-user]
+
+2026-04-30T16:04:14.512822613Z [inf]    → 33 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.518645926Z [inf]  Processing: /forex/investment/[id] [extension-user]
+
+2026-04-30T16:04:14.519139526Z [inf]    → 0 page keys, menu: ext_forex
+Processing: /forex/investment [extension-user]
+
+2026-04-30T16:04:14.519669751Z [inf]    → 29 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.525664901Z [inf]  Processing: /forex [extension-user]
+
+2026-04-30T16:04:14.526801816Z [inf]    → 54 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.553756026Z [inf]  Processing: /forex/plan/[id] [extension-user]
+
+2026-04-30T16:04:14.5546587Z [inf]    → 50 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.563432036Z [inf]  Processing: /forex/plan [extension-user]
+
+2026-04-30T16:04:14.564115712Z [inf]    → 16 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.569205945Z [inf]  Processing: /forex/transaction [extension-user]
+
+2026-04-30T16:04:14.569636861Z [inf]    → 51 page keys, menu: ext_forex
+
+2026-04-30T16:04:14.57769202Z [inf]  Processing: /futures [user]
+
+2026-04-30T16:04:14.578184419Z [inf]    → 10 page keys, menu: menu-user
+
+2026-04-30T16:04:14.58273949Z [inf]  Processing: /gateway/api-key/[id]/edit [extension-user]
+
+2026-04-30T16:04:14.583813831Z [inf]    → 45 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.592295279Z [inf]  Processing: /gateway/api-key/create [extension-user]
+
+2026-04-30T16:04:14.59318248Z [inf]    → 63 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.603510428Z [inf]  Processing: /gateway/checkout/[paymentIntentId] [extension-user]
+  → 0 page keys, menu: ext_gateway
+Processing: /gateway/dashboard [extension-user]
+
+2026-04-30T16:04:14.604006051Z [inf]    → 14 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.610109674Z [inf]  Processing: /gateway/docs [extension-user]
+
+2026-04-30T16:04:14.610617245Z [inf]    → 0 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.610696504Z [inf]  Processing: /gateway/integration [extension-user]
+
+2026-04-30T16:04:14.611339448Z [inf]    → 88 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.625073043Z [inf]  Processing: /gateway [extension-user]
+
+2026-04-30T16:04:14.626250168Z [inf]    → 47 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.636015942Z [inf]  Processing: /gateway/payment/[id] [extension-user]
+
+2026-04-30T16:04:14.637106398Z [inf]    → 2 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.6501847Z [inf]  Processing: /gateway/payment [extension-user]
+
+2026-04-30T16:04:14.650713273Z [inf]    → 35 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.662292637Z [inf]  Processing: /gateway/payouts/[id] [extension-user]
+
+2026-04-30T16:04:14.662939337Z [inf]    → 23 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.671624381Z [inf]  Processing: /gateway/payouts [extension-user]
+
+2026-04-30T16:04:14.672322958Z [inf]    → 21 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.679643125Z [inf]  Processing: /gateway/register [extension-user]
+
+2026-04-30T16:04:14.680171137Z [inf]    → 25 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.686130013Z [inf]  Processing: /gateway/settings [extension-user]
+
+2026-04-30T16:04:14.687106207Z [inf]    → 61 page keys, menu: ext_gateway
+
+2026-04-30T16:04:14.696684741Z [inf]  Processing: /ico/about [extension-user]
+
+2026-04-30T16:04:14.697066043Z [inf]    → 27 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.703826971Z [inf]  Processing: /ico/creator/launch [extension-user]
+
+2026-04-30T16:04:14.704157798Z [inf]    → 20 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.709769913Z [inf]  Processing: /ico/creator [extension-user]
+
+2026-04-30T16:04:14.710403464Z [inf]    → 26 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.716393396Z [inf]  Processing: /ico/creator/token/[id] [extension-user]
+
+2026-04-30T16:04:14.721060094Z [inf]    → 128 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.735717113Z [inf]  Processing: /ico/creator/token/[id]/plan/upgrade [extension-user]
+
+2026-04-30T16:04:14.736326417Z [inf]    → 26 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.74401027Z [inf]  Processing: /ico/creator/token/[id]/release [extension-user]
+
+2026-04-30T16:04:14.744147926Z [inf]    → 0 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.744229208Z [inf]  Processing: /ico/creator/token-simulator [extension-user]
+
+2026-04-30T16:04:14.745414746Z [inf]    → 56 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.766692324Z [inf]  Processing: /ico/dashboard [extension-user]
+
+2026-04-30T16:04:14.767391803Z [inf]    → 17 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.773921114Z [inf]  Processing: /ico/offer/[id] [extension-user]
+
+2026-04-30T16:04:14.775633943Z [inf]    → 63 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.788183812Z [inf]  Processing: /ico/offer [extension-user]
+
+2026-04-30T16:04:14.791040215Z [inf]    → 54 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.803493651Z [inf]  Processing: /ico [extension-user]
+
+2026-04-30T16:04:14.804628863Z [inf]    → 58 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.813247427Z [inf]  Processing: /ico/transaction/[id] [extension-user]
+
+2026-04-30T16:04:14.813775729Z [inf]    → 27 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.820033744Z [inf]  Processing: /ico/transaction [extension-user]
+
+2026-04-30T16:04:14.82058459Z [inf]    → 36 page keys, menu: ext_ico
+
+2026-04-30T16:04:14.827736285Z [inf]  Processing: /nft/[id] [extension-user]
+
+2026-04-30T16:04:14.828695503Z [inf]    → 49 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.836989811Z [inf]  Processing: /nft/batch-mint [extension-user]
+
+2026-04-30T16:04:14.837755439Z [inf]    → 31 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.844258701Z [inf]  Processing: /nft/collection/[id]/edit [extension-user]
+
+2026-04-30T16:04:14.84488446Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.844916588Z [inf]  Processing: /nft/collection/[id] [extension-user]
+
+2026-04-30T16:04:14.845487314Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.867331612Z [inf]  Processing: /nft/collection/create [extension-user]
+
+2026-04-30T16:04:14.868702357Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.868796548Z [inf]  Processing: /nft/collection [extension-user]
+
+2026-04-30T16:04:14.86898451Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.869050599Z [inf]  Processing: /nft/create [extension-user]
+
+2026-04-30T16:04:14.872518039Z [inf]    → 40 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.893191711Z [inf]  Processing: /nft/creator/[id] [extension-user]
+
+2026-04-30T16:04:14.894376728Z [inf]    → 30 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.906775561Z [inf]  Processing: /nft/creator [extension-user]
+
+2026-04-30T16:04:14.908752686Z [inf]    → 7 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.921492691Z [inf]  Processing: /nft/creator/profile [extension-user]
+
+2026-04-30T16:04:14.922734243Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.933674238Z [inf]  Processing: /nft/marketplace [extension-user]
+
+2026-04-30T16:04:14.93502256Z [inf]    → 40 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.952982182Z [inf]  Processing: /nft [extension-user]
+
+2026-04-30T16:04:14.953618857Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.953686909Z [inf]  Processing: /nft/token/[id]/list [extension-user]
+
+2026-04-30T16:04:14.955070764Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.955148711Z [inf]  Processing: /nft/token/[id] [extension-user]
+
+2026-04-30T16:04:14.957508099Z [inf]    → 43 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.969112782Z [inf]  Processing: /nft/token [extension-user]
+
+2026-04-30T16:04:14.969248856Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.969303998Z [inf]  Processing: /nft/user/[id] [extension-user]
+
+2026-04-30T16:04:14.970340943Z [inf]    → 34 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.977353189Z [inf]  Processing: /nft/user [extension-user]
+
+2026-04-30T16:04:14.977376624Z [inf]    → 0 page keys, menu: ext_nft
+
+2026-04-30T16:04:14.977449553Z [inf]  Processing: /p2p/dashboard [extension-user]
+
+2026-04-30T16:04:14.978792577Z [inf]    → 33 page keys, menu: ext_p2p
+
+2026-04-30T16:04:14.985616911Z [inf]  Processing: /p2p/guide [extension-user]
+
+2026-04-30T16:04:14.98801041Z [inf]    → 148 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.005909061Z [inf]  Processing: /p2p/guided-matching [extension-user]
+
+2026-04-30T16:04:15.007405815Z [inf]    → 91 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.019567844Z [inf]  Processing: /p2p/offer/[id]/edit [extension-user]
+
+2026-04-30T16:04:15.020769065Z [inf]    → 107 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.033835399Z [inf]  Processing: /p2p/offer/[id] [extension-user]
+
+2026-04-30T16:04:15.036009269Z [inf]    → 114 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.050015052Z [inf]  Processing: /p2p/offer/create [extension-user]
+
+2026-04-30T16:04:15.054524955Z [inf]    → 234 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.079546918Z [inf]  Processing: /p2p/offer [extension-user]
+
+2026-04-30T16:04:15.08024185Z [inf]    → 38 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.088074846Z [inf]  Processing: /p2p [extension-user]
+
+2026-04-30T16:04:15.089522127Z [inf]    → 91 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.106272715Z [inf]  Processing: /p2p/trade/[id] [extension-user]
+
+2026-04-30T16:04:15.110213115Z [inf]    → 155 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.12778851Z [inf]  Processing: /p2p/trade [extension-user]
+
+2026-04-30T16:04:15.131430061Z [inf]    → 86 page keys, menu: ext_p2p
+
+2026-04-30T16:04:15.142929716Z [inf]  Processing: /staking/dashboard [extension-user]
+
+2026-04-30T16:04:15.143882765Z [inf]    → 41 page keys, menu: ext_staking
+
+2026-04-30T16:04:15.151398616Z [inf]  Processing: /staking/guide [extension-user]
+
+2026-04-30T16:04:15.151834179Z [inf]    → 156 page keys, menu: ext_staking
+
+2026-04-30T16:04:15.170907882Z [inf]  Processing: /staking [extension-user]
+
+2026-04-30T16:04:15.172009624Z [inf]    → 51 page keys, menu: ext_staking
+
+2026-04-30T16:04:15.180539565Z [inf]  Processing: /staking/pool/[id] [extension-user]
+
+2026-04-30T16:04:15.181691573Z [inf]    → 82 page keys, menu: ext_staking
+
+2026-04-30T16:04:15.193042044Z [inf]  Processing: /staking/pool [extension-user]
+
+2026-04-30T16:04:15.193921383Z [inf]    → 42 page keys, menu: ext_staking
+
+2026-04-30T16:04:15.201600568Z [inf]  Processing: /staking/position [extension-user]
+
+2026-04-30T16:04:15.203672836Z [inf]    → 55 page keys, menu: ext_staking
+
+2026-04-30T16:04:15.213312902Z [inf]  Processing: /about [user]
+
+2026-04-30T16:04:15.213423638Z [inf]    → 0 page keys, menu: menu-user
+
+2026-04-30T16:04:15.213490518Z [inf]  Processing: /contact [user]
+
+2026-04-30T16:04:15.213582035Z [inf]    → 0 page keys, menu: menu-user
+Processing: /privacy [user]
+
+2026-04-30T16:04:15.2136984Z [inf]    → 0 page keys, menu: menu-user
+Processing: /terms [user]
+
+2026-04-30T16:04:15.213774795Z [inf]    → 0 page keys, menu: menu-user
+
+2026-04-30T16:04:15.213816707Z [inf]  Processing: /api-docs [user]
+
+2026-04-30T16:04:15.215942986Z [inf]    → 47 page keys, menu: menu-user
+
+2026-04-30T16:04:15.223806298Z [inf]  Processing: /[pageId] [user]
+
+2026-04-30T16:04:15.226706417Z [inf]    → 23 page keys, menu: menu-user
+
+2026-04-30T16:04:15.232645573Z [inf]  Processing: /binary [user]
+
+2026-04-30T16:04:15.241247783Z [inf]    → 218 page keys, menu: menu-user
+
+2026-04-30T16:04:15.262050509Z [inf]  Processing: /confirm/password-reset [user]
+
+2026-04-30T16:04:15.262172532Z [inf]    → 1 page keys, menu: menu-user
+
+2026-04-30T16:04:15.266217477Z [inf]  Processing: /error-page/401 [user]
+
+2026-04-30T16:04:15.266253922Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:15.270550896Z [inf]  Processing: /error-page/403 [user]
+
+2026-04-30T16:04:15.270586359Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:15.274912777Z [inf]  Processing: /error-page/404 [user]
+
+2026-04-30T16:04:15.275011124Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:15.27937645Z [inf]  Processing: /error-page/419 [user]
+
+2026-04-30T16:04:15.27948932Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:15.283756649Z [inf]  Processing: /error-page/429 [user]
+
+2026-04-30T16:04:15.283880394Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:15.288315365Z [inf]  Processing: /error-page/500 [user]
+
+2026-04-30T16:04:15.28844515Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:15.292549735Z [inf]  Processing: /error-page/503 [user]
+
+2026-04-30T16:04:15.292695724Z [inf]    → 5 page keys, menu: menu-user
+
+2026-04-30T16:04:15.296818256Z [inf]  Processing: /finance/deposit [user]
+
+2026-04-30T16:04:15.299731544Z [inf]    → 119 page keys, menu: menu-user
+
+2026-04-30T16:04:15.314760161Z [inf]  Processing: /finance/history [user]
+
+2026-04-30T16:04:15.315278479Z [inf]    → 66 page keys, menu: menu-user
+
+2026-04-30T16:04:15.323945706Z [inf]  Processing: /finance/transfer [user]
+
+2026-04-30T16:04:15.324531725Z [inf]    → 49 page keys, menu: menu-user
+
+2026-04-30T16:04:15.331486564Z [inf]  Processing: /finance/wallet/[type]/[currency] [user]
+
+2026-04-30T16:04:15.33213099Z [inf]    → 77 page keys, menu: menu-user
+
+2026-04-30T16:04:15.342412559Z [inf]  Processing: /finance/wallet/[type] [user]
+
+2026-04-30T16:04:15.342539609Z [inf]    → 0 page keys, menu: menu-user
+
+2026-04-30T16:04:15.34257979Z [inf]  Processing: /finance/wallet [user]
+
+2026-04-30T16:04:15.343675502Z [inf]    → 39 page keys, menu: menu-user
+
+2026-04-30T16:04:15.350604874Z [inf]  Processing: /finance/withdraw [user]
+
+2026-04-30T16:04:15.351306136Z [inf]    → 46 page keys, menu: menu-user
+
+2026-04-30T16:04:15.358855006Z [inf]  Processing: /investment/dashboard [user]
+
+2026-04-30T16:04:15.359485932Z [inf]    → 29 page keys, menu: menu-user
+
+2026-04-30T16:04:15.365855804Z [inf]  Processing: /investment [user]
+
+2026-04-30T16:04:15.366764537Z [inf]    → 55 page keys, menu: menu-user
+
+2026-04-30T16:04:15.374409121Z [inf]  Processing: /investment/plan/[id] [user]
+
+2026-04-30T16:04:15.374833817Z [inf]    → 20 page keys, menu: menu-user
+
+2026-04-30T16:04:15.379998743Z [inf]  Processing: /investment/plan [user]
+
+2026-04-30T16:04:15.380309779Z [inf]    → 13 page keys, menu: menu-user
+
+2026-04-30T16:04:15.386015495Z [inf]  Processing: /login [user]
+
+2026-04-30T16:04:15.386283217Z [inf]    → 12 page keys, menu: menu-user
+
+2026-04-30T16:04:15.39118707Z [inf]  Processing: /market [user]
+
+2026-04-30T16:04:15.391758277Z [inf]    → 20 page keys, menu: menu-user
+
+2026-04-30T16:04:15.397278605Z [inf]  Processing: / [user]
+
+2026-04-30T16:04:15.401274277Z [inf]    → 81 page keys, menu: menu-user
+
+2026-04-30T16:04:15.412165229Z [inf]  Processing: /ref/[code] [user]
+
+2026-04-30T16:04:15.412250016Z [inf]    → 1 page keys, menu: menu-user
+
+2026-04-30T16:04:15.416191246Z [inf]  Processing: /register [user]
+
+2026-04-30T16:04:15.41629335Z [inf]    → 0 page keys, menu: menu-user
+
+2026-04-30T16:04:15.416361913Z [inf]  Processing: /reset [user]
+
+2026-04-30T16:04:15.416542093Z [inf]    → 9 page keys, menu: menu-user
+
+2026-04-30T16:04:15.421191335Z [inf]  Processing: /support [user]
+
+2026-04-30T16:04:15.42137508Z [inf]    → 28 page keys, menu: menu-user
+
+2026-04-30T16:04:15.427711242Z [inf]  Processing: /support/ticket/[id] [user]
+
+2026-04-30T16:04:15.428612403Z [inf]    → 25 page keys, menu: menu-user
+
+2026-04-30T16:04:15.433903498Z [inf]  Processing: /support/ticket [user]
+
+2026-04-30T16:04:15.434966892Z [inf]    → 58 page keys, menu: menu-user
+
+2026-04-30T16:04:15.443151266Z [inf]  Processing: /trade [user]
+
+2026-04-30T16:04:15.443390194Z [inf]    → 1 page keys, menu: menu-user
+
+2026-04-30T16:04:15.447223522Z [inf]  Processing: /unsubscribe [user]
+
+2026-04-30T16:04:15.447467087Z [inf]    → 20 page keys, menu: menu-user
+
+2026-04-30T16:04:15.45276367Z [inf]  
+📋 Generating 27 menu files...
+
+  Menu: menu-admin (202 keys)
+
+2026-04-30T16:04:15.535287492Z [inf]    Menu: menu-user (202 keys)
+
+2026-04-30T16:04:15.579214234Z [inf]    Menu: ext_admin_affiliate (12 keys)
+
+2026-04-30T16:04:15.588129263Z [inf]    Menu: ext_admin_ai_investment (8 keys)
+
+2026-04-30T16:04:15.595267067Z [inf]    Menu: ext_admin_ai_market-maker (10 keys)
+
+2026-04-30T16:04:15.601928436Z [inf]    Menu: ext_admin_copy-trading (20 keys)
+
+2026-04-30T16:04:15.609888704Z [inf]    Menu: ext_admin_ecommerce (22 keys)
+
+2026-04-30T16:04:15.617965285Z [inf]    Menu: ext_admin_ecosystem (16 keys)
+
+2026-04-30T16:04:15.625693013Z [inf]    Menu: ext_admin_faq (8 keys)
+
+2026-04-30T16:04:15.631522906Z [inf]    Menu: ext_admin_forex (20 keys)
+
+2026-04-30T16:04:15.637234261Z [inf]    Menu: ext_admin_futures (6 keys)
+
+2026-04-30T16:04:15.641400358Z [inf]    Menu: ext_admin_gateway (10 keys)
+
+2026-04-30T16:04:15.646440927Z [inf]    Menu: ext_admin_ico (8 keys)
+
+2026-04-30T16:04:15.650892623Z [inf]    Menu: ext_admin_mailwizard (4 keys)
+
+2026-04-30T16:04:15.655196797Z [inf]    Menu: ext_admin_nft (34 keys)
+
+2026-04-30T16:04:15.662150034Z [inf]    Menu: ext_admin_p2p (14 keys)
+
+2026-04-30T16:04:15.667146527Z [inf]    Menu: ext_admin_staking (8 keys)
+
+2026-04-30T16:04:15.671788788Z [inf]    Menu: ext_affiliate (18 keys)
+
+2026-04-30T16:04:15.677265101Z [inf]    Menu: ext_copy-trading (12 keys)
+
+2026-04-30T16:04:15.68223919Z [inf]    Menu: ext_ecommerce (10 keys)
+
+2026-04-30T16:04:15.686778467Z [inf]    Menu: ext_faq (4 keys)
+
+2026-04-30T16:04:15.690884524Z [inf]    Menu: ext_forex (10 keys)
+
+2026-04-30T16:04:15.695489119Z [inf]    Menu: ext_gateway (12 keys)
+
+2026-04-30T16:04:15.700234816Z [inf]    Menu: ext_ico (18 keys)
+
+2026-04-30T16:04:15.705709716Z [inf]    Menu: ext_nft (6 keys)
+
+2026-04-30T16:04:15.710012378Z [inf]    Menu: ext_p2p (12 keys)
+
+2026-04-30T16:04:15.714838586Z [inf]    Menu: ext_staking (8 keys)
+
+2026-04-30T16:04:15.723535267Z [inf]  
+✅ i18n manifest generated successfully!
+   Routes: 363
+   Menus: 27
+   Total page keys: 13161
+   Page types:
+     - Admin: 59
+
+2026-04-30T16:04:15.723575137Z [inf]       - User: 58
+     - Extension Admin: 130
+     - Extension User: 101
+     - Excluded: 18
+   Output: /app/frontend/public/i18n
+
+2026-04-30T16:04:18.145359974Z [inf]  [stage-0  8/11] RUN --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-frontend/next/cache,target=/app/frontend/.next/cache --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-node_modules/cache,target=/app/node_modules/.cache pnpm build:i18n || true
+2026-04-30T16:04:18.544907232Z [inf]  [stage-0  9/11] RUN --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-frontend/next/cache,target=/app/frontend/.next/cache --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-node_modules/cache,target=/app/node_modules/.cache cd frontend && pnpm exec next build
+2026-04-30T16:04:22.82792044Z [inf]  Frontend: No .env file found in any of the expected locations
+
+2026-04-30T16:04:22.828464156Z [inf]  Frontend: Checked paths: [
+  '/app/.env',
+  '/app/.env',
+  '/app/frontend/.env',
+  '/app/frontend/.env'
+]
+
+2026-04-30T16:04:22.879948021Z [inf]  Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+
+2026-04-30T16:04:22.879976914Z [inf]  https://nextjs.org/telemetry
+
+
+2026-04-30T16:04:22.895070358Z [inf]  ▲ Next.js 16.1.6 (Turbopack)
+
+2026-04-30T16:04:22.895111019Z [inf]  - Experiments (use with caution):
+
+2026-04-30T16:04:22.895301895Z [inf]    · optimizePackageImports
+
+2026-04-30T16:04:22.895580262Z [inf]  
+2026-04-30T16:04:23.041387594Z [inf]    Creating an optimized production build ...
+
+2026-04-30T16:04:23.394758676Z [inf]  Frontend: No .env file found in any of the expected locations
+
+2026-04-30T16:04:23.418123343Z [inf]  Frontend: Checked paths: [
+  '/app/.env',
+  '/app/.env',
+  '/app/frontend/.env',
+  '/app/frontend/.env'
+]
+
+2026-04-30T16:04:57.614836854Z [inf]  ✓ Compiled successfully in 34.2s
+
+2026-04-30T16:04:57.619877442Z [inf]    Skipping validation of types
+
+2026-04-30T16:04:58.189747875Z [inf]    Collecting page data using 31 workers ...
+
+2026-04-30T16:05:10.843594682Z [inf]    Generating static pages using 31 workers (0/2) ...
+
+2026-04-30T16:05:10.934370058Z [inf]  ✓ Generating static pages using 31 workers (2/2) in 90.8ms
+
+2026-04-30T16:05:10.941961802Z [inf]    Finalizing page optimization ...
+
+2026-04-30T16:05:10.950604823Z [inf]  
+2026-04-30T16:05:10.956332933Z [inf]  Route (app)
+┌ ○ /
+├ ƒ /_not-found
+├ ƒ /[locale]
+├ ƒ /[locale]/[pageId]
+├ ƒ /[locale]/about
+├ ƒ /[locale]/admin
+├ ƒ /[locale]/admin/affiliate
+├ ƒ /[locale]/admin/affiliate/condition
+├ ƒ /[locale]/admin/affiliate/referral
+├ ƒ /[locale]/admin/affiliate/referral/[id]
+├ ƒ /[locale]/admin/affiliate/reward
+├ ƒ /[locale]/admin/affiliate/settings
+├ ƒ /[locale]/admin/ai/investment
+├ ƒ /[locale]/admin/ai/investment/duration
+├ ƒ /[locale]/admin/ai/investment/log
+├ ƒ /[locale]/admin/ai/investment/plan
+├ ƒ /[locale]/admin/ai/market-maker
+├ ƒ /[locale]/admin/ai/market-maker/analytics
+├ ƒ /[locale]/admin/ai/market-maker/guide
+├ ƒ /[locale]/admin/ai/market-maker/market
+├ ƒ /[locale]/admin/ai/market-maker/market/[id]
+├ ƒ /[locale]/admin/ai/market-maker/market/create
+├ ƒ /[locale]/admin/ai/market-maker/settings
+├ ƒ /[locale]/admin/api/key
+├ ƒ /[locale]/admin/blog
+├ ƒ /[locale]/admin/blog/author
+├ ƒ /[locale]/admin/blog/category
+├ ƒ /[locale]/admin/blog/comment
+├ ƒ /[locale]/admin/blog/post
+├ ƒ /[locale]/admin/blog/settings
+├ ƒ /[locale]/admin/blog/tag
+├ ƒ /[locale]/admin/builder
+├ ƒ /[locale]/admin/builder/[id]
+├ ƒ /[locale]/admin/content
+├ ƒ /[locale]/admin/content/media
+├ ƒ /[locale]/admin/content/slider
+├ ƒ /[locale]/admin/copy-trading
+├ ƒ /[locale]/admin/copy-trading/audit
+├ ƒ /[locale]/admin/copy-trading/follower
+├ ƒ /[locale]/admin/copy-trading/follower/[id]
+├ ƒ /[locale]/admin/copy-trading/health
+├ ƒ /[locale]/admin/copy-trading/leader
+├ ƒ /[locale]/admin/copy-trading/leader/[id]
+├ ƒ /[locale]/admin/copy-trading/settings
+├ ƒ /[locale]/admin/copy-trading/trade
+├ ƒ /[locale]/admin/copy-trading/transaction
+├ ƒ /[locale]/admin/crm
+├ ƒ /[locale]/admin/crm/kyc/application
+├ ƒ /[locale]/admin/crm/kyc/application/[id]
+├ ƒ /[locale]/admin/crm/kyc/level
+├ ƒ /[locale]/admin/crm/kyc/level/[id]
+├ ƒ /[locale]/admin/crm/kyc/level/create
+├ ƒ /[locale]/admin/crm/permission
+├ ƒ /[locale]/admin/crm/role
+├ ƒ /[locale]/admin/crm/support
+├ ƒ /[locale]/admin/crm/support/[id]
+├ ƒ /[locale]/admin/crm/user
+├ ƒ /[locale]/admin/crm/user/[id]
+├ ƒ /[locale]/admin/default-editor
+├ ƒ /[locale]/admin/default-editor/[pageId]/edit
+├ ƒ /[locale]/admin/default-editor/[pageId]/preview
+├ ƒ /[locale]/admin/ecommerce
+├ ƒ /[locale]/admin/ecommerce/category
+├ ƒ /[locale]/admin/ecommerce/discount
+├ ƒ /[locale]/admin/ecommerce/order
+├ ƒ /[locale]/admin/ecommerce/order/[id]
+├ ƒ /[locale]/admin/ecommerce/product
+├ ƒ /[locale]/admin/ecommerce/review
+├ ƒ /[locale]/admin/ecommerce/settings
+├ ƒ /[locale]/admin/ecommerce/shipping
+├ ƒ /[locale]/admin/ecommerce/wishlist
+├ ƒ /[locale]/admin/ecosystem
+├ ƒ /[locale]/admin/ecosystem/blockchain/[productId]
+├ ƒ /[locale]/admin/ecosystem/ledger
+├ ƒ /[locale]/admin/ecosystem/market
+├ ƒ /[locale]/admin/ecosystem/market/[id]
+├ ƒ /[locale]/admin/ecosystem/market/create
+├ ƒ /[locale]/admin/ecosystem/token
+├ ƒ /[locale]/admin/ecosystem/token/[id]
+├ ƒ /[locale]/admin/ecosystem/token/create
+├ ƒ /[locale]/admin/ecosystem/utxo
+├ ƒ /[locale]/admin/ecosystem/wallet/custodial
+├ ƒ /[locale]/admin/ecosystem/wallet/master
+├ ƒ /[locale]/admin/extensions
+├ ƒ /[locale]/admin/faq
+├ ƒ /[locale]/admin/faq/ai
+├ ƒ /[locale]/admin/faq/feedback
+├ ƒ /[locale]/admin/faq/manage
+├ ƒ /[locale]/admin/faq/manage/[id]
+├ ƒ /[locale]/admin/faq/question
+├ ƒ /[locale]/admin/faq/question/[id]/answer
+├ ƒ /[locale]/admin/faq/question/[id]/convert
+├ ƒ /[locale]/admin/finance
+├ ƒ /[locale]/admin/finance/binary/market
+├ ƒ /[locale]/admin/finance/binary/market/[id]/edit
+├ ƒ /[locale]/admin/finance/binary/market/create
+├ ƒ /[locale]/admin/finance/binary/settings
+├ ƒ /[locale]/admin/finance/currency/fiat
+├ ƒ /[locale]/admin/finance/currency/spot
+├ ƒ /[locale]/admin/finance/deposit/gateway
+├ ƒ /[locale]/admin/finance/deposit/gateway/[id]
+├ ƒ /[locale]/admin/finance/deposit/log
+├ ƒ /[locale]/admin/finance/deposit/log/[id]
+├ ƒ /[locale]/admin/finance/deposit/method
+├ ƒ /[locale]/admin/finance/deposit/method/[id]
+├ ƒ /[locale]/admin/finance/exchange
+├ ƒ /[locale]/admin/finance/exchange/balance
+├ ƒ /[locale]/admin/finance/exchange/chart
+├ ƒ /[locale]/admin/finance/exchange/fee
+├ ƒ /[locale]/admin/finance/exchange/market
+├ ƒ /[locale]/admin/finance/investment/duration
+├ ƒ /[locale]/admin/finance/investment/history
+├ ƒ /[locale]/admin/finance/investment/plan
+├ ƒ /[locale]/admin/finance/order/binary
+├ ƒ /[locale]/admin/finance/order/ecosystem
+├ ƒ /[locale]/admin/finance/order/exchange
+├ ƒ /[locale]/admin/finance/order/futures
+├ ƒ /[locale]/admin/finance/profit
+├ ƒ /[locale]/admin/finance/transaction
+├ ƒ /[locale]/admin/finance/transfer
+├ ƒ /[locale]/admin/finance/transfer/[id]
+├ ƒ /[locale]/admin/finance/wallet
+├ ƒ /[locale]/admin/finance/withdraw/log
+├ ƒ /[locale]/admin/finance/withdraw/log/[id]
+├ ƒ /[locale]/admin/finance/withdraw/method
+├ ƒ /[locale]/admin/forex
+├ ƒ /[locale]/admin/forex/account
+├ ƒ /[locale]/admin/forex/deposit
+├ ƒ /[locale]/admin/forex/deposit/[id]
+├ ƒ /[locale]/admin/forex/duration
+├ ƒ /[locale]/admin/forex/investment
+├ ƒ /[locale]/admin/forex/plan
+├ ƒ /[locale]/admin/forex/signal
+├ ƒ /[locale]/admin/forex/withdraw
+├ ƒ /[locale]/admin/forex/withdraw/[id]
+├ ƒ /[locale]/admin/futures
+├ ƒ /[locale]/admin/futures/market
+├ ƒ /[locale]/admin/futures/market/[id]
+├ ƒ /[locale]/admin/futures/market/create
+├ ƒ /[locale]/admin/futures/position
+├ ƒ /[locale]/admin/gateway
+├ ƒ /[locale]/admin/gateway/merchant
+├ ƒ /[locale]/admin/gateway/merchant/[id]
+├ ƒ /[locale]/admin/gateway/payment
+├ ƒ /[locale]/admin/gateway/payment/[id]
+├ ƒ /[locale]/admin/gateway/payout
+├ ƒ /[locale]/admin/gateway/settings
+├ ƒ /[locale]/admin/gateway/settings/design
+├ ƒ /[locale]/admin/gateway/settings/design/preview
+├ ƒ /[locale]/admin/ico
+├ ƒ /[locale]/admin/ico/offer
+├ ƒ /[locale]/admin/ico/offer/[id]
+├ ƒ /[locale]/admin/ico/offer/create
+├ ƒ /[locale]/admin/ico/offer/status/[status]
+├ ƒ /[locale]/admin/ico/settings
+├ ƒ /[locale]/admin/ico/transaction
+├ ƒ /[locale]/admin/ico/transaction/[id]
+├ ƒ /[locale]/admin/mailwizard/campaign
+├ ƒ /[locale]/admin/mailwizard/campaign/[id]
+├ ƒ /[locale]/admin/mailwizard/campaign/create
+├ ƒ /[locale]/admin/mailwizard/template
+├ ƒ /[locale]/admin/mailwizard/template/[id]
+├ ƒ /[locale]/admin/mailwizard/template/create
+├ ƒ /[locale]/admin/nft
+├ ƒ /[locale]/admin/nft/activity
+├ ƒ /[locale]/admin/nft/analytics
+├ ƒ /[locale]/admin/nft/auction
+├ ƒ /[locale]/admin/nft/category
+├ ƒ /[locale]/admin/nft/collection
+├ ƒ /[locale]/admin/nft/creator
+├ ƒ /[locale]/admin/nft/dispute
+├ ƒ /[locale]/admin/nft/listing
+├ ƒ /[locale]/admin/nft/marketplace
+├ ƒ /[locale]/admin/nft/offer
+├ ƒ /[locale]/admin/nft/onboarding
+├ ƒ /[locale]/admin/nft/sale
+├ ƒ /[locale]/admin/nft/settings
+├ ƒ /[locale]/admin/nft/token
+├ ƒ /[locale]/admin/notification
+├ ƒ /[locale]/admin/p2p
+├ ƒ /[locale]/admin/p2p/activity
+├ ƒ /[locale]/admin/p2p/dispute
+├ ƒ /[locale]/admin/p2p/dispute/[id]
+├ ƒ /[locale]/admin/p2p/offer
+├ ƒ /[locale]/admin/p2p/offer/[id]
+├ ƒ /[locale]/admin/p2p/offer/[id]/edit
+├ ƒ /[locale]/admin/p2p/payment-method
+├ ƒ /[locale]/admin/p2p/payment-method/[id]
+├ ƒ /[locale]/admin/p2p/settings
+├ ƒ /[locale]/admin/p2p/trade
+├ ƒ /[locale]/admin/p2p/trade/[id]
+├ ƒ /[locale]/admin/staking
+├ ƒ /[locale]/admin/staking/earning
+├ ƒ /[locale]/admin/staking/pool
+├ ƒ /[locale]/admin/staking/pool/[id]
+├ ƒ /[locale]/admin/staking/pool/[id]/edit
+├ ƒ /[locale]/admin/staking/pool/new
+├ ƒ /[locale]/admin/staking/position
+├ ƒ /[locale]/admin/staking/settings
+├ ƒ /[locale]/admin/system
+├ ƒ /[locale]/admin/system/announcement
+├ ƒ /[locale]/admin/system/cron
+├ ƒ /[locale]/admin/system/database/backup
+├ ƒ /[locale]/admin/system/extension
+├ ƒ /[locale]/admin/system/extension/[id]
+├ ƒ /[locale]/admin/system/license
+├ ƒ /[locale]/admin/system/logo
+├ ƒ /[locale]/admin/system/notification
+├ ƒ /[locale]/admin/system/notification/template
+├ ƒ /[locale]/admin/system/settings
+├ ƒ /[locale]/admin/system/update
+├ ƒ /[locale]/admin/trading/settings
+├ ƒ /[locale]/affiliate
+├ ƒ /[locale]/affiliate/condition
+├ ƒ /[locale]/affiliate/dashboard
+├ ƒ /[locale]/affiliate/network
+├ ƒ /[locale]/affiliate/referral
+├ ƒ /[locale]/affiliate/referral-generator
+├ ƒ /[locale]/affiliate/reward
+├ ƒ /[locale]/api-docs
+├ ƒ /[locale]/binary
+├ ƒ /[locale]/blog
+├ ƒ /[locale]/blog/[slug]
+├ ƒ /[locale]/blog/author
+├ ƒ /[locale]/blog/author/[id]
+├ ƒ /[locale]/blog/author/apply
+├ ƒ /[locale]/blog/author/manage
+├ ƒ /[locale]/blog/author/manage/[id]/edit
+├ ƒ /[locale]/blog/author/manage/new
+├ ƒ /[locale]/blog/category
+├ ƒ /[locale]/blog/category/[slug]
+├ ƒ /[locale]/blog/post
+├ ƒ /[locale]/blog/tag
+├ ƒ /[locale]/blog/tag/[slug]
+├ ƒ /[locale]/confirm/password-reset
+├ ƒ /[locale]/contact
+├ ƒ /[locale]/copy-trading
+├ ƒ /[locale]/copy-trading/analytics
+├ ƒ /[locale]/copy-trading/become-leader
+├ ƒ /[locale]/copy-trading/dashboard
+├ ƒ /[locale]/copy-trading/guide/follower
+├ ƒ /[locale]/copy-trading/guide/leader
+├ ƒ /[locale]/copy-trading/leader
+├ ƒ /[locale]/copy-trading/leader/[id]
+├ ƒ /[locale]/copy-trading/leader/[id]/follow
+├ ƒ /[locale]/copy-trading/subscription
+├ ƒ /[locale]/copy-trading/trade
+├ ƒ /[locale]/ecommerce
+├ ƒ /[locale]/ecommerce/cart
+├ ƒ /[locale]/ecommerce/category
+├ ƒ /[locale]/ecommerce/category/[slug]
+├ ƒ /[locale]/ecommerce/checkout
+├ ƒ /[locale]/ecommerce/order
+├ ƒ /[locale]/ecommerce/order/[id]
+├ ƒ /[locale]/ecommerce/product
+├ ƒ /[locale]/ecommerce/product/[slug]
+├ ƒ /[locale]/ecommerce/shipping
+├ ƒ /[locale]/ecommerce/wishlist
+├ ƒ /[locale]/ecosystem
+├ ƒ /[locale]/error-page/401
+├ ƒ /[locale]/error-page/403
+├ ƒ /[locale]/error-page/404
+├ ƒ /[locale]/error-page/419
+├ ƒ /[locale]/error-page/429
+├ ƒ /[locale]/error-page/500
+├ ƒ /[locale]/error-page/503
+├ ƒ /[locale]/faq
+├ ƒ /[locale]/faq/[id]
+├ ƒ /[locale]/faq/troubleshooter
+├ ƒ /[locale]/finance/deposit
+├ ƒ /[locale]/finance/history
+├ ƒ /[locale]/finance/transfer
+├ ƒ /[locale]/finance/wallet
+├ ƒ /[locale]/finance/wallet/[type]
+├ ƒ /[locale]/finance/wallet/[type]/[currency]
+├ ƒ /[locale]/finance/withdraw
+├ ƒ /[locale]/forex
+├ ƒ /[locale]/forex/account
+├ ƒ /[locale]/forex/account/[id]/deposit
+├ ƒ /[locale]/forex/account/[id]/withdraw
+├ ƒ /[locale]/forex/dashboard
+├ ƒ /[locale]/forex/investment
+├ ƒ /[locale]/forex/investment/[id]
+├ ƒ /[locale]/forex/plan
+├ ƒ /[locale]/forex/plan/[id]
+├ ƒ /[locale]/forex/transaction
+├ ƒ /[locale]/futures
+├ ƒ /[locale]/gateway
+├ ƒ /[locale]/gateway/api-key/[id]/edit
+├ ƒ /[locale]/gateway/api-key/create
+├ ƒ /[locale]/gateway/checkout/[paymentIntentId]
+├ ƒ /[locale]/gateway/dashboard
+├ ƒ /[locale]/gateway/docs
+├ ƒ /[locale]/gateway/integration
+├ ƒ /[locale]/gateway/payment
+├ ƒ /[locale]/gateway/payment/[id]
+├ ƒ /[locale]/gateway/payouts
+├ ƒ /[locale]/gateway/payouts/[id]
+├ ƒ /[locale]/gateway/register
+├ ƒ /[locale]/gateway/settings
+├ ƒ /[locale]/ico
+├ ƒ /[locale]/ico/about
+├ ƒ /[locale]/ico/creator
+├ ƒ /[locale]/ico/creator/launch
+├ ƒ /[locale]/ico/creator/token-simulator
+├ ƒ /[locale]/ico/creator/token/[id]
+├ ƒ /[locale]/ico/creator/token/[id]/plan/upgrade
+├ ƒ /[locale]/ico/creator/token/[id]/release
+├ ƒ /[locale]/ico/dashboard
+├ ƒ /[locale]/ico/offer
+├ ƒ /[locale]/ico/offer/[id]
+├ ƒ /[locale]/ico/transaction
+├ ƒ /[locale]/ico/transaction/[id]
+├ ƒ /[locale]/investment
+├ ƒ /[locale]/investment/dashboard
+├ ƒ /[locale]/investment/plan
+├ ƒ /[locale]/investment/plan/[id]
+├ ƒ /[locale]/login
+├ ƒ /[locale]/market
+├ ƒ /[locale]/nft
+├ ƒ /[locale]/nft/[id]
+├ ƒ /[locale]/nft/batch-mint
+├ ƒ /[locale]/nft/collection
+├ ƒ /[locale]/nft/collection/[id]
+├ ƒ /[locale]/nft/collection/[id]/edit
+├ ƒ /[locale]/nft/collection/create
+├ ƒ /[locale]/nft/create
+├ ƒ /[locale]/nft/creator
+├ ƒ /[locale]/nft/creator/[id]
+├ ƒ /[locale]/nft/creator/profile
+├ ƒ /[locale]/nft/marketplace
+├ ƒ /[locale]/nft/token
+├ ƒ /[locale]/nft/token/[id]
+├ ƒ /[locale]/nft/token/[id]/list
+├ ƒ /[locale]/nft/user
+├ ƒ /[locale]/nft/user/[id]
+├ ƒ /[locale]/p2p
+├ ƒ /[locale]/p2p/dashboard
+├ ƒ /[locale]/p2p/guide
+├ ƒ /[locale]/p2p/guided-matching
+├ ƒ /[locale]/p2p/offer
+├ ƒ /[locale]/p2p/offer/[id]
+├ ƒ /[locale]/p2p/offer/[id]/edit
+├ ƒ /[locale]/p2p/offer/create
+├ ƒ /[locale]/p2p/trade
+├ ƒ /[locale]/p2p/trade/[id]
+├ ƒ /[locale]/privacy
+├ ƒ /[locale]/ref/[code]
+├ ƒ /[locale]/register
+├ ƒ /[locale]/reset
+├ ƒ /[locale]/staking
+├ ƒ /[locale]/staking/dashboard
+├ ƒ /[locale]/staking/guide
+├ ƒ /[locale]/staking/pool
+├ ƒ /[locale]/staking/pool/[id]
+├ ƒ /[locale]/staking/position
+├ ƒ /[locale]/support
+├ ƒ /[locale]/support/ticket
+├ ƒ /[locale]/support/ticket/[id]
+├ ƒ /[locale]/terms
+├ ƒ /[locale]/trade
+├ ƒ /[locale]/unsubscribe
+├ ƒ /[locale]/user/kyc
+├ ƒ /[locale]/user/kyc/application/[id]
+├ ƒ /[locale]/user/kyc/application/[id]/update
+├ ƒ /[locale]/user/kyc/apply/[id]
+├ ƒ /[locale]/user/notification
+└ ƒ /[locale]/user/profile
+
+
+ƒ Proxy (Middleware)
+
+
+2026-04-30T16:05:10.956463439Z [inf]  ○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+2026-04-30T16:05:13.999276885Z [inf]  [stage-0  9/11] RUN --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-frontend/next/cache,target=/app/frontend/.next/cache --mount=type=cache,id=s/3d7184fa-588b-4c8d-8e33-415251691928-node_modules/cache,target=/app/node_modules/.cache cd frontend && pnpm exec next build
+2026-04-30T16:05:14.066533883Z [inf]  [stage-0 10/11] RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+2026-04-30T16:05:25.290991320Z [inf]  [stage-0 10/11] RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+2026-04-30T16:05:25.716689264Z [inf]  [stage-0 11/11] COPY . /app
+2026-04-30T16:07:31.625923721Z [inf]  [stage-0 11/11] COPY . /app
+2026-04-30T16:07:31.718445336Z [inf]  exporting to docker image format
+2026-04-30T16:09:14.425536163Z [inf]  exporting to docker image format
+2026-04-30T16:09:23.833208806Z [inf]  containerimage.descriptor: eyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLm1hbmlmZXN0LnYxK2pzb24iLCJkaWdlc3QiOiJzaGEyNTY6N2ZlOWExYjlkNGJmNjgwN2VmNGZiY2I5YzcwYTRhOWU3ZTEyMzc1NzRlNTRhOWQyY2ZjZTcwOTQ3YTZlNDU0NSIsInNpemUiOjI5NjEsImFubm90YXRpb25zIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkIjoiMjAyNi0wNC0zMFQxNjowOTowOFoifSwicGxhdGZvcm0iOnsiYXJjaGl0ZWN0dXJlIjoiYW1kNjQiLCJvcyI6ImxpbnV4In19
+2026-04-30T16:09:23.833218651Z [inf]  containerimage.config.digest: sha256:48ae36fb2b3516700be51e64e9f1cf4bb2573b72df3ff81a76fbaaacebc0bf69
+2026-04-30T16:09:23.833223789Z [inf]  containerimage.digest: sha256:7fe9a1b9d4bf6807ef4fbcb9c70a4a9e7e1237574e54a9d2cfce70947a6e4545
+2026-04-30T16:09:49.545330918Z [inf]  image push
+2026-04-30T16:09:59.657064945Z [inf]  image push
+2026-04-30T16:10:14.405654600Z [inf]  image push
+2026-04-30T16:10:14.405755041Z [inf]  image push
+2026-04-30T16:10:53.656544404Z [inf]  
+2026-04-30T16:10:53.656546513Z [inf]  [35m====================
+Starting Healthcheck
+====================
+[0m
+2026-04-30T16:10:53.656547683Z [inf]  [37mPath: /[0m
+2026-04-30T16:10:53.656548672Z [inf]  [37mRetry window: 10m0s[0m
+2026-04-30T16:10:53.656549265Z [inf]  
+2026-04-30T16:11:03.739172084Z [inf]  [93mAttempt #1 failed with service unavailable. Continuing to retry for 9m49s[0m
+2026-04-30T16:11:15.076721103Z [inf]  [93mAttempt #2 failed with service unavailable. Continuing to retry for 9m38s[0m
+2026-04-30T16:11:27.123184693Z [inf]  [93mAttempt #3 failed with service unavailable. Continuing to retry for 9m26s[0m
+2026-04-30T16:11:41.164710291Z [inf]  [93mAttempt #4 failed with service unavailable. Continuing to retry for 9m12s[0m
+2026-04-30T16:11:59.457821482Z [inf]  [93mAttempt #5 failed with service unavailable. Continuing to retry for 8m54s[0m
+2026-04-30T16:12:25.557285093Z [inf]  [93mAttempt #6 failed with service unavailable. Continuing to retry for 8m28s[0m
+2026-04-30T16:13:05.602813403Z [inf]  [93mAttempt #7 failed with service unavailable. Continuing to retry for 7m48s[0m
+2026-04-30T16:13:45.647154531Z [inf]  [93mAttempt #8 failed with service unavailable. Continuing to retry for 7m8s[0m
+2026-04-30T16:14:25.683368467Z [inf]  [93mAttempt #9 failed with service unavailable. Continuing to retry for 6m28s[0m
+2026-04-30T16:15:05.740479828Z [inf]  [93mAttempt #10 failed with service unavailable. Continuing to retry for 5m47s[0m
+2026-04-30T16:15:45.808229589Z [inf]  [93mAttempt #11 failed with service unavailable. Continuing to retry for 5m7s[0m
+2026-04-30T16:16:25.848504080Z [inf]  [93mAttempt #12 failed with service unavailable. Continuing to retry for 4m27s[0m
+2026-04-30T16:17:05.926442294Z [inf]  [93mAttempt #13 failed with service unavailable. Continuing to retry for 3m47s[0m
+2026-04-30T16:17:46.224887028Z [inf]  [93mAttempt #14 failed with service unavailable. Continuing to retry for 3m7s[0m
+2026-04-30T16:18:26.264532268Z [inf]  [93mAttempt #15 failed with service unavailable. Continuing to retry for 2m27s[0m
+2026-04-30T16:19:06.303193318Z [inf]  [93mAttempt #16 failed with service unavailable. Continuing to retry for 1m47s[0m
+2026-04-30T16:19:46.353982454Z [inf]  [93mAttempt #17 failed with service unavailable. Continuing to retry for 1m7s[0m
+2026-04-30T16:20:26.399967845Z [inf]  [93mAttempt #18 failed with service unavailable. Continuing to retry for 27s[0m
+2026-04-30T16:20:26.520745721Z [inf]  
+2026-04-30T16:20:26.520748248Z [inf]  [91m1/1 replicas never became healthy![0m
+2026-04-30T16:20:26.520748863Z [inf]  [91mHealthcheck failed![0m
