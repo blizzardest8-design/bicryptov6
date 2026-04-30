@@ -1,0 +1,30 @@
+2026-04-30T17:47:41.131138768Z [inf]  Starting Container
+2026-04-30T17:47:41.137159295Z [inf]  ================================================================
+2026-04-30T17:47:41.137171096Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T17:47:41.137178539Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T17:47:41.137184155Z [inf]  Writing runtime .env from environment...
+2026-04-30T17:47:41.137199797Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T17:47:41.137222620Z [inf]  MySQL is reachable.
+2026-04-30T17:47:41.137230390Z [inf]  Relaxing server sql_mode for backend connections...
+2026-04-30T17:47:41.137238797Z [inf]  ================================================================
+2026-04-30T17:47:41.137243748Z [inf]    Bicrypto Railway Boot
+2026-04-30T17:47:43.545588222Z [inf]  Database already has 160 tables. Skipping import + seed.
+2026-04-30T17:47:43.545593427Z [inf]  Starting backend (port 4000) + frontend (port 8080) under PM2...
+2026-04-30T17:47:43.689397096Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-04-30T17:47:44.399837663Z [inf]  2026-04-30T17:47:44: PM2 log: Launching in no daemon mode
+2026-04-30T17:47:44.399843873Z [inf]  2026-04-30T17:47:44: PM2 log: App [backend:0] starting in -fork mode-
+2026-04-30T17:47:44.399850089Z [inf]  2026-04-30T17:47:44: PM2 log: App [frontend:1] starting in -fork mode-
+2026-04-30T17:47:44.399856251Z [inf]  2026-04-30T17:47:44: PM2 log: App [backend:0] online
+2026-04-30T17:47:44.399862256Z [inf]  2026-04-30T17:47:44: PM2 log: App [frontend:1] online
+2026-04-30T17:47:44.840117733Z [inf]  ▲ Next.js 16.1.6
+2026-04-30T17:47:44.840125245Z [inf]  - Local:         http://localhost:8080
+2026-04-30T17:47:44.840129799Z [inf]  - Network:       http://10.172.223.29:8080
+2026-04-30T17:47:44.840133703Z [inf]  ✓ Starting...
+2026-04-30T17:47:45.430617679Z [inf]  ✓ Ready in 800ms
+2026-04-30T17:47:48.271396335Z [inf]  [90m17:47:48[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-04-30T17:47:48.271405594Z [err]  (node:85) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-04-30T17:47:48.271413859Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-30T17:47:48.271441069Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-04-30T17:47:48.271452000Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-04-30T17:47:48.271458869Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-04-30T17:47:48.271464669Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
