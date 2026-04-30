@@ -6,7 +6,7 @@
  * Usage:  node scripts/import-sql.js path/to/dump.sql
  *
  * Reads DB_HOST / DB_PORT / DB_USER / DB_PASSWORD / DB_NAME from env.
- * Splits on `;` at end-of-line, ignores `/*! ... */` MySQL hints,
+ * Splits on `;` at end-of-line, ignores MySQL hint comments,
  * and runs each statement sequentially with foreign keys disabled.
  */
 const fs = require("fs");

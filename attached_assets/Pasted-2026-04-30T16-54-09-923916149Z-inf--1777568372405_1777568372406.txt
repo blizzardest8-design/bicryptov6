@@ -1,0 +1,151 @@
+2026-04-30T16:54:09.923916149Z [inf]  ================================================================
+2026-04-30T16:54:09.923922912Z [inf]    Bicrypto Railway Boot
+2026-04-30T16:54:09.923930260Z [inf]  ================================================================
+2026-04-30T16:54:09.923936068Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T16:54:09.923941127Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T16:54:09.923946374Z [inf]  Writing runtime .env from environment...
+2026-04-30T16:54:09.923952910Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T16:54:09.923959909Z [inf]  MySQL is reachable.
+2026-04-30T16:54:10.244430675Z [inf]  Starting Container
+2026-04-30T16:54:10.900123825Z [inf]  Importing initial.sql (3953 lines)...
+2026-04-30T16:54:10.900128797Z [err]  /app/scripts/import-sql.js:77
+2026-04-30T16:54:10.900134818Z [err]  
+2026-04-30T16:54:10.900140487Z [err]  
+2026-04-30T16:54:10.900145422Z [err]  
+2026-04-30T16:54:10.900151059Z [err]  SyntaxError: Unexpected end of input
+2026-04-30T16:54:10.900155691Z [err]      at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+2026-04-30T16:54:10.900160865Z [err]      at Module._compile (node:internal/modules/cjs/loader:1491:20)
+2026-04-30T16:54:10.900166391Z [err]      at Object..js (node:internal/modules/cjs/loader:1689:10)
+2026-04-30T16:54:10.900173051Z [err]      at Module.load (node:internal/modules/cjs/loader:1318:32)
+2026-04-30T16:54:10.900178661Z [err]      at Function._load (node:internal/modules/cjs/loader:1128:12)
+2026-04-30T16:54:10.900183486Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2026-04-30T16:54:10.900188098Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+2026-04-30T16:54:10.900334398Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2026-04-30T16:54:10.900340591Z [err]      at node:internal/main/run_main_module:36:49
+2026-04-30T16:54:10.900345366Z [err]  
+2026-04-30T16:54:10.900352124Z [err]  Node.js v22.11.0
+2026-04-30T16:54:11.794108684Z [inf]  ================================================================
+2026-04-30T16:54:11.794114214Z [inf]    Bicrypto Railway Boot
+2026-04-30T16:54:11.794119151Z [inf]  ================================================================
+2026-04-30T16:54:11.794124539Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T16:54:11.794130009Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T16:54:11.794137047Z [inf]  Writing runtime .env from environment...
+2026-04-30T16:54:11.794142771Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T16:54:11.794148146Z [inf]  MySQL is reachable.
+2026-04-30T16:54:11.984735072Z [inf]  Importing initial.sql (3953 lines)...
+2026-04-30T16:54:12.065290633Z [err]      at Module.load (node:internal/modules/cjs/loader:1318:32)
+2026-04-30T16:54:12.065302713Z [err]      at Function._load (node:internal/modules/cjs/loader:1128:12)
+2026-04-30T16:54:12.065309768Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2026-04-30T16:54:12.065316774Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+2026-04-30T16:54:12.065322860Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2026-04-30T16:54:12.065329162Z [err]      at node:internal/main/run_main_module:36:49
+2026-04-30T16:54:12.065335951Z [err]  
+2026-04-30T16:54:12.065342457Z [err]  Node.js v22.11.0
+2026-04-30T16:54:12.065346012Z [err]  /app/scripts/import-sql.js:77
+2026-04-30T16:54:12.065350954Z [err]  
+2026-04-30T16:54:12.065357379Z [err]  
+2026-04-30T16:54:12.065362984Z [err]  
+2026-04-30T16:54:12.065368487Z [err]  SyntaxError: Unexpected end of input
+2026-04-30T16:54:12.065374865Z [err]      at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+2026-04-30T16:54:12.065380544Z [err]      at Module._compile (node:internal/modules/cjs/loader:1491:20)
+2026-04-30T16:54:12.065385894Z [err]      at Object..js (node:internal/modules/cjs/loader:1689:10)
+2026-04-30T16:54:13.188903934Z [inf]  ================================================================
+2026-04-30T16:54:13.188912131Z [inf]    Bicrypto Railway Boot
+2026-04-30T16:54:13.188918062Z [inf]  ================================================================
+2026-04-30T16:54:13.188925274Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T16:54:13.188931764Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T16:54:13.188937338Z [inf]  Writing runtime .env from environment...
+2026-04-30T16:54:13.188942836Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T16:54:13.985323252Z [inf]  MySQL is reachable.
+2026-04-30T16:54:13.985328251Z [inf]  Importing initial.sql (3953 lines)...
+2026-04-30T16:54:13.985333150Z [err]  /app/scripts/import-sql.js:77
+2026-04-30T16:54:13.985339045Z [err]  
+2026-04-30T16:54:13.985344734Z [err]  
+2026-04-30T16:54:13.985349389Z [err]  
+2026-04-30T16:54:13.985354749Z [err]  SyntaxError: Unexpected end of input
+2026-04-30T16:54:13.985359540Z [err]      at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+2026-04-30T16:54:13.985365027Z [err]      at Module._compile (node:internal/modules/cjs/loader:1491:20)
+2026-04-30T16:54:13.985372603Z [err]      at Object..js (node:internal/modules/cjs/loader:1689:10)
+2026-04-30T16:54:13.985380921Z [err]      at Module.load (node:internal/modules/cjs/loader:1318:32)
+2026-04-30T16:54:13.985387686Z [err]      at Function._load (node:internal/modules/cjs/loader:1128:12)
+2026-04-30T16:54:13.985394097Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2026-04-30T16:54:13.985400891Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+2026-04-30T16:54:13.985407386Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2026-04-30T16:54:13.985429899Z [err]      at node:internal/main/run_main_module:36:49
+2026-04-30T16:54:13.985437188Z [err]  
+2026-04-30T16:54:13.985444972Z [err]  Node.js v22.11.0
+2026-04-30T16:54:15.115250426Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T16:54:15.115260918Z [inf]  Writing runtime .env from environment...
+2026-04-30T16:54:15.115275494Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T16:54:15.115289286Z [inf]  MySQL is reachable.
+2026-04-30T16:54:15.115360880Z [inf]  ================================================================
+2026-04-30T16:54:15.115367126Z [inf]    Bicrypto Railway Boot
+2026-04-30T16:54:15.115373043Z [inf]  ================================================================
+2026-04-30T16:54:15.115379778Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T16:54:15.123464215Z [inf]  Importing initial.sql (3953 lines)...
+2026-04-30T16:54:15.180893242Z [err]  /app/scripts/import-sql.js:77
+2026-04-30T16:54:15.180907794Z [err]  
+2026-04-30T16:54:15.180928350Z [err]  
+2026-04-30T16:54:15.180934647Z [err]  
+2026-04-30T16:54:15.180941611Z [err]  SyntaxError: Unexpected end of input
+2026-04-30T16:54:15.180948090Z [err]      at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+2026-04-30T16:54:15.180955444Z [err]      at Module._compile (node:internal/modules/cjs/loader:1491:20)
+2026-04-30T16:54:15.180962402Z [err]      at Object..js (node:internal/modules/cjs/loader:1689:10)
+2026-04-30T16:54:15.180972375Z [err]      at Module.load (node:internal/modules/cjs/loader:1318:32)
+2026-04-30T16:54:15.180979688Z [err]      at Function._load (node:internal/modules/cjs/loader:1128:12)
+2026-04-30T16:54:15.180985593Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2026-04-30T16:54:15.180991740Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+2026-04-30T16:54:15.180997464Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2026-04-30T16:54:15.181004096Z [err]      at node:internal/main/run_main_module:36:49
+2026-04-30T16:54:15.181010121Z [err]  
+2026-04-30T16:54:15.181017905Z [err]  Node.js v22.11.0
+2026-04-30T16:54:16.373957018Z [inf]  ================================================================
+2026-04-30T16:54:16.373961964Z [inf]    Bicrypto Railway Boot
+2026-04-30T16:54:16.373966583Z [inf]  ================================================================
+2026-04-30T16:54:16.373971113Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T16:54:16.373975958Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T16:54:16.373980901Z [inf]  Writing runtime .env from environment...
+2026-04-30T16:54:16.373985798Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T16:54:16.373990323Z [inf]  MySQL is reachable.
+2026-04-30T16:54:17.318890701Z [err]  /app/scripts/import-sql.js:77
+2026-04-30T16:54:17.318896515Z [err]  
+2026-04-30T16:54:17.319247750Z [inf]  Importing initial.sql (3953 lines)...
+2026-04-30T16:54:17.319336206Z [err]  
+2026-04-30T16:54:17.319343260Z [err]  
+2026-04-30T16:54:17.319349725Z [err]  SyntaxError: Unexpected end of input
+2026-04-30T16:54:17.319355248Z [err]      at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+2026-04-30T16:54:17.319360518Z [err]      at Module._compile (node:internal/modules/cjs/loader:1491:20)
+2026-04-30T16:54:17.319366427Z [err]      at Object..js (node:internal/modules/cjs/loader:1689:10)
+2026-04-30T16:54:17.319371127Z [err]      at Module.load (node:internal/modules/cjs/loader:1318:32)
+2026-04-30T16:54:17.319377470Z [err]      at Function._load (node:internal/modules/cjs/loader:1128:12)
+2026-04-30T16:54:17.319382117Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2026-04-30T16:54:17.319387049Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+2026-04-30T16:54:17.319392996Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2026-04-30T16:54:17.319397301Z [err]      at node:internal/main/run_main_module:36:49
+2026-04-30T16:54:17.319403063Z [err]  
+2026-04-30T16:54:17.319409047Z [err]  Node.js v22.11.0
+2026-04-30T16:54:18.187282891Z [inf]  ================================================================
+2026-04-30T16:54:18.187288839Z [inf]    Bicrypto Railway Boot
+2026-04-30T16:54:18.187296502Z [inf]  ================================================================
+2026-04-30T16:54:18.187302471Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-04-30T16:54:18.187310108Z [inf]  Redis target: redis.railway.internal:6379
+2026-04-30T16:54:18.187317078Z [inf]  Writing runtime .env from environment...
+2026-04-30T16:54:18.187323994Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-04-30T16:54:18.187330927Z [inf]  MySQL is reachable.
+2026-04-30T16:54:18.187336809Z [inf]  Importing initial.sql (3953 lines)...
+2026-04-30T16:54:18.187343148Z [err]  /app/scripts/import-sql.js:77
+2026-04-30T16:54:18.187351351Z [err]  
+2026-04-30T16:54:18.187358063Z [err]  
+2026-04-30T16:54:18.187363952Z [err]  
+2026-04-30T16:54:18.187369513Z [err]  SyntaxError: Unexpected end of input
+2026-04-30T16:54:18.187375615Z [err]      at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+2026-04-30T16:54:18.187381055Z [err]      at Module._compile (node:internal/modules/cjs/loader:1491:20)
+2026-04-30T16:54:18.187386506Z [err]      at Object..js (node:internal/modules/cjs/loader:1689:10)
+2026-04-30T16:54:18.187391558Z [err]      at Module.load (node:internal/modules/cjs/loader:1318:32)
+2026-04-30T16:54:18.187397529Z [err]      at Function._load (node:internal/modules/cjs/loader:1128:12)
+2026-04-30T16:54:18.187403065Z [err]      at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+2026-04-30T16:54:18.187407654Z [err]      at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+2026-04-30T16:54:18.187412021Z [err]      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2026-04-30T16:54:18.187417196Z [err]      at node:internal/main/run_main_module:36:49
+2026-04-30T16:54:18.188010944Z [err]  
+2026-04-30T16:54:18.188016066Z [err]  Node.js v22.11.0
