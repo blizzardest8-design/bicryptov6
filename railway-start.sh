@@ -232,6 +232,16 @@ else
   echo "Database already has $TABLE_COUNT tables. Skipping import + seed."
 fi
 
+# -------- Skip Sequelize sync on fresh containers --------
+# Without a committed .sync-hash file the backend sees every deploy as
+# "models changed" and runs Sequelize.sync({alter:true}) across all 184
+# tables.  That takes 5-10 minutes and the process never binds port 4000,
+# so Railway considers the deploy failed.  Setting DB_SYNC=none makes the
+# backend call sequelize.authenticate() only — the schema is already in
+# place from the initial.sql import above, so no sync is needed.
+export DB_SYNC="${DB_SYNC:-none}"
+echo "DB_SYNC=${DB_SYNC} (use 'alter' only when intentionally migrating schema)"
+
 # -------- Start the app --------
 echo "Starting backend (port ${BACKEND_PORT:-4000}) + frontend (port ${PORT:-3000}) under PM2..."
 exec npx pm2-runtime start production.config.js --env production

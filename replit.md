@@ -94,6 +94,21 @@ What needs your own keys later:
 
 ## Recent changes (agent log)
 
+- 2026-05-01: **DB_SYNC=none default added to `railway-start.sh`.**
+  Root-cause analysis of the May 1 08:06 Railway deploy failure: every fresh
+  Railway container had no `.sync-hash` file, so the backend always entered
+  the "models changed" path and ran `Sequelize.sync({alter:true})` across all
+  184 tables — a multi-minute operation that left port 4000 unbound. The
+  `railway-start.sh` now exports `DB_SYNC="${DB_SYNC:-none}"` before starting
+  PM2 so the backend just calls `sequelize.authenticate()` on boot. The schema
+  is already in place from the `initial.sql` import; no sync is needed.
+  (Override: set `DB_SYNC=alter` in Railway Variables when intentionally
+  applying a model migration.)
+  Also confirmed: the `exchange.js` TDZ patch applied on 2026-04-30 is in
+  place and correct — the "Cannot access 'agent' before initialization" errors
+  seen in the April 30 22:08 Railway log were from a pre-patch deploy and
+  should not recur.
+
 - 2026-04-30 (c): **Repo-wide Railway hardening pass.** Six fixes that
   together remove every recurring deploy failure mode:
   1. `frontend/next.config.js` — rewrites for `/api/*`, `/uploads/*`,
