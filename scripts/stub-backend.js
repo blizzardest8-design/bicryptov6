@@ -81,6 +81,30 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // PoW captcha challenge — return disabled so login form doesn't spin forever
+  if (url.startsWith("/api/auth/pow/challenge")) {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ enabled: false }));
+    return;
+  }
+
+  // Login / register / password — return a clear error pointing to Railway
+  if (
+    url.startsWith("/api/auth/login") ||
+    url.startsWith("/api/auth/register") ||
+    url.startsWith("/api/auth/password") ||
+    url.startsWith("/api/auth/logout") ||
+    url.startsWith("/api/auth/verify")
+  ) {
+    res.writeHead(503, { "Content-Type": "application/json" });
+    res.end(
+      JSON.stringify({
+        error: "This is the Replit dev preview — login/register requires the real backend on Railway. Open your Railway URL to sign in.",
+      })
+    );
+    return;
+  }
+
   // Page content (home, etc.) — return empty page so the home renderer
   // falls through to its default layout instead of erroring.
   if (url.startsWith("/api/content/")) {
