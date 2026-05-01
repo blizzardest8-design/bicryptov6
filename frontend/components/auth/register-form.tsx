@@ -323,9 +323,10 @@ export default function RegisterForm({
           }, 500); // Small delay to let the success toast show
         } else {
           // User needs to verify their email or registration successful but not logged in
-          // Check if the backend response indicates email verification is needed
+          // Primary signal: the verifyEmailStatus setting. Fallback: message content.
           const responseMessage = (result.data?.message || "").toLowerCase();
-          const needsVerification = responseMessage.includes("verify") ||
+          const needsVerification = verifyEmailStatus || 
+                                    responseMessage.includes("verify") ||
                                     responseMessage.includes("verification") ||
                                     responseMessage.includes("not verified");
 

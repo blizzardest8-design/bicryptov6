@@ -55,10 +55,10 @@ export default function LoginPage() {
           description: "Your email has been verified. You can now access all features.",
         });
 
-        // Redirect to dashboard after 3 seconds
+        // Full page reload so Next.js picks up the new auth cookies from the response
         setTimeout(() => {
-          router.push('/');
-        }, 3000);
+          window.location.replace('/');
+        }, 1500);
       } else {
         setVerificationStatus('error');
         setVerificationMessage(result.error || 'Email verification failed');

@@ -676,7 +676,7 @@ export const DEFAULT_SETTINGS = {
   twoFactorSmsStatus: "true",
   twoFactorEmailStatus: "true",
   twoFactorAppStatus: "true",
-  verifyEmailStatus: "true",
+  verifyEmailStatus: "false",
   appStoreLink: "",
   googlePlayLink: "",
   unilevelLevel1: "1",

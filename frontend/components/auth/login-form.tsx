@@ -174,10 +174,15 @@ export default function LoginForm({
           window.location.reload();
         }, 500); // Small delay to let the success toast show
       } else {
-        const currentError = useUserStore.getState().error;
+        const currentError = useUserStore.getState().error || "";
+        const isUnverified = currentError.toLowerCase().includes("not verified") ||
+                             currentError.toLowerCase().includes("verify your email") ||
+                             currentError.toLowerCase().includes("verification email sent");
         toast({
-          title: "Login failed",
-          description: currentError || "Invalid email or password.",
+          title: isUnverified ? "Email not verified" : "Login failed",
+          description: isUnverified
+            ? "A new verification link has been sent to your email. Please check your inbox."
+            : (currentError || "Invalid email or password."),
           variant: "destructive",
         });
       }

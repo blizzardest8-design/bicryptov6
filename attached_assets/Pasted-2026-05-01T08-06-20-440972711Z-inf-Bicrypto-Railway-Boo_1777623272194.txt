@@ -1,0 +1,1004 @@
+2026-05-01T08:06:20.440972711Z [inf]    Bicrypto Railway Boot
+2026-05-01T08:06:20.440977110Z [inf]  ================================================================
+2026-05-01T08:06:20.440981880Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-05-01T08:06:21.075588284Z [inf]  Applying MySQL 8 schema fixups...
+2026-05-01T08:06:21.853507239Z [inf]    support_ticket.tags_idx already absent.
+2026-05-01T08:06:22.011139621Z [inf]    support_ticket.tags already JSON.
+2026-05-01T08:06:23.464198022Z [inf]  Database already has 184 tables. Skipping import + seed.
+2026-05-01T08:06:23.464201372Z [inf]  Starting backend (port 4000) + frontend (port 8080) under PM2...
+2026-05-01T08:06:23.464204752Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-05-01T08:06:23.802868416Z [inf]  2026-05-01T08:06:23: PM2 log: Launching in no daemon mode
+2026-05-01T08:06:23.823703079Z [inf]  2026-05-01T08:06:23: PM2 log: App [backend:0] starting in -fork mode-
+2026-05-01T08:06:23.829833057Z [inf]  2026-05-01T08:06:23: PM2 log: App [frontend:1] starting in -fork mode-
+2026-05-01T08:06:23.836619809Z [inf]  2026-05-01T08:06:23: PM2 log: App [backend:0] online
+2026-05-01T08:06:23.836627199Z [inf]  2026-05-01T08:06:23: PM2 log: App [frontend:1] online
+2026-05-01T08:06:24.150081148Z [inf]  ▲ Next.js 16.1.6
+2026-05-01T08:06:24.150107077Z [inf]  - Local:         http://localhost:8080
+2026-05-01T08:06:24.150110067Z [inf]  - Network:       http://10.205.150.216:8080
+2026-05-01T08:06:24.150113137Z [inf]  ✓ Starting...
+2026-05-01T08:06:24.531802726Z [inf]  ✓ Ready in 554ms
+2026-05-01T08:06:25.486706234Z [err]  (node:96) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2026-05-01T08:06:25.486708664Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-01T08:06:25.486710784Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:06:25.486712924Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:06:25.486715444Z [err]    errno: -111,
+2026-05-01T08:06:25.486717684Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:06:25.486719824Z [err]    syscall: 'connect',
+2026-05-01T08:06:25.486722024Z [err]    address: '127.0.0.1',
+2026-05-01T08:06:25.486724234Z [err]    port: 4000
+2026-05-01T08:06:25.486726584Z [err]  }
+2026-05-01T08:06:25.486728754Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:06:25.486731064Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:06:25.486734254Z [err]    errno: -111,
+2026-05-01T08:06:25.486736644Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:06:25.486738944Z [err]    syscall: 'connect',
+2026-05-01T08:06:25.486741094Z [err]    address: '127.0.0.1',
+2026-05-01T08:06:25.486743404Z [err]    port: 4000
+2026-05-01T08:06:25.486745674Z [err]  }
+2026-05-01T08:06:25.486748494Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:06:25.486750784Z [err]  Failed to proxy http://127.0.0.1:4000/api/settings Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:06:25.486753034Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:06:25.486807394Z [err]    errno: -111,
+2026-05-01T08:06:25.486809644Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:06:25.486811823Z [err]    syscall: 'connect',
+2026-05-01T08:06:25.486815053Z [err]    address: '127.0.0.1',
+2026-05-01T08:06:25.487059271Z [err]    port: 4000
+2026-05-01T08:06:25.487061811Z [err]  }
+2026-05-01T08:06:25.487064051Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:06:25.487066401Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:06:25.487068721Z [err]    errno: -111,
+2026-05-01T08:06:25.487070991Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:06:25.487073261Z [err]    syscall: 'connect',
+2026-05-01T08:06:25.487075461Z [err]    address: '127.0.0.1',
+2026-05-01T08:06:25.487078221Z [err]    port: 4000
+2026-05-01T08:06:25.487080911Z [err]  }
+2026-05-01T08:06:25.487084171Z [err]  SSR: Failed to fetch /api/settings: 500 Internal Server Error
+2026-05-01T08:06:25.607045392Z [err]  (node:96) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-05-01T08:06:26.180989346Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-05-01T08:06:26.180992906Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-05-01T08:06:26.180995586Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-05-01T08:06:26.180998346Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-05-01T08:06:26.181001126Z [inf]  [90m08:06:26[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-05-01T08:06:46.200734747Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:06:46.200738737Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:06:46.200741497Z [err]    errno: -111,
+2026-05-01T08:06:46.200744897Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:06:46.200747387Z [err]    syscall: 'connect',
+2026-05-01T08:06:46.200749837Z [err]    address: '127.0.0.1',
+2026-05-01T08:06:46.200752057Z [err]    port: 4000
+2026-05-01T08:06:46.200754677Z [err]  }
+2026-05-01T08:06:47.825093766Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:06:47.825096606Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:06:47.825099786Z [err]    errno: -111,
+2026-05-01T08:06:47.825102196Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:06:47.825104995Z [err]    syscall: 'connect',
+2026-05-01T08:06:47.825107735Z [err]    address: '127.0.0.1',
+2026-05-01T08:06:47.825111105Z [err]    port: 4000
+2026-05-01T08:06:47.825113935Z [err]  }
+2026-05-01T08:06:54.499178141Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:06:54.499180961Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:06:54.499184391Z [err]    errno: -111,
+2026-05-01T08:06:54.499186841Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:06:54.499190711Z [err]    syscall: 'connect',
+2026-05-01T08:06:54.499193251Z [err]    address: '127.0.0.1',
+2026-05-01T08:06:54.499195771Z [err]    port: 4000
+2026-05-01T08:06:54.499198341Z [err]  }
+2026-05-01T08:07:00.461374911Z [err]  }
+2026-05-01T08:07:00.461417981Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:07:00.461423101Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:07:00.461428571Z [err]    errno: -111,
+2026-05-01T08:07:00.461432801Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:07:00.461437561Z [err]    syscall: 'connect',
+2026-05-01T08:07:00.461442401Z [err]    address: '127.0.0.1',
+2026-05-01T08:07:00.461446970Z [err]    port: 4000
+2026-05-01T08:07:06.796406553Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:07:06.796409783Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:07:06.796412743Z [err]    errno: -111,
+2026-05-01T08:07:06.796415693Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:07:06.796418283Z [err]    syscall: 'connect',
+2026-05-01T08:07:06.796421473Z [err]    address: '127.0.0.1',
+2026-05-01T08:07:06.796424463Z [err]    port: 4000
+2026-05-01T08:07:06.796427893Z [err]  }
+2026-05-01T08:07:13.539675319Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:07:13.539686259Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:07:13.539689849Z [err]    errno: -111,
+2026-05-01T08:07:13.539693329Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:07:13.539697038Z [err]    syscall: 'connect',
+2026-05-01T08:07:13.539700498Z [err]    address: '127.0.0.1',
+2026-05-01T08:07:13.539703358Z [err]    port: 4000
+2026-05-01T08:07:13.539706618Z [err]  }
+2026-05-01T08:07:19.936722645Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:07:19.936725895Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:07:19.936729454Z [err]    errno: -111,
+2026-05-01T08:07:19.936733644Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:07:19.936736964Z [err]    syscall: 'connect',
+2026-05-01T08:07:19.936750114Z [err]    address: '127.0.0.1',
+2026-05-01T08:07:19.936753864Z [err]    port: 4000
+2026-05-01T08:07:19.936758274Z [err]  }
+2026-05-01T08:07:26.515217530Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:07:26.515218510Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:07:26.515223200Z [err]    syscall: 'connect',
+2026-05-01T08:07:26.515227850Z [err]    address: '127.0.0.1',
+2026-05-01T08:07:26.515234910Z [err]    port: 4000
+2026-05-01T08:07:26.515238280Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:07:26.515242930Z [err]  }
+2026-05-01T08:07:26.515245890Z [err]    errno: -111,
+2026-05-01T08:07:33.632753245Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:07:33.632756725Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:07:33.632759795Z [err]    errno: -111,
+2026-05-01T08:07:33.632764565Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:07:33.632767635Z [err]    syscall: 'connect',
+2026-05-01T08:07:33.632770315Z [err]    address: '127.0.0.1',
+2026-05-01T08:07:33.632773355Z [err]    port: 4000
+2026-05-01T08:07:33.632776645Z [err]  }
+2026-05-01T08:07:39.759977165Z [err]  Failed to proxy http://127.0.0.1:4000/api/user?userId=64917385-8ae7-44e3-8f57-e17aab8a0fce Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:07:39.759982595Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:07:39.759985415Z [err]    errno: -111,
+2026-05-01T08:07:39.759987935Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:07:39.759990384Z [err]    syscall: 'connect',
+2026-05-01T08:07:39.760000974Z [err]    address: '127.0.0.1',
+2026-05-01T08:07:39.760003284Z [err]    port: 4000
+2026-05-01T08:07:39.760005714Z [err]  }
+2026-05-01T08:09:31.163492573Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:31.163509263Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.163530033Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:31.163535613Z [err]    errno: -111,
+2026-05-01T08:09:31.163544582Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.163548562Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.163554602Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.163558792Z [err]    port: 4000
+2026-05-01T08:09:31.163562982Z [err]  }
+2026-05-01T08:09:31.163568332Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.163571922Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:31.163585862Z [err]    errno: -111,
+2026-05-01T08:09:31.163586592Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.163591212Z [err]    errno: -111,
+2026-05-01T08:09:31.163596382Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.163596712Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.163603342Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.163605562Z [err]    port: 4000
+2026-05-01T08:09:31.163610522Z [err]    port: 4000
+2026-05-01T08:09:31.163613672Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.163618772Z [err]  }
+2026-05-01T08:09:31.163623552Z [err]  }
+2026-05-01T08:09:31.163623892Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.163628862Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.163631912Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:09:31.163636182Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.163640362Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:31.164106617Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:09:31.164113947Z [err]  Failed to proxy http://127.0.0.1:4000/api/user/profile Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.164116367Z [err]    errno: -111,
+2026-05-01T08:09:31.164121347Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.164121477Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:31.164125427Z [err]    errno: -111,
+2026-05-01T08:09:31.164132337Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.164133507Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.164140407Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.164143577Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.164150237Z [err]    port: 4000
+2026-05-01T08:09:31.164155927Z [err]  }
+2026-05-01T08:09:31.164161367Z [err]  SSR: Failed to fetch user profile: 500 Internal Server Error
+2026-05-01T08:09:31.164166967Z [err]  Failed to proxy http://127.0.0.1:4000/api/settings Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.164171957Z [err]    errno: -111,
+2026-05-01T08:09:31.164175127Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:31.164182037Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.164186067Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.164190177Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.164194547Z [err]    port: 4000
+2026-05-01T08:09:31.164198757Z [err]  }
+2026-05-01T08:09:31.164429744Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.164434404Z [err]    port: 4000
+2026-05-01T08:09:31.164441764Z [err]  }
+2026-05-01T08:09:31.164445854Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.164449044Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:31.164452734Z [err]    errno: -111,
+2026-05-01T08:09:31.166927503Z [err]    errno: -111,
+2026-05-01T08:09:31.166934283Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.166939213Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.166944853Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.166950963Z [err]    port: 4000
+2026-05-01T08:09:31.166952833Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:31.166958453Z [err]    syscall: 'connect',
+2026-05-01T08:09:31.166960903Z [err]  }
+2026-05-01T08:09:31.166966782Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:31.166967592Z [err]  SSR: Failed to fetch /api/settings: 500 Internal Server Error
+2026-05-01T08:09:31.166971232Z [err]    port: 4000
+2026-05-01T08:09:31.166973902Z [err]  }
+2026-05-01T08:09:31.166977082Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:31.166979982Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.320088442Z [err]  Failed to proxy http://127.0.0.1:4000/api/settings Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.320092062Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.320095502Z [err]    errno: -111,
+2026-05-01T08:09:35.320100282Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.320103321Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.320125611Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.320129161Z [err]    port: 4000
+2026-05-01T08:09:35.320132591Z [err]  }
+2026-05-01T08:09:35.320135691Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.320139021Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.320142061Z [err]    errno: -111,
+2026-05-01T08:09:35.320145291Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.320148101Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.320150891Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.320153841Z [err]    port: 4000
+2026-05-01T08:09:35.320156961Z [err]  }
+2026-05-01T08:09:35.655409656Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/market Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.655412896Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.655415566Z [err]    errno: -111,
+2026-05-01T08:09:35.655418336Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.655421316Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.655423956Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.655426466Z [err]    port: 4000
+2026-05-01T08:09:35.655429176Z [err]  }
+2026-05-01T08:09:35.655432026Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.655434566Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.655437666Z [err]    errno: -111,
+2026-05-01T08:09:35.655439896Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.655442186Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.655444766Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.655447216Z [err]    port: 4000
+2026-05-01T08:09:35.655449696Z [err]  }
+2026-05-01T08:09:35.655452336Z [err]  Failed to proxy http://127.0.0.1:4000/api/content/landing-stats Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.655454976Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.655457436Z [err]    errno: -111,
+2026-05-01T08:09:35.655460175Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.655462555Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.655464855Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.655468305Z [err]    port: 4000
+2026-05-01T08:09:35.655470635Z [err]  }
+2026-05-01T08:09:35.655473425Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.655476325Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.655478685Z [err]    errno: -111,
+2026-05-01T08:09:35.657808705Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.657813105Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.657816315Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.657819245Z [err]    port: 4000
+2026-05-01T08:09:35.657821775Z [err]  }
+2026-05-01T08:09:35.657824285Z [err]  Failed to proxy http://127.0.0.1:4000/api/content/default-page/home?pageSource=default Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.657826645Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.657829575Z [err]    errno: -111,
+2026-05-01T08:09:35.657832325Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.657834935Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.657837305Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.657839615Z [err]    port: 4000
+2026-05-01T08:09:35.657842705Z [err]  }
+2026-05-01T08:09:35.657845815Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.657848325Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.657850685Z [err]    errno: -111,
+2026-05-01T08:09:35.657852995Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.657855375Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.657858265Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.657860515Z [err]    port: 4000
+2026-05-01T08:09:35.657862945Z [err]  }
+2026-05-01T08:09:35.657866975Z [err]  Failed to proxy http://127.0.0.1:4000/api/ecosystem/market Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.657869455Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.657871605Z [err]    errno: -111,
+2026-05-01T08:09:35.657874385Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.657877075Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.657879365Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.657881585Z [err]    port: 4000
+2026-05-01T08:09:35.659764058Z [err]  }
+2026-05-01T08:09:35.659767008Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:35.659769388Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:35.659771858Z [err]    errno: -111,
+2026-05-01T08:09:35.659774248Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:35.659776588Z [err]    syscall: 'connect',
+2026-05-01T08:09:35.659779328Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:35.659782468Z [err]    port: 4000
+2026-05-01T08:09:35.659784748Z [err]  }
+2026-05-01T08:09:36.275576845Z [err]  Failed to proxy http://127.0.0.1:4000/img/logo/logo-dark.webp?v=1 Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:36.275580274Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:36.275584514Z [err]    errno: -111,
+2026-05-01T08:09:36.275589094Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:36.275593454Z [err]    syscall: 'connect',
+2026-05-01T08:09:36.275598104Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:36.275601634Z [err]    port: 4000
+2026-05-01T08:09:36.275605084Z [err]  }
+2026-05-01T08:09:36.275609084Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:36.275613514Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:36.275617234Z [err]    errno: -111,
+2026-05-01T08:09:36.275620994Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:36.275624464Z [err]    syscall: 'connect',
+2026-05-01T08:09:36.275628634Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:36.275632304Z [err]    port: 4000
+2026-05-01T08:09:36.275635654Z [err]  }
+2026-05-01T08:09:36.344105528Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:36.344109808Z [err]  Failed to proxy http://127.0.0.1:4000/img/logo/logo.webp?v=1 Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:36.344118648Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:36.344118728Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:36.344126538Z [err]    errno: -111,
+2026-05-01T08:09:36.344129308Z [err]    errno: -111,
+2026-05-01T08:09:36.344134198Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:36.344139298Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:36.344141908Z [err]    syscall: 'connect',
+2026-05-01T08:09:36.344148548Z [err]    syscall: 'connect',
+2026-05-01T08:09:36.344149488Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:36.344157018Z [err]    port: 4000
+2026-05-01T08:09:36.344157638Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:36.344161898Z [err]  }
+2026-05-01T08:09:36.344166458Z [err]    port: 4000
+2026-05-01T08:09:36.344169238Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:36.344175318Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:36.344177428Z [err]  }
+2026-05-01T08:09:36.344181268Z [err]    errno: -111,
+2026-05-01T08:09:36.344187788Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:36.344188248Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:36.344194108Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:36.344197848Z [err]    errno: -111,
+2026-05-01T08:09:36.344201768Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:36.344205208Z [err]    syscall: 'connect',
+2026-05-01T08:09:36.344209448Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:36.344213328Z [err]    port: 4000
+2026-05-01T08:09:36.344216857Z [err]  }
+2026-05-01T08:09:36.346342859Z [err]    syscall: 'connect',
+2026-05-01T08:09:36.346348949Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:36.346353099Z [err]    port: 4000
+2026-05-01T08:09:36.346356939Z [err]  }
+2026-05-01T08:09:36.346360529Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:09:37.315469172Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:37.315473052Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:37.315477352Z [err]    errno: -111,
+2026-05-01T08:09:37.315481592Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:37.315485202Z [err]    syscall: 'connect',
+2026-05-01T08:09:37.315489352Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:37.315493182Z [err]    port: 4000
+2026-05-01T08:09:37.315496532Z [err]  }
+2026-05-01T08:09:37.315499962Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:37.315503382Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:37.315506852Z [err]    errno: -111,
+2026-05-01T08:09:37.315510132Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:37.315513782Z [err]    syscall: 'connect',
+2026-05-01T08:09:37.315517342Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:37.315522622Z [err]    port: 4000
+2026-05-01T08:09:37.315526692Z [err]  }
+2026-05-01T08:09:37.315531412Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:09:37.315535502Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:37.315540002Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:37.315544692Z [err]    errno: -111,
+2026-05-01T08:09:37.315549212Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:37.315553492Z [err]    syscall: 'connect',
+2026-05-01T08:09:37.315557792Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:37.315561532Z [err]    port: 4000
+2026-05-01T08:09:37.315565982Z [err]  }
+2026-05-01T08:09:46.937755929Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:46.937760228Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:46.937762988Z [err]    errno: -111,
+2026-05-01T08:09:46.937765758Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:46.937768968Z [err]    syscall: 'connect',
+2026-05-01T08:09:46.937771368Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:46.937773778Z [err]    port: 4000
+2026-05-01T08:09:46.937776368Z [err]  }
+2026-05-01T08:09:54.605497492Z [err]    errno: -111,
+2026-05-01T08:09:54.605503892Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:54.605508332Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:54.605508432Z [err]    syscall: 'connect',
+2026-05-01T08:09:54.605512002Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:54.605516502Z [err]    port: 4000
+2026-05-01T08:09:54.605517552Z [err]    syscall: 'connect',
+2026-05-01T08:09:54.605521352Z [err]  }
+2026-05-01T08:09:54.605524352Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:54.605525642Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:54.605528002Z [err]    port: 4000
+2026-05-01T08:09:54.605530092Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:54.605532872Z [err]  }
+2026-05-01T08:09:54.605536312Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:09:54.605540572Z [err]  Failed to proxy http://127.0.0.1:4000/api/settings Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:54.605543662Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:54.605570482Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:54.605574442Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:54.605577911Z [err]    errno: -111,
+2026-05-01T08:09:54.605580741Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:54.605584241Z [err]    syscall: 'connect',
+2026-05-01T08:09:54.605587331Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:54.605592481Z [err]    port: 4000
+2026-05-01T08:09:54.605595891Z [err]  }
+2026-05-01T08:09:54.605599021Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:54.605601561Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:54.605605251Z [err]    errno: -111,
+2026-05-01T08:09:54.607222768Z [err]    errno: -111,
+2026-05-01T08:09:54.607225328Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:54.607228278Z [err]    syscall: 'connect',
+2026-05-01T08:09:54.607231207Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:54.607234177Z [err]    port: 4000
+2026-05-01T08:09:54.607236977Z [err]  }
+2026-05-01T08:09:54.607239607Z [err]  SSR: Failed to fetch /api/settings: 500 Internal Server Error
+2026-05-01T08:09:54.607242467Z [err]  Failed to proxy http://127.0.0.1:4000/api/user/profile Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:54.607253697Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:54.607256417Z [err]    errno: -111,
+2026-05-01T08:09:54.607259227Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:54.607263207Z [err]    syscall: 'connect',
+2026-05-01T08:09:54.607265747Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:54.607268157Z [err]    port: 4000
+2026-05-01T08:09:54.607270817Z [err]  }
+2026-05-01T08:09:54.607274137Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:09:54.607277087Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:09:54.607280047Z [err]    errno: -111,
+2026-05-01T08:09:54.607286937Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:09:54.607289337Z [err]    syscall: 'connect',
+2026-05-01T08:09:54.607291697Z [err]    address: '127.0.0.1',
+2026-05-01T08:09:54.607294497Z [err]    port: 4000
+2026-05-01T08:09:54.607297257Z [err]  }
+2026-05-01T08:09:54.607299287Z [err]  SSR: Failed to fetch user profile: 500 Internal Server Error
+2026-05-01T08:10:14.461668112Z [err]  Failed to proxy http://127.0.0.1:4000/api/settings Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.461671542Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.461675712Z [err]    errno: -111,
+2026-05-01T08:10:14.461679212Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.461682832Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.461686192Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.461689782Z [err]    port: 4000
+2026-05-01T08:10:14.461693222Z [err]  }
+2026-05-01T08:10:14.461696182Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.461699392Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.461702552Z [err]    errno: -111,
+2026-05-01T08:10:14.461706862Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.461710302Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.461713602Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.461716742Z [err]    port: 4000
+2026-05-01T08:10:14.461720442Z [err]  }
+2026-05-01T08:10:14.561297362Z [err]  Failed to proxy http://127.0.0.1:4000/api/content/default-page/home?pageSource=default Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.561308702Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.561313232Z [err]    errno: -111,
+2026-05-01T08:10:14.561317182Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.561320052Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.561324312Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.561327492Z [err]    port: 4000
+2026-05-01T08:10:14.561336132Z [err]  }
+2026-05-01T08:10:14.561339162Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.561343272Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.561346652Z [err]    errno: -111,
+2026-05-01T08:10:14.561349712Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.561353662Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.561356982Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.561361252Z [err]    port: 4000
+2026-05-01T08:10:14.561364542Z [err]  }
+2026-05-01T08:10:14.561367712Z [err]  Failed to proxy http://127.0.0.1:4000/api/content/landing-stats Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.561371642Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.561375162Z [err]    errno: -111,
+2026-05-01T08:10:14.561378202Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.561380891Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.561385391Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.561388481Z [err]    port: 4000
+2026-05-01T08:10:14.561391131Z [err]  }
+2026-05-01T08:10:14.561395261Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.561399891Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.561402681Z [err]    errno: -111,
+2026-05-01T08:10:14.563817010Z [err]  Failed to proxy http://127.0.0.1:4000/api/ecosystem/market Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.563822410Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.563825830Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.563829880Z [err]    errno: -111,
+2026-05-01T08:10:14.563834660Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.563837770Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.563840390Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.563844770Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.563847300Z [err]    port: 4000
+2026-05-01T08:10:14.563852700Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.563853700Z [err]  }
+2026-05-01T08:10:14.563860050Z [err]    port: 4000
+2026-05-01T08:10:14.563860300Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/market Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.563864620Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.563868290Z [err]    errno: -111,
+2026-05-01T08:10:14.563870910Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.563873570Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.563876320Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.563879800Z [err]    port: 4000
+2026-05-01T08:10:14.563882620Z [err]  }
+2026-05-01T08:10:14.563885370Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.563887789Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.563890579Z [err]    errno: -111,
+2026-05-01T08:10:14.563892759Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.563896539Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.563900699Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.563903779Z [err]    port: 4000
+2026-05-01T08:10:14.563907079Z [err]  }
+2026-05-01T08:10:14.565917392Z [err]  }
+2026-05-01T08:10:14.565920192Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:14.565923232Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:14.565925782Z [err]    errno: -111,
+2026-05-01T08:10:14.565928632Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:14.565930912Z [err]    syscall: 'connect',
+2026-05-01T08:10:14.565935282Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:14.565937662Z [err]    port: 4000
+2026-05-01T08:10:14.565940082Z [err]  }
+2026-05-01T08:10:15.227070322Z [err]  Failed to proxy http://127.0.0.1:4000/img/logo/logo-dark.webp?v=1 Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:15.227083752Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:15.227090542Z [err]    errno: -111,
+2026-05-01T08:10:15.227096552Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:15.227101482Z [err]    syscall: 'connect',
+2026-05-01T08:10:15.227106412Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:15.227114732Z [err]    port: 4000
+2026-05-01T08:10:15.227119842Z [err]  }
+2026-05-01T08:10:15.227125002Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:15.227131271Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:15.227137221Z [err]    errno: -111,
+2026-05-01T08:10:15.227150921Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:15.227156011Z [err]    syscall: 'connect',
+2026-05-01T08:10:15.227161231Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:15.227166441Z [err]    port: 4000
+2026-05-01T08:10:15.227171411Z [err]  }
+2026-05-01T08:10:17.319903215Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.319913824Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.319918784Z [err]    errno: -111,
+2026-05-01T08:10:17.319924524Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.319928064Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.319932634Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.319935804Z [err]    port: 4000
+2026-05-01T08:10:17.319939474Z [err]  }
+2026-05-01T08:10:17.319943564Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.319947574Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.319959144Z [err]    errno: -111,
+2026-05-01T08:10:17.319963514Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.319968044Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.319972304Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.319976624Z [err]    port: 4000
+2026-05-01T08:10:17.319981634Z [err]  }
+2026-05-01T08:10:17.319986074Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:10:17.319990584Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/session Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.319994754Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.319998654Z [err]    errno: -111,
+2026-05-01T08:10:17.320002494Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.320006624Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.320009774Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.320013564Z [err]    port: 4000
+2026-05-01T08:10:17.320016973Z [err]  }
+2026-05-01T08:10:17.320020523Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.320023603Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.321995816Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.322003866Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.322007896Z [err]    port: 4000
+2026-05-01T08:10:17.322013956Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.322017106Z [err]  }
+2026-05-01T08:10:17.322021856Z [err]    errno: -111,
+2026-05-01T08:10:17.322022336Z [err]    errno: -111,
+2026-05-01T08:10:17.322025066Z [err]  Failed to refresh token: 500 Internal Server Error
+2026-05-01T08:10:17.322026336Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.322028986Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/session Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.322031326Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.322032886Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.322037146Z [err]    errno: -111,
+2026-05-01T08:10:17.322040606Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.322043596Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.322047496Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.322053856Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.322054036Z [err]    port: 4000
+2026-05-01T08:10:17.322059306Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.322063566Z [err]  }
+2026-05-01T08:10:17.322065456Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.322068956Z [err]    port: 4000
+2026-05-01T08:10:17.322072916Z [err]  }
+2026-05-01T08:10:17.322076676Z [err]  Failed to refresh token: 500 Internal Server Error
+2026-05-01T08:10:17.458821892Z [err]    errno: -111,
+2026-05-01T08:10:17.458831792Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.458856692Z [err]  Failed to proxy http://127.0.0.1:4000/img/logo/logo.webp?v=1 Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.458862892Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.458867442Z [err]    errno: -111,
+2026-05-01T08:10:17.458874662Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.458878892Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.458883532Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.458886902Z [err]    port: 4000
+2026-05-01T08:10:17.458893422Z [err]  }
+2026-05-01T08:10:17.458897182Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.458901602Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.458906632Z [err]    errno: -111,
+2026-05-01T08:10:17.458911142Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.458915922Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.458920422Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.458926001Z [err]    port: 4000
+2026-05-01T08:10:17.458930411Z [err]  }
+2026-05-01T08:10:17.458934581Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.458938091Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.458941561Z [err]    errno: -111,
+2026-05-01T08:10:17.458945241Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.458948401Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.458952501Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.458955661Z [err]    port: 4000
+2026-05-01T08:10:17.458959041Z [err]  }
+2026-05-01T08:10:17.458962861Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.458968261Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.459760854Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.459764464Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.459768064Z [err]    port: 4000
+2026-05-01T08:10:17.459771254Z [err]  }
+2026-05-01T08:10:17.459774804Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:10:17.461785736Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/session Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.461799666Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.461807126Z [err]    errno: -111,
+2026-05-01T08:10:17.461812986Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.461818896Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.461826146Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.461831506Z [err]    port: 4000
+2026-05-01T08:10:17.461836696Z [err]  }
+2026-05-01T08:10:17.461842426Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:17.461847526Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:17.461852416Z [err]    errno: -111,
+2026-05-01T08:10:17.461859026Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:17.461864676Z [err]    syscall: 'connect',
+2026-05-01T08:10:17.461870216Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:17.461874815Z [err]    port: 4000
+2026-05-01T08:10:17.461879045Z [err]  }
+2026-05-01T08:10:17.464081776Z [err]  Failed to refresh token: 500 Internal Server Error
+2026-05-01T08:10:20.921152664Z [err]  Failed to proxy http://127.0.0.1:4000/img/logo/favicon-32x32.webp Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.921156274Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.921160114Z [err]    errno: -111,
+2026-05-01T08:10:20.921163524Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.921167074Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.921170164Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.921173074Z [err]    port: 4000
+2026-05-01T08:10:20.921176234Z [err]  }
+2026-05-01T08:10:20.921179344Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.921182974Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.921187894Z [err]    errno: -111,
+2026-05-01T08:10:20.921192904Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.921196174Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.921199164Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.921201964Z [err]    port: 4000
+2026-05-01T08:10:20.921205074Z [err]  }
+2026-05-01T08:10:20.921208434Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.921211864Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.921215244Z [err]    errno: -111,
+2026-05-01T08:10:20.921218204Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.921221734Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.921225154Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.921241643Z [err]    port: 4000
+2026-05-01T08:10:20.921245053Z [err]  }
+2026-05-01T08:10:20.921248483Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.921252043Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.921255943Z [err]    errno: -111,
+2026-05-01T08:10:20.922725400Z [err]  }
+2026-05-01T08:10:20.922729730Z [err]  Failed to refresh token: 500 Internal Server Error
+2026-05-01T08:10:20.922733640Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/session Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.922737630Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.922740900Z [err]    errno: -111,
+2026-05-01T08:10:20.922745070Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.922749280Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.922752230Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.922754920Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.922757940Z [err]    port: 4000
+2026-05-01T08:10:20.922762050Z [err]  }
+2026-05-01T08:10:20.922765160Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:10:20.922768240Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/session Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.922771370Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.922774240Z [err]    errno: -111,
+2026-05-01T08:10:20.922777179Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.922779609Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.922782549Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.922785219Z [err]    port: 4000
+2026-05-01T08:10:20.922788279Z [err]  }
+2026-05-01T08:10:20.922790829Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.922793879Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.922796329Z [err]    errno: -111,
+2026-05-01T08:10:20.922801469Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.922804199Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.922807519Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.922810259Z [err]    port: 4000
+2026-05-01T08:10:20.924971471Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.924976861Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.924982131Z [err]    port: 4000
+2026-05-01T08:10:20.924985980Z [err]  }
+2026-05-01T08:10:20.924989670Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.924993070Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.924996770Z [err]    errno: -111,
+2026-05-01T08:10:20.925000550Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.925004060Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.925007420Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.925010790Z [err]    port: 4000
+2026-05-01T08:10:20.925013820Z [err]  }
+2026-05-01T08:10:20.925016940Z [err]  Failed to refresh token: 500 Internal Server Error
+2026-05-01T08:10:20.925020190Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/session Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.925027800Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.925034330Z [err]    errno: -111,
+2026-05-01T08:10:20.925037590Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.925041370Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.925044820Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.925048090Z [err]    port: 4000
+2026-05-01T08:10:20.925051230Z [err]  }
+2026-05-01T08:10:20.925054550Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.925057870Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.925061920Z [err]    errno: -111,
+2026-05-01T08:10:20.925064870Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.925068100Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.925071360Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.925075640Z [err]    port: 4000
+2026-05-01T08:10:20.925078850Z [err]  }
+2026-05-01T08:10:20.926700566Z [err]  Failed to refresh token: 500 Internal Server Error
+2026-05-01T08:10:20.926704546Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:20.926707286Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:20.926710056Z [err]    errno: -111,
+2026-05-01T08:10:20.926712876Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:20.926715656Z [err]    syscall: 'connect',
+2026-05-01T08:10:20.926718406Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:20.926720966Z [err]    port: 4000
+2026-05-01T08:10:20.926723606Z [err]  }
+2026-05-01T08:10:26.035848772Z [err]  Failed to proxy http://127.0.0.1:4000/img/logo/favicon-16x16.webp Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:26.035852402Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:26.035856092Z [err]    errno: -111,
+2026-05-01T08:10:26.035860432Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:26.035863212Z [err]    syscall: 'connect',
+2026-05-01T08:10:26.035866292Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:26.035868982Z [err]    port: 4000
+2026-05-01T08:10:26.035872212Z [err]  }
+2026-05-01T08:10:26.035874812Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:26.035877692Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:26.035881162Z [err]    errno: -111,
+2026-05-01T08:10:26.035884542Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:26.035887262Z [err]    syscall: 'connect',
+2026-05-01T08:10:26.035890352Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:26.035892992Z [err]    port: 4000
+2026-05-01T08:10:26.035895712Z [err]  }
+2026-05-01T08:10:30.659785379Z [err]    errno: -111,
+2026-05-01T08:10:30.659791899Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:30.659796339Z [err]    syscall: 'connect',
+2026-05-01T08:10:30.659801219Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:30.659807519Z [err]    port: 4000
+2026-05-01T08:10:30.659812499Z [err]  }
+2026-05-01T08:10:30.659818829Z [err]  Failed to proxy http://127.0.0.1:4000/img/logo/favicon-96x96.webp Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:30.659820459Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:30.659826969Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:30.659831219Z [err]    errno: -111,
+2026-05-01T08:10:30.659836839Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:30.659841489Z [err]    port: 4000
+2026-05-01T08:10:30.659845179Z [err]    syscall: 'connect',
+2026-05-01T08:10:30.659849969Z [err]  }
+2026-05-01T08:10:30.659856139Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:30.659862179Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:36.876648791Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/role Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:36.876661221Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:36.876666071Z [err]    errno: -111,
+2026-05-01T08:10:36.876671021Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:36.876675701Z [err]    syscall: 'connect',
+2026-05-01T08:10:36.876680461Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:36.876684891Z [err]    port: 4000
+2026-05-01T08:10:36.876688971Z [err]  }
+2026-05-01T08:10:36.876692711Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:36.876696561Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:36.876700261Z [err]    errno: -111,
+2026-05-01T08:10:36.876703491Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:36.876706481Z [err]    syscall: 'connect',
+2026-05-01T08:10:36.876710081Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:36.876713341Z [err]    port: 4000
+2026-05-01T08:10:36.876717011Z [err]  }
+2026-05-01T08:10:36.876721231Z [err]  Failed to fetch roles and permissions: 500 Internal Server Error
+2026-05-01T08:10:36.883291103Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/session Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:36.883302363Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:36.883307553Z [err]    errno: -111,
+2026-05-01T08:10:36.883311333Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:36.883315753Z [err]    syscall: 'connect',
+2026-05-01T08:10:36.883320312Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:36.883324122Z [err]    port: 4000
+2026-05-01T08:10:36.883327742Z [err]  }
+2026-05-01T08:10:36.883331442Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:36.883336982Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:36.883340902Z [err]    errno: -111,
+2026-05-01T08:10:36.883344222Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:36.883348382Z [err]    syscall: 'connect',
+2026-05-01T08:10:36.883352882Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:36.883356502Z [err]    port: 4000
+2026-05-01T08:10:36.883359682Z [err]  }
+2026-05-01T08:10:36.883362772Z [err]  Failed to refresh token: 500 Internal Server Error
+2026-05-01T08:10:37.451762782Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:37.451768502Z [err]    port: 4000
+2026-05-01T08:10:37.451774232Z [err]  }
+2026-05-01T08:10:37.451811042Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:37.451815642Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:37.451819522Z [err]    errno: -111,
+2026-05-01T08:10:37.451822992Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:37.451827421Z [err]    syscall: 'connect',
+2026-05-01T08:10:57.462761456Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:57.462765626Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:57.462768876Z [err]    errno: -111,
+2026-05-01T08:10:57.462773286Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:57.462777536Z [err]    syscall: 'connect',
+2026-05-01T08:10:57.462781566Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:57.462785386Z [err]    port: 4000
+2026-05-01T08:10:57.462789226Z [err]  }
+2026-05-01T08:10:58.863220197Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:10:58.863222727Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:10:58.863225397Z [err]    errno: -111,
+2026-05-01T08:10:58.863228427Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:10:58.863230997Z [err]    syscall: 'connect',
+2026-05-01T08:10:58.863233807Z [err]    address: '127.0.0.1',
+2026-05-01T08:10:58.863246397Z [err]    port: 4000
+2026-05-01T08:10:58.863248887Z [err]  }
+2026-05-01T08:11:07.999777321Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:07.999785471Z [err]    errno: -111,
+2026-05-01T08:11:07.999789361Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:07.999792451Z [err]    syscall: 'connect',
+2026-05-01T08:11:07.999795401Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:07.999798261Z [err]    port: 4000
+2026-05-01T08:11:07.999800731Z [err]  }
+2026-05-01T08:11:07.999817761Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:14.692296097Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:14.692300377Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:14.692303307Z [err]    errno: -111,
+2026-05-01T08:11:14.692305957Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:14.692308647Z [err]    syscall: 'connect',
+2026-05-01T08:11:14.692311727Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:14.692314057Z [err]    port: 4000
+2026-05-01T08:11:14.692316747Z [err]  }
+2026-05-01T08:11:19.291199226Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/pow/challenge?action=login Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:19.291204046Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:19.291208126Z [err]    errno: -111,
+2026-05-01T08:11:19.291210686Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:19.291213246Z [err]    syscall: 'connect',
+2026-05-01T08:11:19.291215646Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:19.291218196Z [err]    port: 4000
+2026-05-01T08:11:19.291220576Z [err]  }
+2026-05-01T08:11:19.291222966Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:19.291225486Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:19.291228666Z [err]    errno: -111,
+2026-05-01T08:11:19.291231126Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:19.291233756Z [err]    syscall: 'connect',
+2026-05-01T08:11:19.291236646Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:19.291239866Z [err]    port: 4000
+2026-05-01T08:11:19.291242256Z [err]  }
+2026-05-01T08:11:19.838316504Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/login Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:19.838323034Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:19.838327494Z [err]    errno: -111,
+2026-05-01T08:11:19.838330864Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:19.838334954Z [err]    syscall: 'connect',
+2026-05-01T08:11:19.838338274Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:19.838341694Z [err]    port: 4000
+2026-05-01T08:11:19.838344584Z [err]  }
+2026-05-01T08:11:19.838349184Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:19.838353004Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:19.838357564Z [err]    errno: -111,
+2026-05-01T08:11:19.838360854Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:19.838364244Z [err]    syscall: 'connect',
+2026-05-01T08:11:19.838368294Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:19.838371834Z [err]    port: 4000
+2026-05-01T08:11:19.838376334Z [err]  }
+2026-05-01T08:11:22.332914169Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/pow/challenge?action=login Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:22.332919569Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:22.332922669Z [err]    errno: -111,
+2026-05-01T08:11:22.332925329Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:22.332928069Z [err]    syscall: 'connect',
+2026-05-01T08:11:22.332931149Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:22.332933849Z [err]    port: 4000
+2026-05-01T08:11:22.332936289Z [err]  }
+2026-05-01T08:11:22.332939129Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:22.332941489Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:22.332944329Z [err]    errno: -111,
+2026-05-01T08:11:22.332947209Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:22.332949529Z [err]    syscall: 'connect',
+2026-05-01T08:11:22.332951669Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:22.332954649Z [err]    port: 4000
+2026-05-01T08:11:22.332957639Z [err]  }
+2026-05-01T08:11:22.844385190Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/login Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:22.844389530Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:22.844393850Z [err]    errno: -111,
+2026-05-01T08:11:22.844396840Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:22.844400120Z [err]    syscall: 'connect',
+2026-05-01T08:11:22.844403650Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:22.844406720Z [err]    port: 4000
+2026-05-01T08:11:22.844410049Z [err]  }
+2026-05-01T08:11:22.844413699Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:22.844416809Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:22.844419719Z [err]    errno: -111,
+2026-05-01T08:11:22.844422619Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:22.844425319Z [err]    syscall: 'connect',
+2026-05-01T08:11:22.844428429Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:22.844431589Z [err]    port: 4000
+2026-05-01T08:11:22.844434419Z [err]  }
+2026-05-01T08:11:27.109360155Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:27.109365034Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:27.109369434Z [err]    errno: -111,
+2026-05-01T08:11:27.109373694Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:27.109378474Z [err]    syscall: 'connect',
+2026-05-01T08:11:27.109383874Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:27.109387824Z [err]    port: 4000
+2026-05-01T08:11:27.109392644Z [err]  }
+2026-05-01T08:11:36.346900088Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/pow/challenge?action=login Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:36.346910208Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:36.346915878Z [err]    errno: -111,
+2026-05-01T08:11:36.346921237Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:36.346927187Z [err]    syscall: 'connect',
+2026-05-01T08:11:36.346931527Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:36.346936677Z [err]    port: 4000
+2026-05-01T08:11:36.346942717Z [err]  }
+2026-05-01T08:11:36.346947027Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:36.346950417Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:36.346954007Z [err]    errno: -111,
+2026-05-01T08:11:36.346957307Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:36.346960387Z [err]    syscall: 'connect',
+2026-05-01T08:11:36.346963807Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:36.346967577Z [err]    port: 4000
+2026-05-01T08:11:36.346970827Z [err]  }
+2026-05-01T08:11:36.346974027Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:36.346978447Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:36.346981647Z [err]    errno: -111,
+2026-05-01T08:11:36.346985507Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:36.346989127Z [err]    syscall: 'connect',
+2026-05-01T08:11:36.346995857Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:36.346998677Z [err]    port: 4000
+2026-05-01T08:11:36.347001927Z [err]  }
+2026-05-01T08:11:38.088639040Z [err]  Failed to proxy http://127.0.0.1:4000/api/auth/login Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:38.088642390Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:38.088646250Z [err]    errno: -111,
+2026-05-01T08:11:38.088649380Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:38.088652520Z [err]    syscall: 'connect',
+2026-05-01T08:11:38.088655250Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:38.088658590Z [err]    port: 4000
+2026-05-01T08:11:38.088661350Z [err]  }
+2026-05-01T08:11:38.088664350Z [err]  Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:38.088667120Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:38.088670460Z [err]    errno: -111,
+2026-05-01T08:11:38.088673660Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:38.088677410Z [err]    syscall: 'connect',
+2026-05-01T08:11:38.088680410Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:38.088683710Z [err]    port: 4000
+2026-05-01T08:11:38.088686620Z [err]  }
+2026-05-01T08:11:46.381668881Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:11:46.381673521Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:11:46.381677061Z [err]    errno: -111,
+2026-05-01T08:11:46.381681721Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:11:46.381685671Z [err]    syscall: 'connect',
+2026-05-01T08:11:46.381688991Z [err]    address: '127.0.0.1',
+2026-05-01T08:11:46.381692651Z [err]    port: 4000
+2026-05-01T08:11:46.381696081Z [err]  }
+2026-05-01T08:12:06.376603434Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:12:06.376608374Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:12:06.376612384Z [err]    errno: -111,
+2026-05-01T08:12:06.376615914Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:12:06.376619994Z [err]    syscall: 'connect',
+2026-05-01T08:12:06.376623394Z [err]    address: '127.0.0.1',
+2026-05-01T08:12:06.376634044Z [err]    port: 4000
+2026-05-01T08:12:06.376637154Z [err]  }
+2026-05-01T08:12:26.379029604Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:12:26.379036594Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:12:26.379040494Z [err]    errno: -111,
+2026-05-01T08:12:26.379043024Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:12:26.379045894Z [err]    syscall: 'connect',
+2026-05-01T08:12:26.379048944Z [err]    address: '127.0.0.1',
+2026-05-01T08:12:26.379051544Z [err]    port: 4000
+2026-05-01T08:12:26.379054644Z [err]  }
+2026-05-01T08:13:06.159306362Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:13:06.159309172Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:13:06.159311702Z [err]    errno: -111,
+2026-05-01T08:13:06.159314352Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:13:06.159317092Z [err]    syscall: 'connect',
+2026-05-01T08:13:06.159320032Z [err]    address: '127.0.0.1',
+2026-05-01T08:13:06.159322742Z [err]    port: 4000
+2026-05-01T08:13:06.159325632Z [err]  }
+2026-05-01T08:13:11.042705057Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:13:11.042711317Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:13:11.042715537Z [err]    errno: -111,
+2026-05-01T08:13:11.042720297Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:13:11.042724817Z [err]    syscall: 'connect',
+2026-05-01T08:13:11.042728597Z [err]    address: '127.0.0.1',
+2026-05-01T08:13:11.042732647Z [err]    port: 4000
+2026-05-01T08:13:11.042736387Z [err]  }
+2026-05-01T08:13:30.982023416Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:13:30.982025696Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:13:30.982028426Z [err]    errno: -111,
+2026-05-01T08:13:30.982031346Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:13:30.982033966Z [err]    syscall: 'connect',
+2026-05-01T08:13:30.982036576Z [err]    address: '127.0.0.1',
+2026-05-01T08:13:30.982039326Z [err]    port: 4000
+2026-05-01T08:13:30.982042026Z [err]  }
+2026-05-01T08:13:50.958359638Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:13:50.958366298Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:13:50.958370758Z [err]    errno: -111,
+2026-05-01T08:13:50.958374328Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:13:50.958377348Z [err]    syscall: 'connect',
+2026-05-01T08:13:50.958380718Z [err]    address: '127.0.0.1',
+2026-05-01T08:13:50.958383398Z [err]    port: 4000
+2026-05-01T08:13:50.958386498Z [err]  }
+2026-05-01T08:13:50.958388778Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:13:50.958391778Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:13:50.958394798Z [err]    errno: -111,
+2026-05-01T08:13:50.958397418Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:13:50.958400048Z [err]    syscall: 'connect',
+2026-05-01T08:13:50.958402928Z [err]    address: '127.0.0.1',
+2026-05-01T08:13:50.958406358Z [err]    port: 4000
+2026-05-01T08:13:50.958409898Z [err]  }
+2026-05-01T08:13:57.893972547Z [err]    syscall: 'connect',
+2026-05-01T08:13:57.893978537Z [err]    address: '127.0.0.1',
+2026-05-01T08:13:57.893981807Z [err]    port: 4000
+2026-05-01T08:13:57.893985427Z [err]  }
+2026-05-01T08:13:57.894073656Z [err]  Failed to proxy http://127.0.0.1:4000/api/exchange/ticker Error: connect ECONNREFUSED 127.0.0.1:4000
+2026-05-01T08:13:57.894078076Z [err]      at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:4000) {
+2026-05-01T08:13:57.894080996Z [err]    errno: -111,
+2026-05-01T08:13:57.894084606Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:14:06.995535164Z [err]    errno: -111,
+2026-05-01T08:14:06.995538144Z [err]    code: 'ECONNREFUSED',
+2026-05-01T08:14:06.995540824Z [err]    syscall: 'connect',

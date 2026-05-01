@@ -46,6 +46,13 @@ calls to `127.0.0.1:4000` inside the container (configured in
 > requires you to publicly expose port 4000, fight CORS, and set
 > `BACKEND_INTERNAL_URL` everywhere. None of that is needed with the default
 > single-service setup.
+>
+> **IMPORTANT — monorepo trap:** If you add a second GitHub-connected service and
+> point its "Root Directory" to `backend/` or `frontend/`, Railway will try to
+> deploy those folders as standalone services. They will compete for the same
+> MySQL database (causing Sequelize sync locks) and the main service will hang.
+> Your Railway project must have exactly **three services**: your app service
+> (connected to the repo root), MySQL plugin, and Redis plugin — nothing else.
 
 Two managed plugins back the app:
 
