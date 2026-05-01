@@ -1,0 +1,199 @@
+2026-05-01T18:47:40.317331406Z [inf]  Starting Container
+2026-05-01T18:47:40.847506898Z [inf]  ================================================================
+2026-05-01T18:47:40.847526240Z [inf]  DB target: root@mysql.railway.internal:3306/railway
+2026-05-01T18:47:40.847536046Z [inf]  Redis target: redis.railway.internal:6379
+2026-05-01T18:47:40.847579329Z [inf]  ================================================================
+2026-05-01T18:47:40.847586962Z [inf]    Bicrypto Railway Boot
+2026-05-01T18:47:40.847628587Z [inf]  Relaxing server sql_mode for backend connections...
+2026-05-01T18:47:40.847671885Z [inf]  Writing runtime .env from environment...
+2026-05-01T18:47:40.847687736Z [inf]  Waiting for MySQL at mysql.railway.internal:3306...
+2026-05-01T18:47:40.847695872Z [inf]  MySQL is reachable.
+2026-05-01T18:47:41.795570875Z [inf]  Applying MySQL 8 schema fixups...
+2026-05-01T18:47:42.850445759Z [inf]    support_ticket.tags_idx already absent.
+2026-05-01T18:47:42.850463511Z [inf]    support_ticket.tags already JSON.
+2026-05-01T18:47:45.065722232Z [inf]  Database already has 184 tables. Skipping import + seed.
+2026-05-01T18:47:45.065730665Z [inf]  DB_SYNC=none (use 'alter' only when intentionally migrating schema)
+2026-05-01T18:47:45.065738357Z [inf]  Starting backend (port 4000) + frontend (port 8080) under PM2...
+2026-05-01T18:47:45.065746398Z [err]  npm warn config production Use `--omit=dev` instead.
+2026-05-01T18:47:45.233120638Z [inf]  2026-05-01T18:47:45: PM2 log: Launching in no daemon mode
+2026-05-01T18:47:45.908997639Z [inf]  2026-05-01T18:47:45: PM2 log: App [backend:0] starting in -fork mode-
+2026-05-01T18:47:45.909004188Z [inf]  2026-05-01T18:47:45: PM2 log: App [frontend:1] starting in -fork mode-
+2026-05-01T18:47:45.909011017Z [inf]  2026-05-01T18:47:45: PM2 log: App [backend:0] online
+2026-05-01T18:47:45.910052239Z [inf]  2026-05-01T18:47:45: PM2 log: App [frontend:1] online
+2026-05-01T18:47:45.960274205Z [inf]  ▲ Next.js 16.1.6
+2026-05-01T18:47:45.960285405Z [inf]  - Local:         http://localhost:8080
+2026-05-01T18:47:45.960293330Z [inf]  - Network:       http://10.192.208.189:8080
+2026-05-01T18:47:45.960301833Z [inf]  ✓ Starting...
+2026-05-01T18:47:46.868767868Z [inf]  ✓ Ready in 1097ms
+2026-05-01T18:47:48.937038688Z [err]  Failed to fetch roles and permissions: 404 
+2026-05-01T18:47:49.860087054Z [err]  (node:96) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-05-01T18:47:49.860095348Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-01T18:47:50.251962800Z [inf]  [36m╭────────────────────────────────────────────────╮[0m
+2026-05-01T18:47:50.251968459Z [inf]  [36m│[0m              🚀 [1m[96mDeMourinho Crypto[0m              [36m│[0m
+2026-05-01T18:47:50.251973532Z [inf]  [36m│[0m              [90mv6.3.0 • Production[0m               [36m│[0m
+2026-05-01T18:47:50.251978407Z [inf]  [36m╰────────────────────────────────────────────────╯[0m
+2026-05-01T18:47:50.251983743Z [inf]  [90m18:47:50[0m [36m[DATABASE][0m [36m→[0m  Database...
+2026-05-01T18:47:51.951142811Z [inf]                      └─ [32m✓[0m [32mDone[0m [90m(1.6s)[0m
+2026-05-01T18:47:51.951151212Z [inf]  [90m18:47:51[0m [36m[NOTIFICATIONS][0m [36m→[0m  Notifications...
+2026-05-01T18:47:51.951158759Z [inf]  [NotificationService] Channels: IN_APP, EMAIL
+2026-05-01T18:47:52.950901801Z [inf]  [90m18:47:52[0m [36m[SECURITY][0m [36m→[0m  Security...
+2026-05-01T18:47:52.950929072Z [inf]                      └─ [32m✓[0m [32mDone[0m [90m(0ms)[0m
+2026-05-01T18:47:52.950936832Z [inf]  [90m18:47:52[0m [36m[ROLES][0m [36m→[0m  Roles...
+2026-05-01T18:47:52.950991447Z [inf]                           └─ [32m✓[0m [32mDone[0m [90m(996ms)[0m
+2026-05-01T18:47:53.029216416Z [inf]                   └─ [32m✓[0m [32mDone[0m [90m(167ms)[0m
+2026-05-01T18:47:53.029226344Z [inf]  [90m18:47:53[0m [36m[ROUTES][0m [36m→[0m  Routes...
+2026-05-01T18:47:53.876186464Z [err]  (node:95) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-05-01T18:47:53.876193885Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-01T18:47:53.876201898Z [inf]                    └─ [32m✓[0m [32mDone[0m [90m(622ms)[0m
+2026-05-01T18:47:53.876210044Z [inf]  [90m18:47:53[0m [36m[CRON][0m [36m→[0m  Cron...
+2026-05-01T18:47:55.945442662Z [inf]                  └─ [32m✓[0m [32mDone[0m [90m(1.9s)[0m
+2026-05-01T18:47:55.945458337Z [inf]  [90m18:47:55[0m [36m[EXTENSIONS][0m [36m→[0m  Extensions...
+2026-05-01T18:47:57.949145247Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:47:57.949150070Z [err]    address: '127.0.0.1',
+2026-05-01T18:47:57.949167046Z [err]    port: 9042
+2026-05-01T18:47:57.949168095Z [err]    syscall: 'connect',
+2026-05-01T18:47:57.949179426Z [err]  }. See innerErrors.[0m
+2026-05-01T18:47:57.949189894Z [err]  [90m18:47:57[0m [36m[SCYLLA][0m [33m⚠[0m  [33mConnection failed. Retrying in 2 seconds...[0m
+2026-05-01T18:47:57.949273264Z [err]  [90m18:47:57[0m [36m[ECOSYSTEM][0m [31m✗[0m  [31mFailed to connect to ScyllaDB: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:47:57.949280220Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:47:57.949286638Z [err]    errno: -111,
+2026-05-01T18:48:00.192091007Z [err]    errno: -111,
+2026-05-01T18:48:00.192103972Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:48:00.192112217Z [err]    syscall: 'connect',
+2026-05-01T18:48:00.192119165Z [err]    address: '127.0.0.1',
+2026-05-01T18:48:00.192126193Z [err]    port: 9042
+2026-05-01T18:48:00.192133849Z [err]  }. See innerErrors.[0m
+2026-05-01T18:48:00.192141416Z [err]  [90m18:47:59[0m [36m[SCYLLA][0m [33m⚠[0m  [33mConnection failed. Retrying in 4 seconds...[0m
+2026-05-01T18:48:00.192163425Z [err]  [90m18:47:59[0m [36m[ECOSYSTEM][0m [31m✗[0m  [31mFailed to connect to ScyllaDB: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:48:00.192172565Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:48:01.078251911Z [inf]  [90m18:48:01[0m [36m[BTC_SCAN][0m [36m→[0m  Starting Bitcoin deposit scanner...
+2026-05-01T18:48:01.078261393Z [inf]                      ├─ [2m•[0m [2mTrying Mempool.space API...[0m
+2026-05-01T18:48:01.112679860Z [inf]                      ├─ [32m✓[0m [2mMempool.space connected[0m
+2026-05-01T18:48:01.112684981Z [inf]                      └─ [32m✓[0m [32mScanner started using mempool[0m [90m(75ms)[0m
+2026-05-01T18:48:02.009927938Z [inf]  [90m18:48:01[0m [36m[EXCHANGE][0m [34mℹ[0m  API credentials for binance are missing. Falling back to public mode for charts and prices.
+2026-05-01T18:48:04.023271594Z [err]  [90m18:48:03[0m [36m[ECOSYSTEM][0m [31m✗[0m  [31mFailed to connect to ScyllaDB: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:48:04.023279547Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:48:04.023286862Z [err]    errno: -111,
+2026-05-01T18:48:04.023295115Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:48:04.023303391Z [err]    syscall: 'connect',
+2026-05-01T18:48:04.023310217Z [err]    address: '127.0.0.1',
+2026-05-01T18:48:04.023319636Z [err]    port: 9042
+2026-05-01T18:48:04.023328928Z [err]  }. See innerErrors.[0m
+2026-05-01T18:48:04.023336606Z [err]  [90m18:48:03[0m [36m[SCYLLA][0m [33m⚠[0m  [33mConnection failed. Retrying in 8 seconds...[0m
+2026-05-01T18:48:10.806558974Z [err]  [90m18:48:10[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:48:10.806564156Z [err]  [90m18:48:10[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:48:10.806569355Z [err]  [90m18:48:10[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:48:10.806577078Z [err]  [90m18:48:10[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:48:11.865460659Z [err]  [90m18:48:11[0m [36m[ECOSYSTEM][0m [31m✗[0m  [31mFailed to connect to ScyllaDB: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:48:11.865468312Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:48:11.865475333Z [err]    errno: -111,
+2026-05-01T18:48:11.865484055Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:48:11.865494398Z [err]    syscall: 'connect',
+2026-05-01T18:48:11.865499947Z [err]    address: '127.0.0.1',
+2026-05-01T18:48:11.865505054Z [err]    port: 9042
+2026-05-01T18:48:11.865510941Z [err]  }. See innerErrors.[0m
+2026-05-01T18:48:11.865516708Z [err]  [90m18:48:11[0m [36m[SCYLLA][0m [33m⚠[0m  [33mConnection failed. Retrying in 16 seconds...[0m
+2026-05-01T18:48:31.894667465Z [err]  [90m18:48:27[0m [36m[ECOSYSTEM][0m [31m✗[0m  [31mFailed to connect to ScyllaDB: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:48:31.894671440Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:48:31.894677538Z [err]    errno: -111,
+2026-05-01T18:48:31.894682859Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:48:31.894687263Z [err]    syscall: 'connect',
+2026-05-01T18:48:31.894691888Z [err]    address: '127.0.0.1',
+2026-05-01T18:48:31.894700355Z [err]    port: 9042
+2026-05-01T18:48:31.894707832Z [err]  }. See innerErrors.[0m
+2026-05-01T18:48:31.894714138Z [err]  [90m18:48:27[0m [36m[SCYLLA][0m [33m⚠[0m  [33mConnection failed. Retrying in 32 seconds...[0m
+2026-05-01T18:49:02.093056860Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:49:02.093096478Z [err]  [90m18:48:59[0m [36m[ECOSYSTEM][0m [31m✗[0m  [31mFailed to connect to ScyllaDB: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:49:02.093109564Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:49:02.093117311Z [err]    errno: -111,
+2026-05-01T18:49:02.093128201Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:49:02.093131352Z [err]  [90m18:48:59[0m [36m[SCYLLA][0m [31m✗[0m  [31mMax retries reached. Could not connect to ScyllaDB.[0m
+2026-05-01T18:49:02.093142993Z [err]    syscall: 'connect',
+2026-05-01T18:49:02.093145702Z [err]  [90m18:49:00[0m [36m[SCYLLA][0m [31m✗[0m  [31mFailed to fetch all open orders: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:49:02.093157068Z [err]    address: '127.0.0.1',
+2026-05-01T18:49:02.093159249Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:49:02.093174895Z [err]    errno: -111,
+2026-05-01T18:49:02.093175269Z [err]    port: 9042
+2026-05-01T18:49:02.093190781Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:49:02.093193903Z [err]  }. See innerErrors.[0m
+2026-05-01T18:49:02.093201336Z [err]    syscall: 'connect',
+2026-05-01T18:49:02.093207792Z [err]    address: '127.0.0.1',
+2026-05-01T18:49:02.093215360Z [err]    port: 9042
+2026-05-01T18:49:02.093222786Z [err]  }. See innerErrors.[0m
+2026-05-01T18:49:02.093229990Z [err]  [90m18:49:00[0m [36m[ECO_ENGINE][0m [31m✗[0m  [31mFailed to populate order queue with open orders: Failed to fetch all open orders: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:49:02.094398725Z [err]  [90m18:49:00[0m [36m[SCYLLA][0m [31m✗[0m  [31mFailed to fetch yesterday's candles: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:49:02.094445888Z [err]    errno: -111,
+2026-05-01T18:49:02.094453568Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:49:02.094519626Z [err]    syscall: 'connect',
+2026-05-01T18:49:02.094528907Z [err]    address: '127.0.0.1',
+2026-05-01T18:49:02.094537839Z [err]    port: 9042
+2026-05-01T18:49:02.094545930Z [err]  }. See innerErrors.[0m
+2026-05-01T18:49:02.094552920Z [err]  [90m18:49:00[0m [36m[SCYLLA][0m [31m✗[0m  [31mFailed to fetch latest candles: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:49:02.094559479Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:49:02.094566148Z [err]    errno: -111,
+2026-05-01T18:49:02.094574693Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:49:02.094582908Z [err]    syscall: 'connect',
+2026-05-01T18:49:02.094589586Z [err]    address: '127.0.0.1',
+2026-05-01T18:49:02.094596053Z [err]    port: 9042
+2026-05-01T18:49:02.094602468Z [err]  }. See innerErrors.[0m
+2026-05-01T18:49:02.094609988Z [err]  [90m18:49:00[0m [36m[ECO_ENGINE][0m [31m✗[0m  [31mFailed to initialize last candles: Failed to fetch latest candles: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:49:02.094616505Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:49:02.094630038Z [err]    errno: -111,
+2026-05-01T18:49:02.094636459Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:49:02.094645054Z [err]    syscall: 'connect',
+2026-05-01T18:49:02.094653052Z [err]    address: '127.0.0.1',
+2026-05-01T18:49:02.094659062Z [err]    port: 9042
+2026-05-01T18:49:02.094666340Z [err]  }. See innerErrors.[0m
+2026-05-01T18:49:02.099096579Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:49:02.099104933Z [err]    errno: -111,
+2026-05-01T18:49:02.099110393Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:49:02.099116987Z [err]    syscall: 'connect',
+2026-05-01T18:49:02.099122564Z [err]    address: '127.0.0.1',
+2026-05-01T18:49:02.099128255Z [err]    port: 9042
+2026-05-01T18:49:02.099137562Z [err]  }. See innerErrors.[0m
+2026-05-01T18:49:02.099143310Z [err]  [90m18:49:00[0m [36m[ECO_ENGINE][0m [31m✗[0m  [31mFailed to initialize yesterday's candles: Failed to fetch yesterday's candles: All host(s) tried for query failed. First host tried, 127.0.0.1:9042: Error: connect ECONNREFUSED 127.0.0.1:9042
+2026-05-01T18:49:02.099148203Z [err]      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1610:16) {
+2026-05-01T18:49:02.099153823Z [err]    errno: -111,
+2026-05-01T18:49:02.099159152Z [err]    code: 'ECONNREFUSED',
+2026-05-01T18:49:02.099164746Z [err]    syscall: 'connect',
+2026-05-01T18:49:02.099169973Z [err]    address: '127.0.0.1',
+2026-05-01T18:49:02.099175372Z [err]    port: 9042
+2026-05-01T18:49:02.099180989Z [err]  }. See innerErrors.[0m
+2026-05-01T18:49:02.099187880Z [inf]                        └─ [32m✓[0m [32mDone[0m [90m(1m 5s)[0m
+2026-05-01T18:49:02.099193417Z [inf]  [32m✓[0m [1m[32mServer ready[0m [2mon port[0m [36m4000[0m [90m(1m 10s)[0m
+2026-05-01T18:50:12.532511116Z [err]  [90m18:50:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:50:12.532753846Z [err]  [90m18:50:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:50:12.532765508Z [err]  [90m18:50:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:50:12.532774147Z [err]  [90m18:50:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:52:13.739132905Z [err]  [90m18:52:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:52:13.739147255Z [err]  [90m18:52:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:52:13.739169635Z [err]  [90m18:52:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:52:13.739178516Z [err]  [90m18:52:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:54:14.114029707Z [err]  [90m18:54:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:54:14.114068633Z [err]  [90m18:54:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:54:14.114075968Z [err]  [90m18:54:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:54:14.114084268Z [err]  [90m18:54:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:56:15.682023862Z [err]  [90m18:56:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:56:15.682029790Z [err]  [90m18:56:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:56:15.682035533Z [err]  [90m18:56:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:56:15.682040496Z [err]  [90m18:56:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:58:08.958113669Z [err]  [90m18:58:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:58:08.958254849Z [err]  [90m18:58:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:58:08.958259404Z [err]  [90m18:58:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T18:58:08.958264653Z [err]  [90m18:58:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:00:09.448115501Z [err]  [90m19:00:01[0m [36m[CRON][0m [31m✗[0m  [31mfetchOpenExchangeRates - OpenExchangeRates failed: Unauthorized: Invalid API key.[0m
+2026-05-01T19:00:09.448260762Z [err]  [90m19:00:07[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:00:09.448269062Z [err]  [90m19:00:07[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:00:09.448276350Z [err]  [90m19:00:07[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:00:09.448283748Z [err]  [90m19:00:07[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:02:12.074857411Z [err]  [90m19:02:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:02:12.074863702Z [err]  [90m19:02:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:02:12.074869186Z [err]  [90m19:02:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:02:12.074918639Z [err]  [90m19:02:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:04:12.429276706Z [err]  [90m19:04:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:04:12.429281911Z [err]  [90m19:04:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:04:12.429286980Z [err]  [90m19:04:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:06:13.651977971Z [err]  [90m19:06:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices - fetch markets data failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:06:13.652331193Z [err]  [90m19:06:06[0m [36m[CRON][0m [31m✗[0m  [31mprocessCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:06:13.652349027Z [err]  [90m19:06:06[0m [36m[CRON][0m [31m✗[0m  [31mWorker processCurrenciesPrices error: binance does not have market symbol LINK/LINK/ETH[0m
+2026-05-01T19:06:13.652364284Z [err]  [90m19:06:06[0m [36m[CRON][0m [31m✗[0m  [31mJob processCurrenciesPrices failed: binance does not have market symbol LINK/LINK/ETH[0m
